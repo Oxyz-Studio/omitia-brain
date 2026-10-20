@@ -22,7 +22,7 @@ The private brain should have its own entry instructions, based on [brain-agents
 
 ## No agent-specific memory dependency
 
-The important context lives in saved notes, source records, knowledge policy, and ingestion receipts. A runtime's short memory can point to these files; it is not the only place that important decisions are stored.
+The important context lives in saved notes, source records, knowledge policy, and ingestion receipts. A runtime's short memory can point to these files. Apply the [compact-memory contract](context.md#keep-runtime-memory-compact) when deciding what to carry across sessions and before relying on a pointer.
 
 Do not assume a new agent inherits a previous session, a user's private connector credentials, a running scheduler, or permissions granted in another environment. Read the persisted policy and confirm actual capabilities only when the requested action needs them.
 

@@ -15,6 +15,9 @@ The agent can complete setup in one conversation or leave a smaller working brai
 | [Ingestion log](ingestion-log.md) | Versioned source coverage and unresolved items. |
 | [Mission](mission.md) | A natural-language job for the existing agent environment. |
 | [Run report](run-report.md) | Evidence of a mission's useful result, limits, and next work. |
+| [Context pack](context-pack.md) | Optional task-oriented reading map linked to canonical notes. |
+| [Retrieval case](retrieval-case.md) | A representative question with evidence, limits, and failure criteria. |
+| [Health status](health-status.md) | Dated observation of expected work, verified coverage, and missing proof. |
 
 Text in `{braces}` is an instruction to adapt, not a fact to assume. Keep unknown information as `unknown` and unmade configuration choices as `not configured`. Do not invent people, permissions, schedules, source access, dates, or decisions to complete a template. Remove unused sections instead of maintaining empty forms.
 

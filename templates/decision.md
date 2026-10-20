@@ -17,3 +17,7 @@
 ## History
 
 {Related earlier decision, replaced claims, unresolved disagreement, or none. Do not manufacture a rationale if the source provides only the outcome.}
+
+## Observed outcome and review
+
+{Optional: the observed effects with dated evidence, what is still unverified, and the condition that would justify reconsidering the decision. An approved plan is not proof of execution or success. Remove this section when it does not help.}

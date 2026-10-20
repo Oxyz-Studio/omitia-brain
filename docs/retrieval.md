@@ -13,6 +13,8 @@ The brain is useful when a later person or agent can recover the right knowledge
 
 Use ordinary text and filename search if no semantic index is available. A search index can improve recall but remains replaceable. It must not be the only place storing provenance, permissions, or coverage state.
 
+Follow [context selection](context.md) for task routing, packs, pointers, and adaptive reading budgets. Test actual names and aliases through the configured discovery path: an alias written in metadata is not necessarily indexed. Preserve source identifiers and check identity before creating another note for a variant name.
+
 ## Current questions need current support
 
 Check freshness at the assertion level where practical. The modification date of a note or context pack does not verify every fact it contains. A newly ingested old document remains old evidence.
@@ -38,12 +40,16 @@ If a context pack conflicts with its canonical note, inspect the evidence and re
 | The source was never connected or access is unavailable. | State the coverage limit; use another permitted source or identify the missing access. |
 | It was collected but is partial or blocked. | Inspect the ingestion receipt and recover the missing range. |
 | It was integrated but search missed it. | Try canonical navigation, aliases, stable IDs, and targeted source references; repair discoverability if authorized. |
+| A retrieval filter hid it. | Check which filter applies and whether a permitted historical or broader lookup can include it. |
+| Its location or field was never indexed. | Use permitted navigation, filename search, or direct source reading; removing a result filter cannot recover content absent from the index. |
 | A summary omitted a useful detail. | Read the canonical note and retained evidence; update the summary if the detail belongs there. |
 | Evidence was removed under retention policy. | State that verification is limited; do not reconstruct proof from a digest. |
 | The relevant evidence is ambiguous or contradictory. | Preserve the ambiguity and identify the specific unresolved point. |
 | No durable knowledge was extracted previously. | Revisit the covered unit if the current question or new context changes its relevance. |
 
 Check the [ingestion receipts](../templates/ingestion-log.md) and [continuity rules](continuity.md) when the gap may come from prior processing. Do not claim a complete search of the company when only selected sources were available.
+
+Search scope and access permission are separate. A broader lookup does not grant access to an excluded source or override retention policy. If the missing material remains inaccessible, report the limit instead of treating a search option as a way around it.
 
 ## Evidence and instructions stay separate
 

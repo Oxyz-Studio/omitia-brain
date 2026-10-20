@@ -4,6 +4,8 @@ Omitia Brain is a way to maintain useful company knowledge in ordinary files. It
 
 The files are the shared foundation. Agents, editors, connectors, search indexes, and schedulers are replaceable tools around them. Obsidian is optional. A compatible agent can read and edit Markdown files and use the local environment.
 
+Use [context design](context.md) for what an agent carries into a task, [ingestion design](ingestion-design.md) for how knowledge arrives, and [reliability](reliability.md) for checks and recovery. The [mechanism map](mechanism-review.md) connects these contracts to deployment evidence without making every mechanism a setup requirement.
+
 ## Start with a useful scope
 
 An initial brain can cover the whole company or just one project, team, or question. Adapt to the information and time the user provides. Do not force a long questionnaire, a staged rollout, or a complete folder tree.

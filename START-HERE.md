@@ -48,6 +48,8 @@ If a host does not automatically load a workspace entry, give the contributor a 
 
 Record only supported knowledge. Read [the knowledge model](docs/knowledge-model.md) before writing multiple assertions, and [governance](docs/governance.md) before interpreting contributor authority or configuring unattended work.
 
+Use [context design](docs/context.md) when choosing packs, descriptive domain notes, procedures, or runtime-memory pointers. Keep these roles lightweight; do not create them all by default. A pointer carried across sessions must lead to a note the next agent actually reads, not become an outdated rule of its own.
+
 Unknown permissions are not authorization for unattended mutation. Initial local note creation requested by the user can proceed within that request; defer only the additional action whose scope is unresolved. Leave unavailable connectors unconfigured while continuing with available sources.
 
 ## Produce the first useful result
@@ -63,6 +65,10 @@ If input is ambiguous or incomplete, preserve the usable facts and mark the unre
 Use [sources](docs/sources.md) to record what is connected, permitted, unavailable, or deferred. The user may connect everything now or expand later. A suggested source is not a connected source.
 
 Use [mission contracts](missions/README.md) for on-demand or recurring maintenance. They remain natural-language instructions. The runtime and tools are chosen from the existing environment; follow [scheduling](docs/scheduling.md) if recurring execution is wanted. Do not activate a schedule until its scope, permissions, limits, and viable agent invocation are established. Existing permissions should be reused without asking for approval on every run.
+
+Use [ingestion design](docs/ingestion-design.md) to establish whether histories persist and the unattended runtime can read them. Where viable and authorized, make scheduled ingestion the primary coverage path; hooks are optional signals or captures, not its only discovery mechanism. If a source expires before the job can read it, choose a permitted capture route or keep the recovery limitation explicit.
+
+For the scope being configured, identify existing write checks, recoverable history or backups, and how missing runs will be noticed. Consult [reliability](docs/reliability.md) only as needed. Record actual assurance and unconfigured choices without making a full operations questionnaire a prerequisite for useful notes. Do not claim a validator, monitor, backup, restore, or alert route is working solely because its instructions exist.
 
 ## Verify and hand over
 

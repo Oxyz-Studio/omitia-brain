@@ -22,8 +22,13 @@ Choose checks that address actual risks in this brain:
 - Have duplicated notes, conflicting statements, or large uncategorized areas made retrieval unreliable?
 - Are source access, private storage boundaries, retention rules, and the agent runtime still aligned with the recorded configuration?
 - Are the scheduled missions still useful at their current frequency, given the user's goals and actual source activity?
+- Are relied-on controls active in this environment, and what has actually been reviewed, checked deterministically, or enforced?
+- Can a missing expected receipt or an old health observation be noticed if the job or its scheduler stops? Distinguish intended pauses from failures.
+- Is the configured recovery path still usable, with its coverage and last isolated restore check visible?
 
 Repair safe issues within the granted scope. Route specific work to ingestion, consolidation, revalidation, or reconciliation when those missions have different permissions or budgets. Avoid automatic cosmetic rewrites of healthy notes.
+
+For rejected writes, keep new candidates outside the canonical account and preserve existing valid notes; recover only the affected changes without losing concurrent work. Resolve pending questions into canonical knowledge and link their resolution, leaving any remaining unknown explicit. Follow [reliability](../docs/reliability.md) for proportionate checks and recovery evidence. Use [supervision](supervise.md) or [recovery](recover.md) when they need a distinct scope or authority; do not create separate jobs merely because these missions exist.
 
 ## Completion evidence
 

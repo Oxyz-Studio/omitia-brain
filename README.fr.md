@@ -27,10 +27,12 @@ Un CTO peut consulter la documentation sans suivre le démarrage guidé ni adopt
 
 - [Principes et architecture](docs/principles.md).
 - [Modèle de connaissance, provenance et dates](docs/knowledge-model.md).
+- [Sélection du contexte, résumés et mémoire compacte](docs/context.md).
 - [Autonomie et contributions](docs/governance.md).
 - [Continuité entre ingestions et récupération du contexte](docs/continuity.md).
 - [Recherche et historique](docs/retrieval.md).
 - [Sources](docs/sources.md), [planification](docs/scheduling.md) et [compatibilité agents](docs/agents.md).
+- [Fiabilité, supervision et restauration](docs/reliability.md) et [couverture des mécanismes](docs/mechanism-review.md).
 
 La documentation de référence est en anglais. L'accompagnement et le contenu de votre brain suivent votre langue.
 
@@ -41,6 +43,10 @@ Les [missions](missions/README.md) décrivent des objectifs, un périmètre, des
 Les documents locaux, les apports directs et les conversations avec les agents disposent de parcours complets. Des recettes permettent d'adapter l'ingestion aux mails, aux espaces documentaires, aux messageries et aux outils métier disponibles.
 
 Vous choisissez l'autonomie selon les sources et les actions. Les permissions déjà accordées évitent les validations répétitives. Pour exécuter une mission en arrière-plan, il faut un agent et un environnement de planification disponibles ; un fichier Markdown seul ne s'exécute pas.
+
+Lorsque l'historique reste accessible et qu'un agent peut travailler en arrière-plan, l'ingestion planifiée est le mécanisme principal. Les hooks sont des accélérateurs ou des moyens de capture facultatifs ; leur absence ne doit pas empêcher le job de découvrir de nouveaux éléments. Si l'historique disparaît avant l'ingestion, une capture autorisée est nécessaire. Voir la [conception des ingestions](docs/ingestion-design.md).
+
+Les missions de supervision recherchent aussi les travaux manqués et les contrôles devenus silencieux. La méthode distingue historique, sauvegarde et restauration réellement vérifiée. Ces mécanismes restent proportionnés aux besoins ; ils ne sont pas des prérequis administratifs pour commencer.
 
 Les limites et le périmètre des vérifications sont explicités dans [Validation](docs/validation.md). Les recettes de connecteurs ne sont pas des intégrations préinstallées.
 

@@ -23,6 +23,12 @@ A useful registration answers:
 
 Do not request every possible connector up front. The agent can inspect existing access and explain what a missing connection would enable. If setup depends on a service, verify its current official documentation and the actual connector capabilities then; this kit does not supply guessed authentication settings.
 
+## Separate the source host from the executing agent
+
+The source host is the machine, account, or service holding the evidence. The execution runtime is where the ingestion agent runs, using a particular access identity. Reading a conversation interactively does not prove that a scheduled agent has the same access. Record the actual route and relevant limits in the source registration or linked mission configuration, without copying credentials.
+
+Establish where permitted captures, temporary copies, reference notes, and reports may go, who can read them, and which retention rules apply. Access from another runtime does not authorize a wider audience or longer retention. Use the [ingestion design](ingestion-design.md) to choose discovery and capture around the source's actual lifetime.
+
 ## Keep three layers distinct
 
 1. **Source evidence:** what was said, written, or observed, with its context and provenance.
@@ -30,6 +36,8 @@ Do not request every possible connector up front. The agent can inspect existing
 3. **Reference knowledge:** the facts, decisions, procedures, and useful interpretation retained in the brain.
 
 Raw material need not be copied into the brain when its source can be revisited reliably and policy permits that dependency. If the source is ephemeral, choose an explicit retention policy or accept and record the recovery limitation. A summary cannot preserve every detail of a conversation.
+
+Permitted raw material and collected excerpts remain evidence to examine. They do not become current reference knowledge by appearing in a search result or capture folder. Favor reconciled canonical notes for current answers and use the [retrieval rules](retrieval.md) when consulting source material or history.
 
 ## Make coverage explicit
 

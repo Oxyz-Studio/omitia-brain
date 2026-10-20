@@ -4,6 +4,8 @@ The kit defines agent work in Markdown. It does not install an execution engine 
 
 A person may run every mission manually. Recurrence is optional and can be added whenever it becomes useful.
 
+For persistent, authorized sources with a viable unattended runtime, scheduled ingestion is the main coverage mechanism. Hooks may accelerate it or supply permitted captures, but source discovery must survive a missed hook. Use the same mission and coverage records across triggers; see [ingestion design](ingestion-design.md).
+
 ## Adapt to the existing environment
 
 The agent should inspect the available runtime and scheduler before proposing setup. Suitable environments can include an agent host with recurring tasks, a workstation scheduler, a server scheduler, or Workspace when the required capability exists.
@@ -46,6 +48,7 @@ Keep the content of the mission portable. The schedule binding is specific to th
 During setup, run a bounded instance using the intended environment. If appropriate to the permissions already granted, use a non-writing preview first. Verify:
 
 - The agent can locate the current private instructions and authorized sources.
+- The intended unattended identity can access the actual source location; an interactive session's access is not sufficient evidence.
 - The actual source coverage is visible, including truncation and pagination limits.
 - Existing knowledge is considered before the agent changes it.
 - A receipt records outcomes and a safe continuation, including when no durable update is needed.
@@ -64,6 +67,8 @@ Set a bounded catch-up policy. If the machine slept or several runs were missed,
 Record run identity, coverage, safe checkpoints, and unfinished work before the runtime ends when possible. A later run can resume from them and detect already integrated items. If a receipt is missing, reconcile the affected interval instead of assuming nothing happened.
 
 Notify according to the user's chosen policy. Quiet healthy runs are often useful; material failures, missing access, or required decisions should still surface through the configured channel. Notification itself must be authorized when it contacts another person or service.
+
+Use [reliability](reliability.md) and the [supervision mission](../missions/supervise.md) to detect missing receipts and ageing observations independently of the worker being monitored. A stable source can be healthy after a recent verified review with no new knowledge; a successful worker can still leave uncovered source versions. Test a reporting path separately from quiet success. Record the available checks, installed enforcement, and backup or restore evidence without claiming mechanisms that have not been observed.
 
 ## Choosing a rhythm
 

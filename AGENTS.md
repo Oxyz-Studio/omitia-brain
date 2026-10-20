@@ -15,4 +15,6 @@ Choose context deliberately. Do not load every document, inspect unrelated user 
 
 Persist coverage and partial outcomes. Previously ingested information may require a broader historical lookup; a failed search does not prove it never existed. Do not mark incomplete sources integrated merely to clear a queue.
 
+For recurring ingestion, use the [ingestion design](docs/ingestion-design.md): source discovery must not depend solely on hooks. Use [context design](docs/context.md) for compact memory and selective reading, and [reliability](docs/reliability.md) when the task concerns validation, missed work, backup, or recovery. Load these references for the relevant task, not on every turn.
+
 The optional repository skill is [.agents/skills/omitia-brain/SKILL.md](.agents/skills/omitia-brain/SKILL.md). Its Claude Code exposure is a relative symlink to the same canonical directory.

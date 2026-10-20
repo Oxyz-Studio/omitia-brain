@@ -27,12 +27,15 @@ For an existing brain, point the agent to that folder and ask it to extend the c
 | --- | --- |
 | The design principles and tradeoffs | [Principles](docs/principles.md) |
 | Notes, assertions, provenance, and time | [Knowledge model](docs/knowledge-model.md) |
+| Context packs, compact memory, and reading budgets | [Context design](docs/context.md) |
 | Autonomy, contributors, and permissions | [Governance](docs/governance.md) |
 | Missing context, partial imports, and recovery | [Continuity](docs/continuity.md) |
 | Finding current knowledge and its history | [Retrieval](docs/retrieval.md) |
 | Selecting and connecting information sources | [Sources](docs/sources.md) |
 | Running missions in an existing environment | [Scheduling](docs/scheduling.md) |
+| Write checks, supervision, backup, and restored use | [Reliability](docs/reliability.md) |
 | Agent entry points and Workspace integration | [Agent compatibility](docs/agents.md) |
+| Mechanism coverage and deployment acceptance | [Mechanism review](docs/mechanism-review.md) |
 
 You can adopt these principles without adopting the templates or directory layout.
 
@@ -42,9 +45,13 @@ You can adopt these principles without adopting the templates or directory layou
 
 An agent can run a mission on demand or configure it in an existing scheduler once you choose the source, permissions, runtime, cadence, and limits. A Markdown file by itself does not run in the background.
 
+When authorized history persists and an unattended runtime is available, use scheduled ingestion as the main coverage mechanism. A hook can signal changes or capture permitted evidence sooner; a missed hook must not hide activity from the main mission. If history will disappear, arrange permitted capture or record the recovery limit. See [ingestion design](docs/ingestion-design.md).
+
 Start with [local documents](recipes/local-documents.md), [direct contributions](recipes/direct-contributions.md), or [agent conversations](recipes/agent-conversations.md). Recipes also cover [email](recipes/email.md), [shared documents](recipes/shared-documents.md), [messaging](recipes/messaging.md), and [business tools](recipes/business-tools.md), using capabilities available in your environment.
 
 You decide how autonomous the agent may be for each source and action. The kit does not require approval for every change after a policy has already authorized it.
+
+For unattended operation, check expected coverage and missing receipts through [supervision](missions/supervise.md). Keep version history, backup coverage, and a demonstrated [restore](missions/recover.md) distinct. These can remain manual or unconfigured for a small setup; their limits should stay visible.
 
 ## What stays portable
 

@@ -55,13 +55,15 @@ New evidence can make an earlier non-actionable fragment meaningful. Revisit the
 6. **Read back.** Use a plausible future question to find and open the canonical knowledge from the brain's entry points or normal search. Verify meaning, evidence links, and relevant dates.
 7. **Finalize.** Only then mark that coverage integrated and persist the readback outcome.
 
-The record of an integrated unit must include the saved knowledge, receipt, and successful retrieval readback. These are separate pieces of evidence even when they live in one file. For no-durable-change or intentionally-skipped outcomes, save the examined coverage and reason; do not create filler notes to satisfy a completion rule.
+The record of an integrated unit must include the saved knowledge, receipt, and successful retrieval readback for the version and range actually examined. These are separate pieces of evidence even when they live in one file. A completion flag, stable source ID, or successful run cannot substitute for them. For no-durable-change or intentionally-skipped outcomes, save the examined coverage and reason; do not create filler notes to satisfy a completion rule.
 
 Filesystem edits may not be atomic across files. If a run stops after writing notes but before recording a receipt, the next run must inspect the notes and source references before applying the same change again. If it stops after a pending receipt, resume with readback and reconciliation. Use stable source identity, version, and range to recognize duplicate work. Repeated delivery should converge on one canonical assertion, not repeated copies.
 
 ## Handle changing sources
 
 A completed range is complete for the observed version. If that source version changes, compare the affected sections and revalidate dependent assertions. An appended message may need only new coverage; an edited earlier message can invalidate a previous conclusion. A renamed file need not be a new source if its stable identity is preserved.
+
+Before finalizing, check that the receipt identifies the content actually read. If the live source changed meanwhile, preserve supported work against the examined version or permitted snapshot and leave changed ranges and dependent claims eligible for revalidation. Never acknowledge a newer version merely because its source ID matches. If the examined content cannot be identified reliably, keep the affected coverage partial and record that limitation.
 
 When the source cannot supply reliable change markers, use a documented periodic comparison strategy and acknowledge its limits. A time-window overlap helps recover late arrivals; it does not by itself detect every edit or deletion.
 

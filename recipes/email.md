@@ -31,6 +31,8 @@ The recurring mission should record the time range or change cursor actually cov
 
 Use overlap and deduplication if the available access cannot guarantee exact incremental boundaries. Distinguish message delivery time, sent time, and observed ingestion time when they affect the conclusion.
 
+Message IDs and headers help locate mail; matching headers alone do not prove that two bodies or attachment sets are identical. Use the content version or permitted snapshot actually examined, and record uncertainty when the available access cannot distinguish them.
+
 A missing message is not proof of retraction. A later email can supersede a proposal, but absence from a query does not by itself negate prior evidence.
 
 ## Verify the result

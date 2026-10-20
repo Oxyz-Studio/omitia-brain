@@ -5,6 +5,7 @@
 - Status: {current / review due / disputed / superseded / historical}.
 - Verified: {actual date and method, or unknown}.
 - Recheck trigger: {date, event, or not configured}.
+- Aliases / former names, if useful: {variants that identify this same subject; omit otherwise. Verify that the chosen navigation or search can find them.}
 
 ## Current knowledge
 

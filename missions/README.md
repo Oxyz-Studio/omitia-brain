@@ -13,8 +13,12 @@ You can run a mission interactively before scheduling it. Starting a brain does 
 | [Revalidate](revalidate.md) | A claim is due for checking or matters to a current decision. | Fresh evidence, an explicit uncertainty, or a request for the access needed to resolve it. |
 | [Maintain](maintain.md) | You want to check whether the brain still works as intended. | Measured gaps are repaired within policy and the remaining issues have next actions. |
 | [Reconcile](reconcile.md) | Coverage is uncertain, a run failed, or later information lost its context. | Processing records and knowledge agree, and unresolved gaps remain visible and resumable. |
+| [Supervise](supervise.md) | Recurring work or its monitor may be missing expected results. | Dated coverage and health findings, including unknown state and authorized follow-up. |
+| [Recover](recover.md) | Knowledge was lost or a recovery path needs rehearsal. | A bounded, checked restoration with retrieval evidence and remaining limits. |
 
-These missions can be combined for a small brain. Separate them when their permissions, schedules, owners, or workloads differ. Do not create five jobs merely because five mission documents exist.
+These missions can be combined for a small brain. Separate them when their permissions, schedules, owners, or workloads differ. Do not create one job per document merely because the mission is available.
+
+The number of documents is not a deployment plan. Ingestion can be the primary recurring mission; supervision or recovery can use an existing independent mechanism or an occasional manual review. Choose actual jobs by need. See [ingestion design](../docs/ingestion-design.md) and [reliability](../docs/reliability.md).
 
 ## Bind a mission to a company
 

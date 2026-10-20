@@ -8,7 +8,9 @@ Determine which conversation history the environment can actually read. Use an a
 
 Register the chosen projects, sessions, participants, date range, exclusions, retention, and permitted actions. Being technically able to read an agent's entire history does not authorize company-wide ingestion of it.
 
-If no history connector exists, a supplied conversation or an end-of-session contribution remains useful. This does not block setup.
+Use the [ingestion design](../docs/ingestion-design.md): when authorized history remains accessible to a recurring agent, the main mission discovers and processes changes without requiring an end-of-session hook. A hook can signal changes or supply evidence through the same mission and receipts.
+
+Check how long the history remains available. If the later agent cannot retrieve it, choose a permitted export, capture before expiry, or supplied conversation; otherwise record the recovery limit. Do not claim a capture or history connector is installed merely because the recipe describes one. A manual contribution remains useful without either.
 
 ## Distill with context
 

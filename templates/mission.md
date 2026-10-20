@@ -22,9 +22,12 @@ Read the entry point and relevant policy. Retrieve current notes and enough sour
 
 - Cadence / trigger and timezone: not configured.
 - Existing scheduler / agent environment: not configured.
+- Runtime or model identity and allowed fallback, when material to cost or reproducibility: not configured.
 - Limits, retry, and overlap handling: not configured.
 - Report destination and notification conditions: not configured.
 - Evidence that scheduling is active: not configured.
+- Scheduling identifier / management reference and pause or removal method: not configured.
+- How a missing expected receipt is noticed, if unattended continuity is needed: not configured.
 
 Persist changed knowledge and a partial coverage receipt. Use an ordinary retrieval question from the brain entry point or configured search to verify that a later run can find the canonical knowledge and its limits. Record readback evidence before finalizing a changed unit as `integrated`; retain partial coverage if retrieval fails.
 

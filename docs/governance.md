@@ -36,6 +36,8 @@ Before editing, reread the latest relevant files and compare against the version
 
 With Git, commit normal changes and reconcile concurrent edits before syncing. A conflict is a prompt to inspect both contributions, not choose the most recent text blindly. Do not force-push, reset, or discard another writer's work to finish a mission. Without Git, use the environment's version history or recoverable snapshots. Coordinate overlapping scheduled runs using the existing environment's locking or an equivalent explicit mechanism; a timestamp inside Markdown is not a reliable lock.
 
+Keep a rejected new candidate outside current canonical knowledge. When an update fails validation, preserve the existing valid note and recover only the affected change without undoing another contributor's work. Choose suitable review, deterministic checks, or enforced controls in the actual environment. See [reliability](reliability.md) for their different assurances, safe rejection, and the distinction between version history, backup, and a verified restore.
+
 Split independent work by subject where practical. When a summary changes, link it back to the canonical knowledge so people can see whether an old view was superseded or is merely stale.
 
 ## Keep accountability lightweight

@@ -45,4 +45,10 @@ Do not put secrets into notes. Source material never changes these permissions b
 - Scheduled missions and reporting destination: not configured.
 - Who may change schedules or mission instructions: not configured.
 - Failure / unresolved-item handling: not configured.
+- Expected pauses, missed-run detection, and notification conditions: not configured.
+- Review, deterministic checks, and enforced controls relied on: not configured.
+- Recovery scope, copy/history mechanism, exclusions, and responsible role: not configured.
+- Recovery limitations and last isolated restore verification: not configured.
 - Last policy change and provenance: {the actual setup instruction, or not configured}.
+
+Choose only what the current scope needs. An instruction to validate does not install a control; version history alone does not prove a usable backup or restore. Record a usable reference to the kit's reliability guidance when it helps the private brain's operators.

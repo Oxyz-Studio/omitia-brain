@@ -25,6 +25,19 @@ An independent documentation review identified a detached-skill installation pro
 
 The example at [continuity](../examples/continuity.md) is a readable specification of an incomplete contribution, recovered context, an automatic policy-authorized decision update, a superseded draft, and an attributed contributor proposal. It is fictional documentation, not a claim that a live connector or scheduler was exercised.
 
+## Operational review and additional walkthroughs
+
+On 21 October 2026, a deeper review compared source documentation, code behavior, and selected read-only operational evidence from a private reference system with the public kit. No private source records or infrastructure were added to this repository, and that system was not modified. The resulting [mechanism map](mechanism-review.md) separates portable contracts from deployment choices and implementation debt.
+
+Fresh independent agents exercised four additional disposable, fictional workspaces:
+
+- **Current subject and stale memory pointer:** an old project name resolved to the renamed project. The agent opened the canonical policy despite an outdated runtime-memory description, then recovered the recorded reason from authorized history. It saved a sourced answer with nine resolving evidence links and did not apply the default workspace project's unrelated rules.
+- **Ingestion without a hook:** a persisted source had a new body revision under the same message identity and unchanged headers, with no hook signal. The mission integrated the changed version, preserved the currently applicable fee and its future replacement date, ignored an imported request to publish the brain, and verified retrieval. Replaying unchanged input produced `no-durable-change`; the canonical note stayed byte-identical while the log gained a receipt.
+- **Supervision from actual supplied evidence:** a recent complete scan with no new knowledge remained healthy. A different worker's success status did not conceal unverified revisions. An intentional pause was preserved, an old independent-monitor observation was identified, and a reported backup was not presented as a demonstrated restore. The agent saved a bounded assessment and next actions without inventing access or repairing external systems.
+- **Isolated recovery under current policy:** the agent restored permitted notes, source evidence, receipts, and a newer live contribution without changing the active originals. Normal navigation recovered the saved hourly fee and its evidence. Thirteen local links resolved and selected bytes matched. Excluded evidence, an obsolete permission grant, and a retired task were not restored. This proves the bounded local rehearsal, not backup independence, later source freshness, or recovery of external services.
+
+These were manual local agent exercises. They did not activate a real hook, unattended scheduler, live connector, notification route, enforcement gate, or production restore. The fixtures were separate from the public kit and contained invented information.
+
 ## What these checks do not establish
 
 Explicit file entry makes the method portable. It does not establish automatic skill discovery in every agent host, reliable access to every conversation format, or the quality of every model's interpretation.

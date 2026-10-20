@@ -4,11 +4,11 @@
 
 Bring new or changed source material into the company brain as reliable, retrievable knowledge. Preserve enough context to interpret it later. An ingestion can correctly result in no new note.
 
-This mission works with a single contribution as well as a recurring source. The user can supply everything at once or leave part of the source unconnected.
+This mission works with a single contribution as well as a recurring source. Use its same coverage and recovery contract for manual, scheduled, or event-triggered runs; see [ingestion design](../docs/ingestion-design.md). The user can supply everything at once or leave part of the source unconnected.
 
 ## Read before acting
 
-Read the brain entry point, current governance, the applicable source registration, this mission's local configuration, and its previous receipt. Consult the existing reference notes and the source context needed to understand the new material. Use [retrieval guidance](../docs/retrieval.md) and [continuity guidance](../docs/continuity.md).
+Read the brain entry point, current governance, the applicable source registration, this mission's local configuration, and its previous receipt. Consult the existing reference notes and the source context needed to understand the new material. Use [retrieval guidance](../docs/retrieval.md), [continuity guidance](../docs/continuity.md), and the relevant [quality and coverage checks](../docs/reliability.md).
 
 Confirm that the runtime has the access and authorized actions required for this run. If a source is unavailable, continue independent work within scope and record the missing coverage. Do not turn an access failure into an empty-source conclusion.
 
@@ -43,7 +43,7 @@ For each item or coherent batch, leave a processing record that distinguishes:
 
 Before finalizing `integrated`, save the knowledge and its coverage receipt while the outcome is still `partial`, then test retrieval as a future user or agent would. Ask a representative question through the normal entry point; verify that the answer recovers the intended meaning, its scope, important qualifications, and supporting provenance. A correct note that cannot be found, or a findable summary that has lost the reason for a decision, is not a completed integration. Save the successful readback before finalizing; otherwise repair the path or leave the unit `partial` with a next action. Keep this check proportionate to the contribution.
 
-Record a resumable cursor or covered range together with explicit gaps. If the connector cannot guarantee stable pagination, allow a justified overlap on the next run and deduplicate by source identity and version. Completion applies to the recorded version or snapshot; new replies and edits remain eligible for a later run.
+Record a resumable cursor or covered range together with explicit gaps. If the connector cannot guarantee stable pagination, allow a justified overlap on the next run and deduplicate by source identity and version. At finalization, the receipt must identify the version and range actually read. If the source changed during the run, preserve that version's supported work and record the changed coverage or dependent claims for revalidation under [continuity](../docs/continuity.md#handle-changing-sources); do not acknowledge the latest source by its identity alone.
 
 ## Stop and recover
 

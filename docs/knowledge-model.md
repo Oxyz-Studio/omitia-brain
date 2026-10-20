@@ -14,6 +14,8 @@ Use the smallest structure that lets a person or agent understand a statement, v
 
 Begin with the [note template](../templates/note.md), [source template](../templates/source.md), and [ingestion log](../templates/ingestion-log.md). Keep optional metadata out until it resolves an actual need.
 
+A context pack selects what to read for a task; a descriptive domain note defines a subject's terms and invariants; a procedure or skill explains how to perform work. These can be sections rather than separate files. See [context roles](context.md#give-each-kind-of-context-its-role) before adding structure.
+
 ## Assertions need a clear meaning
 
 Distinguish these kinds in ordinary prose or a short label:
