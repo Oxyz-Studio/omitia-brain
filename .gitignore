@@ -1,0 +1,17 @@
+# This public repository contains the kit, not a company's brain.
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.sqlite
+*.sqlite3
+*.db
+.obsidian/
+.obsidian-index/
+.claude/settings.local.json
+.codex/
+node_modules/
+.venv/
+work/
+outputs/

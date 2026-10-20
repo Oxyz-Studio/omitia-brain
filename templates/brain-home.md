@@ -1,0 +1,27 @@
+# {Organization or working-scope name} brain
+
+## Purpose
+
+{What work should this memory help with now? Record the user's actual scope; a project or team is enough.}
+
+## Read first
+
+- `AGENTS.md`: instructions for agents working here.
+- `KNOWLEDGE_POLICY.md`: authority, permitted actions, and handling rules.
+- `SOURCES.md` and `INGESTION_LOG.md`, if created: enabled sources and processing coverage.
+- {List only existing source records and notes that help this scope.}
+
+## What is known
+
+{A short account of the useful knowledge already present, with links to its canonical notes. Distinguish established facts, working assumptions, and unresolved issues.}
+
+## Setup and next use
+
+- Setup state: {usable / complete for the agreed scope / incomplete}.
+- Next useful task: {the user's goal, not a generic questionnaire}.
+- Outstanding choices: {what remains unknown or not configured, if anything}.
+- Resume point: {where to continue and which information would help}.
+- Connected sources: {records of sources actually accessible, or none}.
+- Scheduled missions: {active missions with verified scheduling evidence, or not configured}.
+
+An incomplete setup can still be useful. Expand the scope when asked or when it supports an authorized task. Never treat an unanswered onboarding question as permission.
