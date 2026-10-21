@@ -38,6 +38,18 @@ Fresh independent agents exercised four additional disposable, fictional workspa
 
 These were manual local agent exercises. They did not activate a real hook, unattended scheduler, live connector, notification route, enforcement gate, or production restore. The fixtures were separate from the public kit and contained invented information.
 
+## External references and restricted audiences
+
+On 21 October 2026, an independent agent built a disposable fictional brain with proposed team, project, leadership, and private-operator areas. It registered a selected checklist as metadata only without reading or claiming integration of its body. It retained a consultation procedure for a live-only project source without saving source content or an answer. A separately granted team fact remained distinct from that consultation-only source.
+
+The agent saved a supplied leadership-only factual fragment and protected provenance in the proposed restricted area, while the team area received only an explicitly authorized release and separately permitted team material. A dependency map connected managed derivatives to source restrictions and described revalidation after a member loses access without source text changing. It separated truth, continued disclosure, and the authority for the independent release, and recorded limits for previous downloads, Git history, and model context.
+
+An independent reader recovered the released statement and restricted factual fragment through their respective homes and normal links, including freshness and authority limits. Static checks found no broken local links, no team link outside its proposed area, and no targeted protected identifiers or amount in team files. These checks assess the saved artifact layout, not an enforced audience boundary.
+
+An independent documentation review caught two inconsistencies before publication: a mixed-source example implied durable retention of a consultation-only source, and the ingestion mission read source registrations and receipts before its new access check. Both were corrected and the focused rereview passed.
+
+This exercise checked instructions and saved artifacts, not security enforcement. Its directory layout is an intended audience map; operating-system permissions, a multi-user backend, actual identities, source resolvers, Microsoft integration, and revocation were not configured or tested. The fixture explicitly withholds serving restricted content to real members until those boundaries are installed and verified. Use the [external access cases](../examples/external-access.md) to test a real deployment's delivery paths separately.
+
 ## What these checks do not establish
 
 Explicit file entry makes the method portable. It does not establish automatic skill discovery in every agent host, reliable access to every conversation format, or the quality of every model's interpretation.

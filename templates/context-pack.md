@@ -1,5 +1,7 @@
 # Context: {task or subject}
 
+- Audience / access dependencies, when restricted: {policy and applicable source or note restrictions; the reading map and orientation must not reveal hidden material}.
+
 ## When to use
 
 {The intention, subject, and scope this selection supports. Omit this pack if the existing home or subject note is sufficient.}

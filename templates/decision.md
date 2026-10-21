@@ -1,6 +1,7 @@
 # Decision: {what was decided}
 
 - Scope: {project, team, or company}.
+- Audience / access dependencies, when restricted: {applicable policy and protected source dependencies; use storage with actual enforcement}.
 - Status: {current / disputed / superseded}.
 - Decided by: {person or body with established authority; unknown if not evidenced}.
 - Effective date: {date established by the source, or unknown}.

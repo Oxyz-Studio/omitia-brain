@@ -32,6 +32,7 @@ Un CTO peut consulter la documentation sans suivre le démarrage guidé ni adopt
 - [Continuité entre ingestions et récupération du contexte](docs/continuity.md).
 - [Recherche et historique](docs/retrieval.md).
 - [Sources](docs/sources.md), [planification](docs/scheduling.md) et [compatibilité agents](docs/agents.md).
+- [Documents conservés dans leurs dossiers ou services et partage contrôlé](docs/external-references.md) : références, consultation ou intégration, avec respect des droits jusque dans les résumés.
 - [Fiabilité, supervision et restauration](docs/reliability.md) et [couverture des mécanismes](docs/mechanism-review.md).
 
 La documentation de référence est en anglais. L'accompagnement et le contenu de votre brain suivent votre langue.

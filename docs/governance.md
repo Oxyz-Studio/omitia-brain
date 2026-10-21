@@ -24,6 +24,28 @@ When permission is not configured, record the missing choice and continue indepe
 
 Actual access is enforced by the environment: filesystem permissions, repository access, connector scopes, and scheduler credentials. Markdown records the operating agreement. It cannot restrict a tool that already has broader access. Keep scopes and access aligned as the brain expands.
 
+## Preserve access boundaries through derived knowledge
+
+Before discovery or retrieval, establish the person or job on whose behalf the agent acts, the actual access identity, and the intended recipients. Apply both the source's applicable restrictions and the private brain's destination policy. Check before delivering material to a person or model, including filenames, source registrations, search results, snippets, and counts that reveal restricted activity. Do not retrieve everything first and rely on the agent to hide forbidden results afterward.
+
+Reading access, authority to use information, and authority to disclose it are distinct. An ingestion account may read more than a particular member; its technical reach does not become that member's access. Do not infer permission from an agent name, senior title, a folder label, or a scheduling configuration.
+
+By default, a note or answer derived from restricted sources keeps all their applicable disclosure restrictions. Combining restricted and widely readable sources does not make the combination widely readable: readers must satisfy every applicable source restriction. Apply the same rule to summaries, context packs, compact memory, indexes or embeddings, logs, reports, exports, and recoverable copies. Keep protected provenance and dependency records in appropriately restricted storage too.
+
+An authorized release can establish a separately publishable statement or sanitized view. Its authority must cover every implicated source restriction. Record that authority, source scope, released content, and permitted audience. A statement that an agent removed names or summarized the source is not itself release authority. Standing policy can authorize repeated releases within explicit bounds; this does not require human approval on every run.
+
+Choose enforcement that fits the environment. A simple private brain can use one shared audience or separate permission-controlled folders or repositories. A multi-user service may need identity-aware retrieval and per-audience views. A person or agent with unrestricted disk access can read files on that disk regardless of Markdown labels. Do not give every member a complete Git clone and claim that a retrieval filter protects its hidden files or history.
+
+## Handle revocation without promising recall
+
+Treat rights changes as dependency changes, even when the source text is unchanged. Stop unauthorized future access and disclosure, then review affected notes, summaries, packs, indexes, caches, receipts, exports, and managed recovery copies under current policy. If required authorization cannot be verified, withhold the affected material rather than assuming an old grant still holds. Continue unrelated authorized work.
+
+Source unavailability alone does not make a fact false. Separately determine what may still be retained or disclosed, including any independently authorized release. Restrict, refresh, remove, or expire managed derivatives as the applicable policy requires; do not automatically delete legitimate historical knowledge or preserve prohibited copies merely for continuity.
+
+Revocation cannot make someone forget a prior answer. Previously downloaded files, served Git history, exports, and already loaded model context may remain. Record the actual limits and use available session, cache, history, and retention controls; do not promise retroactive erasure or immediate revocation across unverified copies. Restoring a backup must not revive obsolete access grants.
+
+For documents kept elsewhere, use [external references](external-references.md). A source locator grants no permission and may itself need protection.
+
 ## Resolve differences with evidence
 
 The user may choose a rule such as “the product owner’s dated release decision overrides earlier release drafts.” An agent can apply that rule automatically when the evidence meets it. Record the replacement and retain the reason so later ingestion does not revive the old state.

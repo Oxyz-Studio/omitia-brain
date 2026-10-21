@@ -8,9 +8,13 @@ This mission works with a single contribution as well as a recurring source. Use
 
 ## Read before acting
 
-Read the brain entry point, current governance, the applicable source registration, this mission's local configuration, and its previous receipt. Consult the existing reference notes and the source context needed to understand the new material. Use [retrieval guidance](../docs/retrieval.md), [continuity guidance](../docs/continuity.md), and the relevant [quality and coverage checks](../docs/reliability.md).
+Read only the authorized entry and policy material needed to establish the [access boundary](../docs/governance.md#preserve-access-boundaries-through-derived-knowledge). Check it before source discovery, retrieval, or output, including source registrations and receipts. Distinguish the requester, job identity, and destination audience.
+
+Within that authorized view, read the applicable source registration, this mission's local configuration, and its previous receipt. Consult the existing reference notes and source context needed to understand the new material. Use [retrieval guidance](../docs/retrieval.md), [continuity guidance](../docs/continuity.md), and the relevant [quality and coverage checks](../docs/reliability.md).
 
 Confirm that the runtime has the access and authorized actions required for this run. If a source is unavailable, continue independent work within scope and record the missing coverage. Do not turn an access failure into an empty-source conclusion.
+
+A [reference-only or consultation-only source](../docs/external-references.md) does not authorize distillation; registering a link is not integration of its contents.
 
 ## Working brief
 
@@ -23,6 +27,7 @@ Use the following constraints to choose an appropriate method:
 - Compare the claim with current knowledge. A changed source can update a fact; an opinion or proposal does not silently become a company decision. Preserve conflicting evidence when it cannot be resolved.
 - Update the reference note and the summaries, links, or context packs materially affected by the change. Keep history or a clear replacement link where needed.
 - Attribute the new knowledge to its source and make its freshness visible. Do not infer that an older fact is false because it is absent from a later extract.
+- Preserve applicable source restrictions in every derived note, summary, pack, index, and report. Do not publish restricted knowledge through a broadly readable receipt or treat a privileged job's access as the audience's permission.
 
 The agent chooses the tools and organization. It must not duplicate large raw archives inside reference notes merely to demonstrate activity.
 
@@ -50,5 +55,7 @@ Record a resumable cursor or covered range together with explicit gaps. If the c
 Stop at the configured time, item, access, or cost boundary. Finish a safe unit of work or leave it explicitly partial. Do not pretend to complete the backlog, silently drop a page, or mark an ambiguous item integrated to clear the queue.
 
 If the source text can no longer be retrieved, keep the useful knowledge that is still supported and mark the unsupported dependency and any verification due. Preserve the reference and its last known evidence while reviewing its reliability; source unavailability alone is not a reason to delete the knowledge. Do not invent the missing context. Route unresolved references to [reconciliation](reconcile.md).
+
+That preservation remains subject to current disclosure and retention policy. A revoked source grant may require restricting derived knowledge and its metadata even when the claim remains true; follow [revocation](../docs/governance.md#handle-revocation-without-promising-recall).
 
 Leave a run receipt with coverage, changes, unresolved items, and the next action. Notify according to the user's reporting policy, with no repeated approval request for actions already authorized.

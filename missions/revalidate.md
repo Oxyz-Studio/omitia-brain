@@ -10,6 +10,8 @@ Read current governance, source registrations, applicable freshness rules, relev
 
 Use only authorized sources and actions. A source becoming inaccessible does not authorize new credentials, a different connector, or an external message.
 
+Rights changes are also revalidation triggers even if the source text is unchanged. Apply [revocation and retention](../docs/governance.md#handle-revocation-without-promising-recall) to dependent notes, packs, indexes, and other managed outputs. Separate factual validity from continued permission to retain or disclose; do not renew access from an old receipt.
+
 ## Working brief
 
 - Identify the claim, its scope, the evidence previously used, and why it is being checked.

@@ -2,6 +2,7 @@
 
 - Kind: {fact / hypothesis / procedure / reference}.
 - Scope: {whose project, team, or company this concerns}.
+- Audience / access dependencies, when restricted: {applicable policy and protected source dependencies; omit only when the brain's shared audience already covers this note. Labels do not enforce rights}.
 - Status: {current / review due / disputed / superseded / historical}.
 - Verified: {actual date and method, or unknown}.
 - Recheck trigger: {date, event, or not configured}.

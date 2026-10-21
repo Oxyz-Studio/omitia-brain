@@ -6,7 +6,7 @@ Load the knowledge needed for the current question. Keep the rest discoverable w
 
 Identify the intended work, named subjects, and relevant time. A workspace, channel, project, or previous conversation can supply a default. An explicit subject in the current request can change that default: a new request about Lumen should not inherit Atlas's constraints merely because the previous thread discussed Atlas.
 
-Read the private brain's entry and policy, then the relevant overview or context pack if one exists. Open the canonical subject and the evidence needed for the task. Follow links selectively; a pack's available links are not a checklist of required reading. If two subjects may be the same, check names, aliases, and identity before combining their knowledge.
+Within the authorized view established by [retrieval](retrieval.md), read the private brain's entry and policy, then the relevant overview or context pack if one exists. Open the canonical subject and the evidence needed for the task. Follow links selectively; a pack's available links are not a checklist of required reading. If two subjects may be the same, check names, aliases, and identity before combining their knowledge.
 
 ## Give each kind of context its role
 

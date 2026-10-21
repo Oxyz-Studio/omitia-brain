@@ -32,6 +32,7 @@ For an existing brain, point the agent to that folder and ask it to extend the c
 | Missing context, partial imports, and recovery | [Continuity](docs/continuity.md) |
 | Finding current knowledge and its history | [Retrieval](docs/retrieval.md) |
 | Selecting and connecting information sources | [Sources](docs/sources.md) |
+| Documents kept elsewhere and controlled sharing | [External references](docs/external-references.md) |
 | Running missions in an existing environment | [Scheduling](docs/scheduling.md) |
 | Write checks, supervision, backup, and restored use | [Reliability](docs/reliability.md) |
 | Agent entry points and Workspace integration | [Agent compatibility](docs/agents.md) |

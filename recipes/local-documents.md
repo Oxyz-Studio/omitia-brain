@@ -10,6 +10,8 @@ The agent should inspect available formats and reading capabilities before promi
 
 Register the source using [the source template](../templates/source.md). A local source can be connected now, supplied occasionally, or only planned for later.
 
+The selected document can stay in its original working folder. Choose [reference-only, live consultation, or knowledge integration](../docs/external-references.md), record the authorized route, and note when a personal path is unavailable to colleagues or the scheduled runtime. Do not assume a shortcut makes it portable or grants access to the rest of the folder.
+
 ## Adapt the ingestion
 
 - Identify each file by a stable locator and a meaningful version indicator, such as a source-provided version or an observed modification state. Account for moved or renamed files when possible.

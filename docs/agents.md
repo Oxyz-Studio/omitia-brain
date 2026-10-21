@@ -30,6 +30,8 @@ Do not assume a new agent inherits a previous session, a user's private connecto
 
 Reuse its organization rather than moving all content. Record how its home, source registry, policy, and history map to the kit's concepts. Keep an explicit reference to the kit version or commit used, so its guidance can be reviewed later.
 
+Documents can remain in their existing folders or document service using [external references](external-references.md). Omitia Workspace or another backend may provide identity, sharing, audit, and enforcement while this kit supplies the portable knowledge contracts. Verify the actual integration: file-level rights alone do not establish external per-document permissions, derived-note restrictions, or revocation. Keep private knowledge exportable only to its authorized audiences, including its history; portability does not mean distributing a complete private clone to every member.
+
 Updates to the public kit are advisory to an existing company brain. Review relevant changes; do not replace company policies or generated notes with fresh template copies.
 
 The skill depends on the kit's guides and missions. Do not copy the skill directory alone into another repository: its relative references would point to missing resources. Keep a full kit checkout available. Where a host supports directory symlinks, expose that same canonical `.agents/skills/omitia-brain` directory through relative links in the other workspace's `.agents/skills` and `.claude/skills`. Resolve the skill's real location before following its reference links. Check that the links and kit path are available to every intended contributor.

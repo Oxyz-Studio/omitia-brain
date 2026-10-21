@@ -18,6 +18,8 @@ Before writing company data, identify the destination with the user or honor a d
 
 Keep company data outside this public kit. Do not put it in examples, templates, an ignored subfolder of this repository, or a temporary branch of its public Git history. Do not create or publish a remote for company data without authorization. Local Git is optional; sharing and backup can be selected later.
 
+Private does not mean readable by every colleague. If selected sources have different audiences, use permission-controlled areas or a backend with verified filtering before reading or storing them. A Markdown audience label cannot protect a complete clone shared with everyone. Follow the [access-boundary contract](docs/governance.md#preserve-access-boundaries-through-derived-knowledge) for restricted scope without making multi-user infrastructure a prerequisite for a single-audience brain.
+
 For an existing brain, read its home, agent instructions, knowledge policy, and relevant subject notes. Preserve its organization, sources, and contributors. Do not re-run onboarding or overwrite files just because this kit has newer templates.
 
 For a new brain, determine enough to do useful work:
@@ -63,6 +65,8 @@ If input is ambiguous or incomplete, preserve the usable facts and mark the unre
 ## Add sources and missions when useful
 
 Use [sources](docs/sources.md) to record what is connected, permitted, unavailable, or deferred. The user may connect everything now or expand later. A suggested source is not a connected source.
+
+Documents may stay in their original folders or cloud service. Choose [reference-only, live consultation, or knowledge integration](docs/external-references.md) according to the granted use; supplying a link does not authorize all three.
 
 Use [mission contracts](missions/README.md) for on-demand or recurring maintenance. They remain natural-language instructions. The runtime and tools are chosen from the existing environment; follow [scheduling](docs/scheduling.md) if recurring execution is wanted. Do not activate a schedule until its scope, permissions, limits, and viable agent invocation are established. Existing permissions should be reused without asking for approval on every run.
 

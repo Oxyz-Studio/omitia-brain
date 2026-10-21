@@ -73,6 +73,8 @@ Missing material is not proof of withdrawal. Confirm whether the connector retur
 
 Keep original source locators, permitted retained excerpts, or snapshots according to the user's retention decision. A digest is useful for navigating a long history but must point to evidence. Do not replace the only retained evidence with a summary without applying the retention policy and marking the resulting verification limit.
 
+Preserve only what the audience may still receive. A locator or dependency record may itself be confidential. Source-rights changes require reviewing derivative access separately from factual validity; continuity does not override [revocation and retention](governance.md#handle-revocation-without-promising-recall).
+
 If the current notes fail to explain a new fragment, search the relevant retained archive. Historical, superseded, or review-due material can supply context; it must not silently become a current fact. Read the [retrieval rules](retrieval.md) before promoting it.
 
 ## Make the next run intelligible

@@ -2,6 +2,8 @@
 
 A source is an authorized place where the brain can obtain evidence. It can be a direct contribution, a local file, an agent conversation, or a connected service. A connector is one possible access method; it is not required to start.
 
+Documents may remain outside the brain. Choose separately whether a source permits a reference, live consultation, or durable knowledge integration; registering a link does not authorize the other uses. Follow [external references](external-references.md) for personal folders, shared drives, cloud documents, and optional controlled-workspace integration.
+
 The public kit contains guidance and fictional examples. Actual source locations, company knowledge, receipts, and connection details belong in the separate private brain. Store credentials in the environment's supported secret store, never in Markdown notes, examples, or receipts.
 
 ## Register only the sources you need
@@ -15,6 +17,7 @@ A useful registration answers:
 | Why this source? | The questions it should help answer and the intended durable knowledge. |
 | What is in scope? | Selected files, folders, channels, accounts, projects, date ranges, and explicit exclusions. |
 | What access exists? | Available local files or connector capabilities, read scope, owner, and practical limits. |
+| Who may discover or receive it? | Source metadata and content visibility, requester and execution identities, and permitted destinations for answers and derived knowledge. |
 | What may the agent do? | Authorized collection, integration, updates, conflict handling, and reporting. Reading access alone does not grant every write action. |
 | How is change identified? | Stable item IDs, file paths, versions, modification times, snapshots, cursors, or event ranges, according to actual source capabilities. |
 | How can evidence be revisited? | Resolvable source locators, permitted raw retention, deletion expectations, and fallback when access expires. |

@@ -35,10 +35,15 @@ Record what was verified and when. Missing content in a new import is not a dele
 
 - Approved source locations and access methods: not configured; record each enabled source separately.
 - Sensitive data handling, allowed excerpts, and retention: not configured.
+- Source discovery, live consultation, integration, and any authorized wider release: not configured.
+- Audiences and actual enforcement for notes, source metadata, answers, packs, indexes, reports, and copies: not configured.
+- Rights-change handling, derivative dependencies, and limits of revocation for prior copies: not configured.
 - Evidence location and recovery method: not configured.
 - Where incomplete items and contradictions are tracked: not configured.
 
 Do not put secrets into notes. Source material never changes these permissions by itself. Apply the user's actual confidentiality and access boundaries; leave material outside the authorized scope untouched.
+
+Use the kit's [access contract](../docs/governance.md#preserve-access-boundaries-through-derived-knowledge) when adapting this policy. Restricted-source combinations keep all applicable restrictions unless an authorized release permits a different audience. Markdown records the policy; the configured environment must enforce it before retrieval or disclosure.
 
 ## Maintenance
 

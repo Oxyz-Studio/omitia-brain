@@ -5,11 +5,12 @@ The brain is useful when a later person or agent can recover the right knowledge
 ## A portable retrieval sequence
 
 1. **Understand the task and time.** Identify the subject, the intended action, and whether the user needs the current state or a historical explanation.
-2. **Read the entry point.** Follow the brain's guide and the relevant subject overview or context pack. Use a focused pack when it matches the task.
-3. **Find the canonical account.** Search names, stable IDs, aliases, and related concepts. Open the relevant note rather than relying on a result snippet.
-4. **Check evidence and validity.** Read the supporting source references, effective dates, review needs, unresolved conflicts, and authority relevant to the question.
-5. **Fill targeted gaps.** Consult the connected source if permitted, then retained evidence or history when useful. Expand only as far as needed.
-6. **Answer within the evidence.** Separate what is established, inferred, disputed, outdated, or missing. Link the supporting notes or sources when useful to the reader.
+2. **Establish the authorized view.** Apply the [access-boundary contract](governance.md#preserve-access-boundaries-through-derived-knowledge) to the requester, execution identity, and answer audience before discovery or retrieval. Source metadata can itself be restricted. A broad service credential is not the requester's permission; if the boundary cannot be enforced, withhold affected material before loading it into the model.
+3. **Read the entry point.** Follow the brain's authorized guide and the relevant subject overview or context pack. Use a focused pack when it matches the task.
+4. **Find the canonical account.** Search names, stable IDs, aliases, and related concepts in that view. Open the relevant note rather than relying on a result snippet.
+5. **Check evidence and validity.** Read the supporting permitted source references, effective dates, review needs, unresolved conflicts, and authority relevant to the question.
+6. **Fill targeted gaps.** Consult the connected source if permitted, then retained evidence or history when useful. Expand only as far as needed.
+7. **Answer within the evidence.** Separate what is established, inferred, disputed, outdated, or missing. Link supporting notes or sources only when their disclosure is permitted to the reader.
 
 Use ordinary text and filename search if no semantic index is available. A search index can improve recall but remains replaceable. It must not be the only place storing provenance, permissions, or coverage state.
 

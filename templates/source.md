@@ -3,6 +3,8 @@
 - Source ID: {stable identifier}.
 - Scope and owner: {what this source covers; who can speak for it}.
 - Location / access: {resolvable path or reference and authorized access method; no credentials}.
+- Enabled uses: {reference only, live consultation, knowledge integration, or the explicitly permitted combination; a reference is not permission to read or distill}.
+- Visibility: {who may discover this source's existence and metadata, read it, and receive answers or derived knowledge; link the applicable policy and enforcement route}.
 - Source host / lifetime: {where the evidence lives and how long the chosen runtime can revisit it}.
 - Execution and destinations: {mission configuration identifying the actual runtime, access identity, permitted storage and audience; no credentials}.
 - Granted use: {link to the policy grant covering read, integration, and retention; otherwise not configured}.
@@ -13,6 +15,7 @@
 - Item and version identity: {stable item IDs plus revision, observed range, content fingerprint, or permitted snapshot; state any limits}.
 - Context needed: {threads, earlier options, attachments, or dependencies; none if self-contained}.
 - Retention / recovery: {permitted raw or captured evidence, temporary copies, where to recover originals, and deletion or expiry limits}.
+- Rights changes / dependencies: {how relevant access changes are detected and affected notes or views found; limits or not configured}.
 - Freshness: {validity or recheck rule for this source, if chosen}.
 
 ## Coverage

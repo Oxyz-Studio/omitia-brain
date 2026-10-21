@@ -6,6 +6,8 @@
 
 ## Read first
 
+{List only entries and metadata this home's intended readers may discover. Use separate enforced views or storage when audiences differ; do not reveal a restricted source through its title or locator here.}
+
 - `AGENTS.md`: instructions for agents working here.
 - `KNOWLEDGE_POLICY.md`: authority, permitted actions, and handling rules.
 - `SOURCES.md` and `INGESTION_LOG.md`, if created: enabled sources and processing coverage.

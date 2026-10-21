@@ -2,6 +2,8 @@
 
 Record source coverage and claim outcomes, not merely that a file was opened. Use a small receipt per batch or a growing table, whichever stays readable.
 
+Keep the receipt and its search metadata within the applicable audience. Source identities, titles, and the fact that an item was processed can be confidential; a broadly readable run report must not expose a restricted receipt.
+
 ## Run: {stable run ID}
 
 - Mission and time: {mission reference and actual run time}.

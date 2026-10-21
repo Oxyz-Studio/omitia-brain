@@ -2,6 +2,8 @@
 
 Shared drives, wikis, and collaboration platforms can provide company documentation without becoming the brain's storage format. The brain retains selected reference knowledge in Markdown and points to the supporting material.
 
+The source may instead permit only a reference or live consultation, with no durable extraction. Select these uses through [external references](../docs/external-references.md); keeping documents in their current service is a valid arrangement.
+
 ## Inspect the environment
 
 Identify the actual connector or authorized export. Verify reading, search, comments, revisions, embedded references, attachments, and pagination as needed; available capabilities differ by environment. Consult current official documentation during setup rather than assuming a particular service behavior.
@@ -11,6 +13,8 @@ Register the selected space, folder, project, or documents, their useful purpose
 ## Respect visibility boundaries
 
 A readable document may contain information that should not be copied to every member of the brain. Establish the permitted destination and audience before integration. Reusing content must not silently widen its visibility.
+
+Apply the [access-boundary contract](../docs/governance.md#preserve-access-boundaries-through-derived-knowledge) before discovery and retrieval, including metadata. Verify how source rights and destination rights are enforced for the actual requester or job. A shared connector credential does not prove per-document access for each member, and a summary must retain the applicable source restrictions unless an authorized release says otherwise.
 
 Read access does not authorize editing the source, sharing it, changing permissions, or inviting collaborators. Treat each of those as a separate governed action.
 

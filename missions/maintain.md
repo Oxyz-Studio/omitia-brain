@@ -21,6 +21,7 @@ Choose checks that address actual risks in this brain:
 - Are there unresolved context gaps, broken source locators, partial items, or abandoned retries that need reconciliation?
 - Have duplicated notes, conflicting statements, or large uncategorized areas made retrieval unreliable?
 - Are source access, private storage boundaries, retention rules, and the agent runtime still aligned with the recorded configuration?
+- Do restricted sources and their notes, search metadata, packs, receipts, and exports retain the required audiences? Have rights changes reached managed derivatives? Use the [access contract](../docs/governance.md#preserve-access-boundaries-through-derived-knowledge); do not mistake labels for enforced restrictions.
 - Are the scheduled missions still useful at their current frequency, given the user's goals and actual source activity?
 - Are relied-on controls active in this environment, and what has actually been reviewed, checked deterministically, or enforced?
 - Can a missing expected receipt or an old health observation be noticed if the job or its scheduler stops? Distinguish intended pauses from failures.

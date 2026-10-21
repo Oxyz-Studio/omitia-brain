@@ -9,6 +9,7 @@
 - Working folder / entry point: {explicit private brain path; no assumed current folder}.
 - Sources and permitted ranges: {source records}.
 - Applicable policy: {policy reference and actual permissions}.
+- Requester / execution access identity / output audience: {distinguish the human or job principal, actual credentials' scope without secrets, and permitted recipients; model identity is not access authority}.
 - Permitted changes: {notes, receipts, summaries, or other explicitly authorized destinations}.
 - Exclusions: {out-of-scope data and actions}.
 
