@@ -72,6 +72,22 @@ Five fresh independent agent exercises ran without the evaluation expectations:
 
 These were local workflows, not end-to-end typing tests in every host menu. [Command cases](../examples/command-checks.md) support further deployment checks.
 
+## Simplification review, 23 October 2026
+
+A repository-wide review consolidated repeated coverage definitions and completion steps in [continuity](continuity.md), allowed one durable record to serve coverage/receipt/report roles, and shortened entry guidance. Existing sections and the fictional studio's realized notes, sources, decisions and receipts were preserved. Its agent entry and manual mission were aligned with policy-first retrieval.
+
+Fresh local agents exercised the candidate method:
+
+- A complete brief produced a two-file private brain with retained evidence and a receipt. Normal retrieval recovered the confirmed fee, effective date and unknown payment terms; optional discovery and continuing work remained deferred.
+- A read-only assessment recovered canonical knowledge, detected a broken link despite a receipt claiming repair, and distinguished stale indexing, partial coverage and unverified scheduled work. All thirteen private files stayed byte-identical.
+- A three-snapshot ingestion preserved an unresolved relative reference, consolidated a renamed project, retained source copies and recorded routine chatter as no durable change. A new agent then recovered the comparison from a revised session: future effect, supplier condition, local exports and unverified execution stayed distinct. Older evidence was unchanged and completion applied to the examined revision.
+
+Replaying the recovered revision produced `no-durable-change`: canonical knowledge, home, governance and retained evidence stayed byte-identical, with only a replay receipt added. No duplicate project or assertion was created.
+
+The ingestion exercises also exposed a procedural limit: file/root-entry inventories preceded the private policy, although no subject or source body was opened first. The skill clarified policy/view-first discovery, but the continuation still inventoried root entries before governance. These outcomes support the scoped knowledge and readback checks, not reliable enforcement of access ordering. The fixtures granted the owner the supplied material; they did not test a real restricted audience boundary.
+
+Codex and Claude loader metadata still discovered the same canonical skill after the wording change, with no model turn in those loader checks. These exercises used local fictional inputs, not actual histories, connectors or background jobs.
+
 ## What these checks do not establish
 
 File portability, loader discovery, agent behavior, artifact integrity and enforced runtime controls are separate evidence. None proves universal model quality, every history format, actual connector/scheduler/search operation, notification delivery or real access enforcement.
