@@ -7,7 +7,7 @@ description: Build, check, query, or maintain a company's Markdown brain using O
 
 Resolve this skill's real directory, following symlinks. The kit root is three levels above that directory and contains `START-HERE.md`, `docs/` and `missions/`. Resolve relative links from the canonical skill directory. Company data belongs in a separate private workspace.
 
-Read an existing brain's governing entry, policy and method reference first. Method files come from its pinned commit: use this working tree only if it is clean and at that commit; otherwise use `git show <commit>:<path>` or the recorded origin at that commit. If unavailable, report it and continue with private rules. Without a pin, propose reviewing a clean kit version and recording its commit; do not silently apply this checkout. New brains record the full commit used. See [method references](../../../docs/agents.md#link-the-brain-to-the-method).
+Before listing or reading a private brain's subject/source files, read its governing entry and policy and establish requester, access identity and audience. Then read its method reference. Method files come from its pinned commit: use this working tree only if it is clean and at that commit; otherwise use `git show <commit>:<path>` or the recorded origin at that commit. If unavailable, report it and continue with private rules. Without a pin, propose reviewing a clean kit version and recording its commit; do not silently apply this checkout. New brains record the full commit used. See [method references](../../../docs/agents.md#link-the-brain-to-the-method).
 
 ## Explicit actions
 
