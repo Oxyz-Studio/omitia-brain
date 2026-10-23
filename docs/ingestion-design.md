@@ -10,6 +10,12 @@ When recurrence is authorized, sources persist, and a suitable agent runtime can
 
 During setup, explicitly offer historical work-session catch-up and continuing ingestion after an authorized [machine/agent inventory](work-discovery.md#inventory-agents-and-histories-on-authorized-machines). Initial catch-up and live coverage have separate observed checkpoints. Continuing work rechecks the permitted inventory for new agents and history locations as well as sessions; inclusion of new sources follows the existing grant or requires a missing scope choice. Full eligible-source review is not full transcript retention or automatic promotion of every claim into the brain.
 
+## Select useful knowledge without a repeated save request
+
+Use [proactive capture](proactive-capture.md) when the existing grant permits retention. Authorized ingestion selects reusable synthesis and resolution lessons from covered evidence even when no message explicitly asks to save them. The canonical reference routes those outcomes to the existing synthesis and procedure recipes and preserves read-only, consultation, evidence, and retention limits.
+
+When configured, historical and continuing ingestion remain the main coverage mechanism. Inline capture can save useful knowledge sooner during ordinary work; it complements source discovery and historical review. Recognize its saved notes and receipts when the same source arrives later, completing only missing work under the shared contract. Neither inline capture, a hook, nor a skill guarantees that every source or conversation is covered.
+
 ## Hooks and captures are optional inputs
 
 A hook may signal that a conversation changed or capture permitted evidence for later reading. It can reduce delay, but a missing hook event does not prove there was no source activity. The main mission checks source coverage through the available authorized history or change interface.

@@ -47,6 +47,8 @@ Choose the relevant recipe: [direct contribution](recipes/direct-contributions.m
 
 Save supported knowledge while keeping ambiguities unresolved. Recover missing context through [continuity](docs/continuity.md); never mark truncated material fully integrated. Build project accounts across sessions rather than one note per transcript. After a bounded batch, group source-linked questions about identity, contradictions, scope and current state; independent facts need not wait for answers. See [project clarification](docs/work-discovery.md#distil-projects-then-ask-useful-questions).
 
+When the user's actual grants cover retaining useful work outcomes, adapt [proactive capture](docs/proactive-capture.md) into the private agent entry and any query skill. Reuse existing grants: a new reusable analysis or observed lesson need not wait for another save request. Leave ungranted capture unconfigured and preserve explicit read-only and source-use limits.
+
 ## Add sources and missions when useful
 
 Register connected, permitted, unavailable and deferred [sources](docs/sources.md). Existing documents can remain at source; distinguish [reference-only, live consultation and integration](docs/external-references.md). A supplied link does not grant all uses.

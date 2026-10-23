@@ -40,6 +40,8 @@ Fill gaps from permitted retained sources and history. Establish older material'
 
 Retain decisions and reasons, constraints, definitions, relationships, procedures, and observations likely to matter again. Every message or session need not become a permanent note.
 
+When an existing grant covers useful current-work outcomes, [capture them](proactive-capture.md) without waiting for another save request. Keep the current action's read-only and retention limits.
+
 Finding no durable knowledge is valid. Record the examined coverage and that outcome so the next run can continue.
 
 ## Make progress durable

@@ -51,7 +51,7 @@ Adopt the principles without adopting a fixed folder layout.
 
 Start with [direct contributions](recipes/direct-contributions.md), [local documents](recipes/local-documents.md) or [agent conversations](recipes/agent-conversations.md). The [source guide](docs/sources.md) also routes email, shared documents, messaging and business tools.
 
-Turn observed corrections into [bounded, verified procedures](recipes/experience-to-procedure.md), or [retain a useful analysis](recipes/direct-contributions.md#preserve-a-useful-synthesis-from-a-question) when authorized. Both paths preserve evidence, scope and later review needs.
+With a standing grant covering the current work, agents [keep useful outcomes](docs/proactive-capture.md) without another save request: analyses become sourced syntheses and observed corrections become bounded procedures. Authorized conversation ingestion catches missed findings and reuses earlier captures instead of duplicating them.
 
 [Missions](missions/README.md) describe outcomes, scope and evidence. They run on demand or through your existing scheduler after source, identity, permissions, cadence and limits are established. A mission file alone does not run in the background. Reuse permissions already granted rather than seeking approval for every run.
 

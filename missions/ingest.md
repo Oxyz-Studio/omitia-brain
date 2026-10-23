@@ -18,6 +18,8 @@ Confirm that the runtime has the access and authorized actions required for this
 
 A [reference-only or consultation-only source](../docs/external-references.md) does not authorize distillation; registering a link is not integration of its contents.
 
+Apply [proactive capture](../docs/proactive-capture.md) within the existing source, action, destination, audience, and retention grant. An authorized ingestion examines useful synthesis and lessons even when the source contains no request to save them; do not wait for a new “keep this” instruction in each conversation. Route a reusable analysis through [direct contributions](../recipes/direct-contributions.md#preserve-a-useful-synthesis-from-a-question) and an observed correction or resolution lesson through [experience to procedure](../recipes/experience-to-procedure.md), preserving its supported validation state.
+
 ## Working brief
 
 Use the following constraints to choose an appropriate method:

@@ -1,6 +1,6 @@
 ---
 name: omitia-brain
-description: Build, check, query, or maintain a company's Markdown brain using Omitia Brain.
+description: Build, consult, or maintain a company's Markdown brain; retain useful work under its existing permissions.
 ---
 
 # Omitia Brain
@@ -33,6 +33,7 @@ Without an explicit action, select only the relevant path:
 | Understand the method | [Principles](../../../docs/principles.md), then the relevant reference. |
 | Query a brain | Its entry and policy, permitted view, then its retrieval contract and relevant notes. Use [retrieval](../../../docs/retrieval.md) for method questions. |
 | Incorporate a source | Private policy, existing subject, a [source recipe](../../../docs/sources.md) and [ingestion](../../../missions/ingest.md). |
+| Current work produces useful lasting knowledge | Private capture permissions and canonical subject, then [proactive capture](../../../docs/proactive-capture.md) at its method pin when needed. Retain covered outcomes without another save request; explicit read-only actions still prevail. |
 | Maintain, supervise or recover | The relevant [mission](../../../missions/README.md); [scheduling](../../../docs/scheduling.md) only for recurring execution. A read-only assessment uses `check`. |
 | Consult from other work | [Consultation entries](../../../docs/agents.md#reach-the-brain-from-other-work) and the [brain-skill template](../../../templates/brain-skill.md). Personal installation needs consent. |
 

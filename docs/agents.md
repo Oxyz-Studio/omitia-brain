@@ -64,13 +64,15 @@ Inside the brain, agents use its entry. Elsewhere, they need a consultation poin
 
 | Entry | Role and location |
 | --- | --- |
-| Brain query skill | Versioned in the private brain using [brain-skill](../templates/brain-skill.md); tells agents when and how to consult it. Contributors can expose that same canonical directory to supported hosts. |
-| Standing pointer | A short rule in personal instructions or runtime memory saying which work calls for the brain and where to enter. Follow [compact memory](context.md#keep-runtime-memory-compact). |
+| Brain query skill | Versioned in the private brain using [brain-skill](../templates/brain-skill.md); routes consultation and useful work outcomes to the private rules. Contributors can expose that same canonical directory to supported hosts. |
+| Standing pointer | A short rule in personal instructions or runtime memory saying which work calls for the brain, where to enter, and to keep useful outcomes under its private capture rule. Follow [compact memory](context.md#keep-runtime-memory-compact). |
 | Optional hook | A host event that injects a pointer or captures permitted evidence. It cannot be the only consultation or [ingestion](ingestion-design.md) path, or cause full-brain loading. |
 
 Personal entries need consent and actual per-host discovery checks. Descriptions and pointers can be visible before policy is read: include only metadata approved for every installation context, normally the organization and broad non-sensitive domains. Restricted subjects belong behind the appropriate access boundary.
 
-Consultation from elsewhere is read-only by default. Read only the governing entry and policy, establish requester, access identity and answer audience, then open the permitted home, packs and notes; the current workspace may have a different audience. Write only when requested and permitted by private policy. Record available entries in the home without exposing personal paths.
+Consultation from elsewhere is read-only by default. Read only the governing entry and policy, establish requester, access identity and answer audience, then open the permitted home, packs and notes; the current workspace may have a different audience. A current request or an existing grant covering capture of this work can authorize writing under private policy. When covered, [keep useful outcomes](proactive-capture.md) without a repeated save request; explicit read-only actions and consultation-only sources still prevent retention. Record available entries in the home without exposing personal paths.
+
+Adapt that rule into the private agent entry and optional query skill at setup or an approved method update. Prefer this existing entry over a separate reminder skill with duplicate policy. Skills and pointers help the current agent remember the rule; authorized history ingestion supplies catch-up and coverage across agents. Neither path proves the other ran, and this kit installs neither a personal reminder nor a schedule.
 
 ### Keep access points current
 

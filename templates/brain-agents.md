@@ -14,6 +14,8 @@ Read `KNOWLEDGE_POLICY.md` first. Establish the requester, actual access identit
 ## Write within the configured policy
 
 - Apply the user's recorded permissions by source, action, scope, and authority. Unconfigured autonomous actions remain unconfigured; a scheduled run cannot infer permission from its existence.
+- When those permissions cover keeping the current work's useful outcomes, save new syntheses, supported corrections and reusable lessons at a meaningful task milestone without waiting for another “remember this” request. Use the existing canonical subject, actual evidence and proportionate receipt/readback. Do not save every answer or treat a model explanation as a tested procedure.
+- A current read-only request, `check`, metadata-only `discover`, or a source without retention permission still prevents that capture. If an outcome is already represented, avoid another note; a standing grant needs no repeated approval. This rule does not authorize additional tests, history scans or external actions.
 - Use the user's chosen conflict policy. Resolve contradictions autonomously when the recorded authority and rules support it. Otherwise preserve both claims, record what would settle the issue, and defer that conclusion.
 - Attribute an individual's proposal or preference to that person. Do not promote it to an organizational decision without evidence of authority and intent.
 - Maintain one canonical account per subject; link related evidence and update summaries affected by a change. Preserve the replaced state when it explains history.

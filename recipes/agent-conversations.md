@@ -14,6 +14,8 @@ Choose triggers and capture through the [ingestion design](../docs/ingestion-des
 
 ## Distill with context
 
+Use [proactive capture](../docs/proactive-capture.md) for the selection and authority boundary. Within an ingestion grant, review reusable conclusions across sources and lessons from corrections or resolutions without requiring “save” wording in the conversation. Route synthesis to [direct contributions](direct-contributions.md#preserve-a-useful-synthesis-from-a-question) and methods to [experience to procedure](experience-to-procedure.md); a critique or proposed fix alone does not establish a usable procedure.
+
 - Identify the conversation, relevant message range, observation time, and whether the source is still growing or has been edited.
 - Read the preceding material needed to understand later references. Include important tool evidence when authorized and relevant; a tool call mentioned in prose may never have succeeded.
 - Distinguish the human's instruction, an agent's suggestion, a factual claim, an observed result, and a final decision. Agent confidence does not make a claim verified.
@@ -36,10 +38,12 @@ For continuing coverage, periodically rediscover sessions and changed versions a
 
 Later agents may repeat knowledge from the brain in a conversation. That repetition is not independent evidence. Keep original provenance and avoid creating more notes each time a summary is quoted.
 
+Recognize knowledge already saved during the work session through its source version/range, canonical note, and receipt. Reuse that capture during historical ingestion; check any remaining context, changed evidence, or incomplete readback under the same coverage contract. An inline save does not make the full conversation reviewed, and its replay does not become independent confirmation.
+
 Treat a correction as new evidence with a clear relationship to the earlier claim. Route ambiguity such as “use the second proposal” to [reconciliation](../missions/reconcile.md) when the alternatives cannot be found.
 
 ## Verify the result
 
 Leave a receipt with actual session and message coverage, target notes, deliberate exclusions, unresolved items, and continuation. Spot-check that a claimed decision was actually made and that an unexecuted plan has not become a completed fact.
 
-Schedule bounded distillation only after the source and action policy is set. The user can also request it at the end of individual conversations. See [ingestion](../missions/ingest.md) and [scheduling](../docs/scheduling.md).
+When configured, historical and continuing ingestion provide source coverage; permitted inline capture complements them by reducing delay. Hooks and skills do not establish coverage of every conversation or agent. See [ingestion design](../docs/ingestion-design.md) for the shared pipeline and its limits.

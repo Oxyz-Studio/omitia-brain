@@ -151,6 +151,26 @@ The read-only synthesis and procedure-transfer fixtures remained byte-identical,
 
 Independent patch review found an ambiguity in how procedure fixtures load the candidate recipe. The scenario instructions now bind that recipe through the private agent entry, matching the exercised setup. Local Markdown targets/anchors, the canonical Claude symlink and `git diff --check` were also checked; the skill itself did not change and host loader discovery was not repeated.
 
+## Proactive capture under existing grants, 24 October 2026
+
+Nine fresh independent agents exercised the [capture scenarios](../examples/proactive-capture-checks.md) in fictional disposable brains without the evaluator's expected answers or another agent's conversation. Private entries explicitly adopted the candidate [capture contract](proactive-capture.md); the ordinary-work fixture also used an adapted canonical query skill and relative Claude link. No real brain's method pin or personal installation changed.
+
+| Exercise | Observed result |
+| --- | --- |
+| Ordinary comparison | Asked only which offer met the requirements and budget, the agent saved the useful comparison in the existing subject and added a receipt without another save request. Standard's recommendation remained distinct from a user selection. Home-to-note-to-source readback recovered the result. |
+| Separate reader | A new read-only agent recovered that saved recommendation and its limits from ordinary navigation and opened the original requirements and both offers. It had no writer history or destination hint. |
+| Correcting a repeated failure | Asked to check the supplied local importer and explain the result, the agent executed the permitted synthetic trials and retained the bounded method and evidence without a save request. Four trials covered three files and five rows: the French baseline failed, per-field comma parsing succeeded, and the US dot control succeeded without changing text commas. |
+| Authorized conversation ingestion | Two registered session ranges, without save instructions in their content, yielded a retained comparison and bounded method from existing execution evidence. An untested proposal to strip punctuation did not become a usable procedure; no new trial was executed. |
+| Replay after an inline save | A quoted earlier comparison did not create a duplicate or independent confirmation. The new weekend-booking requirement narrowed applicability: the old recommendation remained historical and current suitability became unresolved. Coverage applied only to the examined replay version/range. |
+| Explicit `check` and no-write requests | Two separate agents answered from evidence despite standing capture grants, with no saved note, receipt or other file change. |
+| Consultation-only sources and missing capture grant | Two separate agents answered the permitted question without retaining source-derived knowledge or content-bearing receipts. Reading permission did not become retention permission. |
+
+File inventories and bytes were compared with pre-run snapshots. The five read-only fixtures stayed identical. Write runs changed only the relevant canonical notes, receipts and, for the executed method, permitted trial evidence and its source registration. Governing entries, policies, source/input originals and the local-tool authorization were preserved. Independent patch review found no blocking conflict with read-only actions, coverage, authority or private method pins.
+
+The updated repository skill and adapted private fixture skill passed frontmatter validation. Local Markdown targets/anchors, the relative canonical Claude link and `git diff --check` passed. Codex CLI 0.153.4's `skills/list` discovered the enabled canonical repository skill, and Claude Code 2.1.267's initialization metadata discovered the same skill through its relative link. These loader checks sent no model turn or persistent configuration change; discovery does not prove automatic invocation in every conversation.
+
+The file adapter, synthetic importer and loader harness were local evaluation tools outside this kit. No real history service, hook, scheduler, personal skill installation or production importer was exercised. Metadata-only discovery and additional changed-version variants remain covered by their existing checks or specified cases rather than an additional run in this set.
+
 ## What these checks do not establish
 
 File portability, loader discovery, agent behavior, artifact integrity and enforced runtime controls are separate evidence. None proves universal model quality, every history format, actual connector/scheduler/search operation, notification delivery or real access enforcement.

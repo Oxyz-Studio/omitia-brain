@@ -6,6 +6,12 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ## 2026-10-24
 
+### Keep useful work under existing grants
+
+- Changes: the capture contract makes retention of useful syntheses, supported corrections and bounded lessons an expected part of authorized work and conversation ingestion, without per-outcome save requests. Private agent/query-skill templates and the generic skill route to that rule; historical ingestion recognizes prior inline captures and preserves source coverage instead of creating duplicate knowledge. Explicit read-only actions and consultation-only sources retain their limits.
+- Impact: **action recommended** for brains that expect spontaneous capture within existing grants. Adapt their private capture rule and consultation entry at an approved method update; older copied entries may still require a new save request. No grant, method pin, personal installation, hook or recurring job changes automatically.
+- Files: `docs/proactive-capture.md`, private entry/policy/skill templates, canonical kit skill, `docs/agents.md`, `docs/principles.md`, `docs/ingestion-design.md`, `START-HERE.md`, contribution/conversation recipes, ingestion mission, README EN/FR, capture scenarios and validation evidence.
+
 ### Bounded procedures, reusable syntheses and adversarial retrieval cases
 
 - Changes: the optional experience-to-procedure recipe and template distinguish observed outcomes, candidate explanations, executed trials and methods usable within tested conditions. Direct contributions include authorized reuse of a useful analysis with evidence, dependencies and source-change review. Fictional cases cover misleading citations, questions without established answers, procedure transfer and exceptions, synthesis retrieval and revision, and consultation without retention.

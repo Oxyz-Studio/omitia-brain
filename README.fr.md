@@ -51,7 +51,7 @@ La référence est en anglais ; l'accompagnement et les notes suivent votre lang
 
 Commencez par les [apports directs](recipes/direct-contributions.md), les [documents locaux](recipes/local-documents.md) ou les [conversations d'agents](recipes/agent-conversations.md). Le [guide des sources](docs/sources.md) oriente aussi vers les mails, documents partagés, messageries et outils métier.
 
-Transformez les corrections observées en [procédures vérifiées dans leur périmètre](recipes/experience-to-procedure.md), ou [conservez une analyse utile](recipes/direct-contributions.md#preserve-a-useful-synthesis-from-a-question) lorsque c'est autorisé. Ces parcours gardent les preuves, les limites et les besoins de révision.
+Quand un accord existant couvre le travail courant, l'agent [garde les résultats utiles](docs/proactive-capture.md) sans nouvelle demande de sauvegarde : analyses sourcées et procédures vérifiées dans leur périmètre. L'ingestion autorisée des conversations rattrape les apports manqués et réutilise les sauvegardes antérieures sans les dupliquer.
 
 Les [missions](missions/README.md) décrivent le résultat, le périmètre et les preuves attendues. Elles utilisent votre agent à la demande ou votre planificateur après définition des sources, de l'identité, des autorisations, de la cadence et des limites. Un fichier de mission seul ne travaille pas en arrière-plan. Les autorisations déjà accordées sont réutilisées.
 

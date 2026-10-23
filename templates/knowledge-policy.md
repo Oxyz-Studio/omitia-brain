@@ -22,6 +22,8 @@ Add a row only when it reflects an actual user instruction. Different sources an
 
 Actions might include reading, collecting, updating factual notes, changing a decision, retaining source excerpts, or configuring a recurring mission. Specify what is automatic, proposed, or disallowed only as far as the user has chosen. Reading permission does not imply write permission; brain maintenance does not imply sending messages or changing external systems.
 
+A recorded grant may cover proactive retention of useful current-work analyses and lessons, including their sources, destination and audience. When it does, a separate save request is unnecessary. This template grants none by default; explicit read-only actions and consultation-only sources still limit retention.
+
 ## Freshness and history
 
 - Freshness expectations by kind of information: not configured.
