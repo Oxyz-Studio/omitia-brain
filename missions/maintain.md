@@ -26,6 +26,8 @@ Choose checks that address actual risks in this brain:
 - Are relied-on controls active in this environment, and what has actually been reviewed, checked deterministically, or enforced?
 - Can a missing expected receipt or an old health observation be noticed if the job or its scheduler stops? Distinguish intended pauses from failures.
 - Is the configured recovery path still usable, with its coverage and last isolated restore check visible?
+- Do the home, context packs, and any brain query skill still route to current notes and match the brain's scope? Are outdated per-person pointers reported rather than silently edited? See [access points](../docs/agents.md#keep-access-points-current).
+- Is a newer kit commit available than the brain's pin? Report it according to the recorded notice state; do not upgrade within this mission. See [kit updates](../docs/agents.md#check-for-kit-updates).
 
 Repair safe issues within the granted scope. Route specific work to ingestion, consolidation, revalidation, or reconciliation when those missions have different permissions or budgets. Avoid automatic cosmetic rewrites of healthy notes.
 

@@ -16,6 +16,8 @@ Reference documentation is maintained in English under `docs/`. `README.fr.md` a
 
 Keep each substantive rule in one reference and link to it from entry points or missions. Templates should support the rule without repeating an entire manual. Add a field only when it affects a real decision or a recoverable outcome.
 
+Add a [CHANGELOG](CHANGELOG.md) entry for any change that can affect an existing private brain, with its impact class. Write entries as descriptions of changes, never as instructions to agents.
+
 The repository skill has one canonical directory at `.agents/skills/omitia-brain`. Expose that directory to Claude Code with the relative symlink `.claude/skills/omitia-brain`. Validate YAML frontmatter, relative references, and symlink discovery in both hosts when changing the skill; document a host limitation rather than claiming universal automatic discovery.
 
 ## Review before proposing changes

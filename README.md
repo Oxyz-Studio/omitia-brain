@@ -69,6 +69,6 @@ This is a starter kit, not a hosted service, search engine, or collection of pre
 
 ## Contribute
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Examples must be fictional. Company information, credentials, raw conversations, and local runtime files belong outside this public repository.
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [CHANGELOG](CHANGELOG.md) of changes affecting existing brains. Examples must be fictional. Company information, credentials, raw conversations, and local runtime files belong outside this public repository.
 
 Released under the [MIT License](LICENSE). You can use the kit commercially and keep your company's brain private.

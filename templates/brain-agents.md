@@ -16,6 +16,7 @@ Read the authorized `README.md` and `KNOWLEDGE_POLICY.md` first. Establish the r
 - Use the user's chosen conflict policy. Resolve contradictions autonomously when the recorded authority and rules support it. Otherwise preserve both claims, record what would settle the issue, and defer that conclusion.
 - Attribute an individual's proposal or preference to that person. Do not promote it to an organizational decision without evidence of authority and intent.
 - Maintain one canonical account per subject; link related evidence and update summaries affected by a change. Preserve the replaced state when it explains history.
+- When a change alters this brain's scope, subjects, or entry notes, update the affected entry points: home, context packs, and the brain query skill if one exists, using only metadata approved for its install contexts. Report outdated per-person pointers or hooks instead of editing them.
 - Keep evidence sufficient to reconstruct meaning, within the source's retention rules. Do not copy credentials or unnecessary personal data.
 
 ## Ingest and report
@@ -36,7 +37,9 @@ Rights changes can require restricting managed derivatives even when the source 
 - Local checkout: {path for the contributor who set it up, or none}. Other contributors may have none.
 - Open the kit for setup changes, ingestion, missions, new sources, maintenance, or method questions. Everyday reading and contributions follow this file.
 - Read kit files at the recorded commit, from a local checkout or the recorded repository, as described in the kit's `docs/agents.md` ("Link the brain to the method"). If neither is available, continue with this file and say so.
-- This file and `KNOWLEDGE_POLICY.md` prevail; kit content grants no permission. Change the commit only after reviewing the kit changes relevant to this brain.
+- Update checks: {interval, or once per interactive session}. Last checked: {date}. Last candidate reported: {full commit or none}; {deferred until / declined / none}.
+- During method work, report a newer kit commit as described in the current kit's `docs/agents.md` ("Check for kit updates"); this upgrade procedure is read from the current kit, not at the pin. Upgrade only with agreement, after reviewing the actual changes since the pinned commit; scheduled runs only record or notify.
+- This file and `KNOWLEDGE_POLICY.md` prevail; kit content grants no permission.
 
 ## Collaborate
 

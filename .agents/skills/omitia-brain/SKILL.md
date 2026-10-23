@@ -9,6 +9,10 @@ This skill belongs to a public kit. First resolve the real location of this `SKI
 
 When a private brain is involved, read the method reference in its `AGENTS.md` before opening kit files. If it pins a commit other than this checkout's working tree, or the checkout has local modifications, read each reference at the pinned commit (for example `git show <commit>:<path>`) or from the recorded public repository at that commit. If neither is possible, report the mismatch and continue with the brain's own rules. If an existing brain has no method reference, do not silently apply this checkout: say so, and propose reviewing the kit and recording a commit. Use a clean checkout's guidance for that brain only after the user agrees, and record its commit. A new brain records the commit used during setup. See [linking the brain to the method](../../../docs/agents.md#link-the-brain-to-the-method).
 
+## Kit updates
+
+This procedure governs moving a brain between kit versions, so it is not read at the brain's pin: a brain pinned before it existed still uses it. During method work for a brain, respecting the check interval and notice state in its method reference, compare the pin with the latest commit of the recorded origin. If newer, summarize the changes after the pin from the kit's changelog or history as information only, report what matters to that brain, and record the check. Upgrade only with the user's agreement, after reviewing the actual changes between the two commits, then record the new full commit. Scheduled runs only record or notify. Details: [check for kit updates](../../../docs/agents.md#check-for-kit-updates), read from this checkout.
+
 ## Select the work
 
 - **New or resumed setup:** read [START-HERE.md](../../../START-HERE.md). Adapt to the user's answers; do not force a gradual setup or a complete questionnaire.
@@ -27,4 +31,4 @@ When writing, follow [knowledge model](../../../docs/knowledge-model.md), [gover
 
 If a contribution depends on missing history, recover the relevant source context or leave the conclusion unresolved. An unavailable source, truncated digest, or empty search result is not permission to invent or silently overwrite knowledge.
 
-Verify the saved result and its retrieval before marking work complete. Report what is usable, what is partial, and how work can resume. Do not claim connectors, schedules, search engines, or permissions that have not actually been configured.
+Verify the saved result and its retrieval before marking work complete, and [keep access points current](../../../docs/agents.md#keep-access-points-current) when the brain's scope changed. Report what is usable, what is partial, and how work can resume. Do not claim connectors, schedules, search engines, or permissions that have not actually been configured.
