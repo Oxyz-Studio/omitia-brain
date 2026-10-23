@@ -22,6 +22,8 @@ Retain only the fictional excerpts included here. Real-world credentials and unn
 
 ## Operation
 
+Retrieval: the authorized view is this fictional launch brain. Start from [README.md](README.md) and follow the relevant note's evidence links; use bounded filename/text search within this folder if navigation fails. Open canonical notes and their needed evidence before relying on them. No index is configured. Historical drafts explain prior discussion but do not support current-price answers.
+
 Source files and receipts provide the recovery trail. Unresolved items remain in the ingestion log until integrated or excluded by an explicit policy. A completed attempt does not advance completed integration past an unresolved item.
 
 The weekly review mission may be run manually within these grants. Its cadence, scheduler, overlap mechanism, and notification destination are not configured; it must not be reported as an active recurring job.

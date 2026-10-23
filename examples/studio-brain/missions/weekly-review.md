@@ -2,7 +2,7 @@
 
 ## Outcome and authority
 
-Keep the weekday launch summary consistent with the authorized local sources and preserve any unresolved context. Read [README.md](../README.md), [policy v1](../KNOWLEDGE_POLICY.md), and [SOURCES.md](../SOURCES.md). Update only this brain's notes, entry points, source coverage, ingestion log, and receipts within the recorded grants.
+Keep the weekday launch summary consistent with the authorized local sources and preserve any unresolved context. Read [policy v1](../KNOWLEDGE_POLICY.md) first, establish the permitted view, then follow [README.md](../README.md) and [SOURCES.md](../SOURCES.md) as needed. Update only this brain's notes, entry points, source coverage, ingestion log, and receipts within the recorded grants.
 
 Retrieve earlier options before integrating relative references. Retry open gaps. Apply the owner's dated decisions automatically; preserve colleague suggestions as attributed proposals. Exclude historical drafts from current-price answers and verify whether recheck triggers have fired. Never infer a retraction just because an export omits an old message.
 

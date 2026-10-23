@@ -6,6 +6,12 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ## 2026-10-23
 
+### Less duplication across setup, missions and records
+
+- Changes: guidance links to the canonical continuity states and finalization steps instead of repeating them. One durable record can serve as source coverage, run receipt and report, with links to the same evidence. Setup, host guidance and reference prose are shorter; validation observations are grouped while their detailed history remains commit-addressed. Templates clarify optional manual/runtime fields and link adaptation when copied. The fictional studio now reads policy before home and uses one private retrieval contract.
+- Impact: **optional** for the simplification; **action recommended** for a brain that copied the studio's older home-before-policy route. Review its entry order and retrieval-contract pointers. No permissions, source scope, method pins or recurring jobs change automatically.
+- Files: entry guides and skill, `docs/`, `missions/README.md`, `missions/ingest.md`, `missions/maintain.md`, `recipes/agent-conversations.md`, receipt/mission templates and the studio's entry/policy/mission. Sources, realized notes, decisions and receipts in the fictional studio are unchanged.
+
 ### Explicit initialization and read-only checks
 
 - Changes: the canonical kit skill routes `init` to new or resumed setup and `check` to a bounded, read-only assessment of entries, retrieval, source coverage and operational evidence. The interface documents Claude Code, Codex CLI/IDE and explicit-file invocation, preserves existing private method pins, and keeps diagnosis separate from receipt-writing missions, index refreshes and version-check metadata writes.

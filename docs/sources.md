@@ -44,20 +44,9 @@ Permitted raw material and collected excerpts remain evidence to examine. They d
 
 ## Make coverage explicit
 
-Use [ingestion records](../templates/ingestion-log.md) with these outcomes:
+Use [ingestion records](../templates/ingestion-log.md) and the shared [coverage and outcome contract](continuity.md#record-coverage-not-just-a-last-run-date). It defines `collected`, `partial`, `blocked`, `integrated`, `no-durable-change`, and `intentionally-skipped`, along with version-bound receipts, recoverable gaps, and repeat-run handling.
 
-- `collected`: acquired or made available; interpretation is pending.
-- `partial`: retrieval or interpretation is incomplete, with a next action.
-- `blocked`: a named dependency prevents the next authorized step.
-- `integrated`: supported durable knowledge was incorporated, with target references.
-- `no-durable-change`: the recorded scope was fully considered and intentionally produced no lasting update.
-- `intentionally-skipped`: the recorded scope was excluded under an explicit reason or policy; it was not fully processed.
-
-Record the source identity, covered version or time range, observation time, completeness, resulting knowledge, unresolved gaps, and continuation. An outcome describes a recorded unit of work, not a permanent state of a living source. A thread processed yesterday may have new replies today.
-
-Advance incremental collection only when gaps remain recoverable. A single “last processed at” date can conceal failures if one item in the interval was truncated or blocked. Keep those gaps separately even if later items succeed.
-
-Repeating a run should recognize the same item version and avoid duplicate knowledge. If a connector cannot provide stable boundaries, use bounded overlap and compare identities and versions rather than assuming timestamp order is exact.
+An outcome describes the recorded version or range, not a permanent state of a living source. A thread processed yesterday may have new replies today. If a connector cannot provide stable boundaries, use bounded overlap and compare identities and versions rather than assuming timestamp order is exact.
 
 ## Integrate meaning, not isolated fragments
 

@@ -22,7 +22,11 @@ The agent can complete setup in one conversation or leave a smaller working brai
 
 Text in `{braces}` is an instruction to adapt, not a fact to assume. Keep unknown information as `unknown` and unmade configuration choices as `not configured`. Do not invent people, permissions, schedules, source access, dates, or decisions to complete a template. Remove unused sections instead of maintaining empty forms.
 
+One record can serve as ingestion log, receipt, and run report for a small batch. If these are separate, link to the canonical coverage and readback instead of copying them. Add a health observation only when assessing expected work or operational gaps.
+
 The filenames and folders are suggestions. Preserve a clear entry point and working links when adapting them. A small brain can use one notes folder, one source record, and one receipt. A larger organization can add domain entry points without changing the principles.
+
+When copying a template outside the kit, adapt its links too: private links must reach the saved notes, and kit references must reach the brain's recorded method version. A relative `../docs/` link is not portable to the private workspace.
 
 Check how the contributors' agents discover instructions. A short `CLAUDE.md` can point to the private `AGENTS.md` when needed; other hosts may require an explicit prompt to read the entry. See [agent compatibility](../docs/agents.md). Keep the rules in one place. Record the kit version in the `AGENTS.md` method reference; see [linking the brain to the method](../docs/agents.md#link-the-brain-to-the-method).
 

@@ -1,6 +1,6 @@
 # Knowledge model
 
-Use the smallest structure that lets a person or agent understand a statement, verify it, and update it without losing its meaning. These concepts are portable; they do not require a database, a particular folder tree, or a large frontmatter schema.
+Use the smallest structure that lets a reader understand, verify, and update a statement without losing meaning. No database, prescribed folder tree, or large metadata schema is required.
 
 ## The core objects
 
@@ -12,13 +12,13 @@ Use the smallest structure that lets a person or agent understand a statement, v
 | Ingestion receipt | The durable record of which source version and range was examined, the outcome, and resulting notes. |
 | Derived view | A context pack, overview, index, or other synthesis built from canonical knowledge. |
 
-Begin with the [note template](../templates/note.md), [source template](../templates/source.md), and [ingestion log](../templates/ingestion-log.md). Keep optional metadata out until it resolves an actual need.
+Start with the [note](../templates/note.md), [source](../templates/source.md), and [ingestion log](../templates/ingestion-log.md) templates. Add metadata only when needed.
 
-A context pack selects what to read for a task; a descriptive domain note defines a subject's terms and invariants; a procedure or skill explains how to perform work. These can be sections rather than separate files. See [context roles](context.md#give-each-kind-of-context-its-role) before adding structure.
+For context packs, domain descriptions, and procedures, use the [context roles](context.md#give-each-kind-of-context-its-role). They can be sections rather than separate files.
 
 ## Assertions need a clear meaning
 
-Distinguish these kinds in ordinary prose or a short label:
+Distinguish in prose or short labels:
 
 - **Fact:** supported by identified evidence.
 - **Observation:** what a person or source reported, with its scope preserved.
@@ -26,23 +26,23 @@ Distinguish these kinds in ordinary prose or a short label:
 - **Decision:** an authorized choice, including scope, effective date, and reason where available.
 - **Unknown:** missing or insufficient information, with the consequence when useful.
 
-"A customer asked for weekly exports" is an observation about that customer. It does not establish that all customers need exports or that the company has committed to building them. Frequency of repetition is not authority or proof.
+"A customer asked for weekly exports" describes that customer's request, not a universal need or company commitment. Repetition is neither authority nor proof.
 
-When two sources disagree, retain the competing assertions and their evidence until the conflict can be resolved under the chosen [governance](governance.md). Do not manufacture a compromise value or silently let the most recently imported statement win.
+Retain conflicting claims and evidence until [governance](governance.md) resolves them. Do not invent a compromise or let the latest import win by default.
 
 ## Evidence belongs at the right level
 
-A source reference should identify the source and a usable locator: a file section, message or thread ID, document section, record ID, or retained excerpt. Include its version or observation time when the content can change. Link to the source record for access and retention details.
+A reference identifies the source and a usable locator: section, message or thread ID, record ID, or retained excerpt. Include a version or observation time for changeable content; link the source record for access and retention details.
 
-One note-level evidence reference can be enough for a short note whose assertions share the same source, timing, and scope. For a note mixing claims from several sources or periods, attach references to the relevant assertions. A reader should not have to guess which of five sources supports a price or a decision.
+A note-level reference can suffice when all assertions share a source, timing, and scope. Otherwise attach references to individual assertions so readers can identify what supports a price or decision.
 
-Prefer stable source IDs over filenames as identity where available. File moves and renamed subjects should not break the trail. A digest or model-generated summary can help find evidence; it cannot prove the source said something.
+Prefer stable source IDs where available so renames and moves preserve the trail. Digests and model summaries can locate evidence but cannot prove what a source said.
 
-If retaining a source is prohibited, keep the permitted locator and describe the access dependency. If access or retention later expires, mark affected claims as no longer independently verifiable from the brain. Do not pretend a dead link is usable proof. See [sources](sources.md).
+If retention is prohibited, keep a permitted locator and its access dependency. If access or retention expires, mark affected claims as no longer independently verifiable from the brain; a dead link is not proof. See [sources](sources.md).
 
 ## Three different dates
 
-Use these names when structured dates are useful; the same distinctions can be written in prose.
+Use these names for structured dates, or express the distinctions in prose.
 
 | Name | Meaning | Example |
 | --- | --- | --- |
@@ -50,13 +50,13 @@ Use these names when structured dates are useful; the same distinctions can be w
 | `recorded_at` | When this assertion was added to or changed in the brain. | The April price list is imported on 18 March. |
 | `review_after` | When the assertion should next be checked, according to its volatility and use. | Verify before quoting after 1 July. |
 
-These dates are not interchangeable. Importing a document today does not make its contents valid today. Do not invent an effective date when the source provides none; say that it is unknown and record when the source was observed.
+An import date does not make content valid that day. If no effective date is supported, mark it unknown and record the source's observation time.
 
-For mixed notes, date the volatile assertions individually when practical. A note's last-modified time says that the file changed, not that every assertion was verified.
+Date volatile assertions individually where practical. A file's modification time does not verify every assertion.
 
 ## Freshness and truth are separate
 
-An overdue review means **review due**, not **false**. A historical decision can remain accurately recorded after its policy is replaced. A missing confirmation is uncertainty, not a contradiction.
+An overdue review means **review due**, not **false**. A replaced decision can remain historically accurate. Missing confirmation is uncertainty, not contradiction.
 
 Use a small number of explicit states only when needed:
 
@@ -68,7 +68,7 @@ Use a small number of explicit states only when needed:
 | Superseded | A specified later assertion or decision replaces it for a stated scope. |
 | Historical | Retained to explain the past; not a current operating instruction. |
 
-States can apply to a section or assertion. Avoid marking a whole note superseded when only one price, owner, or condition changed. The agent must check dates and evidence when reading; a maintenance label alone cannot guarantee freshness. See [retrieval](retrieval.md).
+Apply states to the affected assertion or section; one changed price need not supersede a whole note. Check dates and evidence when reading: a label cannot guarantee freshness. See [retrieval](retrieval.md).
 
 ## Changes preserve meaning
 
@@ -80,9 +80,9 @@ When replacing an assertion:
 4. Update the current account without erasing important prior reasoning.
 5. Find derived views and dependent conclusions that must be refreshed.
 
-A context pack is a maintained summary of canonical notes. It should link to those notes and avoid unnecessary duplicated detail. When an offer changes, an old sales brief that repeats its price must be updated or visibly marked for refresh. An index rebuild alone does not repair stale prose.
+Derived views should link to canonical notes and limit duplication. When an offer changes, refresh a sales brief repeating its price or mark it for refresh. An index rebuild does not repair stale prose.
 
-Do not infer cancellation from absence in a later import. Absence is meaningful only if the source is known to be a complete authoritative snapshot with understood deletion semantics. Otherwise record the discrepancy and seek evidence.
+Do not infer cancellation from absence unless a complete authoritative snapshot and its deletion semantics support that conclusion. Otherwise record the discrepancy and seek evidence.
 
 ## A compact fictional example
 
@@ -106,4 +106,4 @@ Do not infer cancellation from absence in a later import. Absence is meaningful 
 - Project brief: refreshed after the scope decision.
 ```
 
-This level of detail is useful for a consequential decision. A stable glossary definition may need only a short definition and one source link. Match the record to the risk and complexity of the claim.
+Match detail to consequence and complexity. A stable glossary entry may need only a definition and source link.

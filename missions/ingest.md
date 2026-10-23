@@ -36,22 +36,11 @@ The agent chooses the tools and organization. It must not duplicate large raw ar
 
 ## Completion evidence
 
-For each item or coherent batch, leave a processing record that distinguishes:
+For each item or coherent batch, use the shared [outcome definitions](../docs/continuity.md#keep-outcomes-distinct) and [recoverable completion steps](../docs/continuity.md#complete-a-unit-in-recoverable-steps). They govern receipts, explicit gaps, overlap, duplicate delivery, and interruption recovery. “Fetched” is collection; “processed” means the recorded content was considered, which can correctly produce `no-durable-change`. Neither establishes integration, and an unavailable or truncated item remains unresolved until recovered or explicitly abandoned under policy.
 
-| Outcome | Required evidence |
-| --- | --- |
-| `collected` | What was fetched and stored or made available; interpretation is still pending. |
-| `integrated` | Saved reference changes, supporting source material, a durable receipt, and successful readback of the meaning through normal retrieval. |
-| `no-durable-change` | The material was fully considered and why no lasting update was appropriate. |
-| `partial` | What was fetched or understood, what is missing, and how to resume. |
-| `blocked` | The missing access, policy decision, or external condition, plus the affected coverage. |
-| `intentionally-skipped` | The deliberate exclusion and its reason; this is not evidence of successful processing. |
+Integration requires saved knowledge, a coverage receipt, and successful readback through normal retrieval for the version and range actually examined. Keep the outcome partial until that evidence is saved. Ask a representative future question and verify meaning, scope, important qualifications, and supporting provenance. A findable summary that has lost the reason for a decision is not complete; repair it or leave a next action. Keep this check proportionate to the contribution.
 
-“Fetched” alone is a collection milestone. “Processed” should only mean the recorded content was considered, not that it was integrated. An unavailable or truncated item remains unresolved until recovered or explicitly abandoned under the user's policy.
-
-Before finalizing `integrated`, save the knowledge and its coverage receipt while the outcome is still `partial`, then test retrieval as a future user or agent would. Ask a representative question through the normal entry point; verify that the answer recovers the intended meaning, its scope, important qualifications, and supporting provenance. A correct note that cannot be found, or a findable summary that has lost the reason for a decision, is not a completed integration. Save the successful readback before finalizing; otherwise repair the path or leave the unit `partial` with a next action. Keep this check proportionate to the contribution.
-
-Record a resumable cursor or covered range together with explicit gaps. If the connector cannot guarantee stable pagination, allow a justified overlap on the next run and deduplicate by source identity and version. At finalization, the receipt must identify the version and range actually read. If the source changed during the run, preserve that version's supported work and record the changed coverage or dependent claims for revalidation under [continuity](../docs/continuity.md#handle-changing-sources); do not acknowledge the latest source by its identity alone.
+If a source changes during the run, apply [changing-source handling](../docs/continuity.md#handle-changing-sources): preserve supported work against the examined version and leave changed coverage or dependent claims for revalidation. Do not acknowledge the latest version by its identity alone.
 
 ## Stop and recover
 

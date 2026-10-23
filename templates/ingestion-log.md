@@ -1,6 +1,6 @@
 # Ingestion log
 
-Record source coverage and claim outcomes, not merely that a file was opened. Use a small receipt per batch or a growing table, whichever stays readable.
+Record source coverage and claim outcomes, not merely that a file was opened. Use a small receipt per batch or a growing table, whichever stays readable. This record can also serve as the run report; link to it rather than repeating coverage or readback elsewhere.
 
 Keep the receipt and its search metadata within the applicable audience. Source identities, titles, and the fact that an item was processed can be confidential; a broadly readable run report must not expose a restricted receipt.
 
@@ -20,8 +20,7 @@ For changed knowledge, save the note and this coverage receipt while the outcome
 
 - Question: {the normal question used}.
 - Path followed / result: {how the canonical knowledge and its limits were found, or what failed}.
-- Receipt and note persisted before readback: {evidence}.
-- Finalization: {mark the covered unit integrated only after successful readback; otherwise retain partial and a recovery step}.
+- Persistence and finalization: {evidence that note and partial receipt were saved before readback; integrated after success, or still partial with a recovery step}.
 
 A `no-durable-change` or `intentionally-skipped` item needs examined coverage and a reason; it does not require a filler note.
 

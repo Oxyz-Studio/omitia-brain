@@ -1,20 +1,20 @@
 # Mechanism coverage and deployment checks
 
-Design review: 21 October 2026. This map checks that the starter addresses a complete knowledge lifecycle, from first use to recovery. It is a guide to the contracts and the evidence a deployment should seek, not a claim that every optional mechanism is installed.
+Design review: 21 October 2026. This map connects the knowledge lifecycle to contracts and deployment acceptance evidence. Optional mechanisms need not all be installed.
 
-The review compared the starter with primary documentation, implementation details, and selected read-only operational evidence from an established private company brain. Private records, infrastructure, source material, and business-specific rules are not published here. Documented intent, code behavior, observed operation, and fictional behavioral tests were considered separately.
+The review compared primary documentation, implementation and selected read-only evidence from a private company brain. No private records are published. Documented intent, code behavior, observed operation and fictional tests were assessed separately.
 
 ## Coverage map
 
 | Mechanism | Public contract | Useful acceptance evidence |
 | --- | --- | --- |
-| Adaptive first use and later contributions | [Start](../START-HERE.md), [direct contributions](../recipes/direct-contributions.md) | A complete brief works immediately; missing answers or connectors do not block unrelated scope; a colleague can resume from saved files. |
+| Adaptive first use and later contributions | [Start](../START-HERE.md), [commands](commands.md), [direct contributions](../recipes/direct-contributions.md) | A complete brief works immediately; missing answers or connectors do not block unrelated scope; a colleague can resume from saved files. |
 | Private workspace and portable agent entry | [Agents](agents.md), [governance](governance.md) | Company data stays separate; a new host loads the actual private instructions; canonical skill links resolve; the brain's method reference reaches the pinned kit version; consultation entries expose only approved metadata. |
 | Authority, permissions, and source trust | [Governance](governance.md) | Existing grants are reused, suggestions stay attributed, and imported commands cannot grant permission. |
 | Source access, transport, lifetime, and retention | [Sources](sources.md), [source record](../templates/source.md) | The executing identity can revisit the evidence; permitted captures and recovery limits are known. |
 | External references without relocation | [External references](external-references.md) | A document stays at source; reference-only, consultation, and integration grants are distinct; another runtime does not invent access. |
 | Source restrictions through derived knowledge | [Access boundaries](governance.md#preserve-access-boundaries-through-derived-knowledge), [access cases](../examples/external-access.md) | Authorized views protect metadata and content before retrieval; mixed-source outputs retain applicable restrictions; revocation reaches managed derivatives with prior-copy limits explicit. |
-| Primary ingestion and optional event hooks | [Ingestion design](ingestion-design.md) | A missing hook does not hide activity in an accessible persisted source; ephemeral evidence has a permitted capture route or an explicit limit. |
+| Primary ingestion and optional event hooks | [Ingestion design](ingestion-design.md), [work discovery](work-discovery.md) | A missing hook does not hide activity in an accessible persisted source; ephemeral evidence has a permitted capture route or an explicit limit. |
 | Incremental collection and source revisions | [Continuity](continuity.md), [ingest](../missions/ingest.md) | Receipts identify the source identity, actual version, examined range, gaps, and retained proof; identical delivery does not duplicate knowledge. |
 | Context reconstruction and interrupted work | [Reconcile](../missions/reconcile.md), [continuity](continuity.md) | Ambiguous fragments stay partial; a later agent can recover their meaning and resume without the original session. |
 | Canonical identity and discoverability | [Retrieval](retrieval.md), [note](../templates/note.md) | Names and aliases work through the real lookup path; a variant name does not create a second subject. |
@@ -36,22 +36,14 @@ The review compared the starter with primary documentation, implementation detai
 
 ## Improvements from this review
 
-The starter already had strong contracts for provenance, temporal meaning, contradictory evidence, durable source coverage, partial ingestion, normal retrieval readback, and replay. Those contracts were retained.
-
-This review made the primary ingestion and optional-hook relationship explicit; separated source location from unattended execution identity; tightened finalization to the source version actually read; added compact-memory and context-selection contracts; and added supervision, write-rejection, and recovery guidance. Optional templates and evaluation cases support those contracts without becoming onboarding requirements.
+The review preserved provenance, time, contradictions, partial coverage, retrieval readback and replay. It clarified primary discovery versus hooks, execution identity and source-version finalization, and added compact-context, supervision, rejection and recovery guidance. See the [changelog](../CHANGELOG.md) for later changes; optional mechanisms remain optional.
 
 ## Implementation habits deliberately excluded
 
-- Treating an old backlog, an unreadable extract, or a failed transfer as successfully integrated merely to clear pending work.
-- Assuming a stable identifier, repeated headers, or a repeated title establishes that content is unchanged.
-- Treating a truncated digest as complete evidence or discarding pending material without recording the loss and its effect.
-- Reading a fresh status, an old successful run, a source count, or zero error messages as proof of current semantic coverage.
-- Treating a versioned protection as installed enforcement, a draft role description as an active agent, or a written domain contract as a working tool integration.
-- Treating silence, repeated suggestions, or inferred preferences as authority to change permissions.
-- Copying one installation's providers, thresholds, folder hierarchy, approval rules, or scheduler into a universal kit.
+- Clearing backlog or unreadable/truncated input as integrated; assuming stable IDs, titles or headers prove unchanged content.
+- Treating counters, recent success, silence or written protections as semantic coverage, installed enforcement or working integration.
+- Inferring permissions from suggestions or copying one installation's providers, thresholds, hierarchy and approval rules into the universal kit.
 
 ## Limits of the review
 
-Coverage of a contract does not establish that every host, connector, model, or deployment implements it. Live integrations, alert routes, access controls, enforcement, and restoration need their own environment-specific evidence. Some mechanisms may remain manual or not configured by choice.
-
-See [validation](validation.md) for the behavioral checks actually performed and their limits. A small useful brain does not need every row implemented on day one; it should state the relevant limits clearly and keep them recoverable as its scope grows.
+Use [validation](validation.md) for evidence actually obtained. Each deployment verifies its own hosts, integrations, alerts, access controls and restoration. A small brain can keep mechanisms manual or unconfigured, with relevant limits and next actions explicit.

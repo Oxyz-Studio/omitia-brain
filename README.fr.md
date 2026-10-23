@@ -2,66 +2,56 @@
 
 **Construire une mémoire d'entreprise utile aux personnes et aux agents.**
 
-Omitia Brain est un kit ouvert fondé sur des fichiers Markdown pour organiser les connaissances d'une entreprise, retrouver le bon contexte et le maintenir à jour. Il fonctionne avec un agent capable de lire et modifier des fichiers locaux. Obsidian, les connecteurs et les tâches planifiées sont facultatifs.
+Omitia Brain est un kit ouvert en Markdown pour enregistrer les connaissances métier, retrouver le contexte et le maintenir utile. Il fonctionne avec un agent capable de lire et modifier des fichiers ; Obsidian, les connecteurs et les tâches planifiées sont facultatifs. Ce dépôt contient la méthode, les modèles et les missions. Le brain de votre entreprise reste dans un espace privé séparé.
 
-Ce dépôt contient la méthode, les modèles et les missions en langage naturel. Le brain privé de votre entreprise reste dans un espace séparé, sous votre contrôle.
-
-[English](README.md) · [Démarrer avec votre agent](DEMARRER.md) · [Comprendre les principes](docs/principles.md) · [Voir un exemple fictif](examples/studio-brain/README.md)
+[English](README.md) · [Démarrer](DEMARRER.md) · [Principes](docs/principles.md) · [Exemple fictif](examples/studio-brain/README.md)
 
 ## Construire son brain
 
-1. Téléchargez ou clonez ce dépôt et ouvrez le dossier avec votre agent.
+1. Téléchargez ou clonez ce dépôt et ouvrez-le avec votre agent.
 2. Donnez-lui cette consigne :
 
-   > Lis START-HERE.md et aide-moi à construire ou enrichir le brain de mon entreprise. Accompagne-moi en français. Adapte-toi à ce que je peux fournir maintenant et indique où seront rangés les fichiers privés avant de les écrire.
+   > Lis START-HERE.md et aide-moi à construire ou enrichir le brain de mon entreprise. Accompagne-moi en français. Utilise ce que je peux fournir maintenant, préserve l'existant et identifie la destination privée avant d'écrire.
 
-3. Apportez ce qui est disponible : une explication, des documents, un projet existant ou des outils connectés. Le démarrage peut être complet immédiatement, limité à un périmètre, ou repris plus tard.
+3. Apportez un brief, des documents, un projet existant ou des outils connectés. Commencez par un sujet ou construisez un premier brain complet ; les questions sans réponse ne doivent pas bloquer le travail utile.
 
-Il n'est pas nécessaire de terminer un questionnaire pour obtenir un premier résultat utile. L'agent exploite les éléments disponibles, distingue les inconnues et reprend les informations existantes. Un collègue peut ensuite ouvrir le dossier de l'entreprise avec son agent pour y contribuer.
+L'agent enregistre les connaissances étayées et montre comment les retrouver. Les prochains contributeurs reprennent depuis les instructions et conventions du brain.
 
-Si vous avez déjà un brain, demandez à l'agent de l'enrichir en respectant ses conventions plutôt que de le reconstruire.
+Le démarrage propose explicitement une skill de consultation partagée, les historiques de tous les agents de travail sur les machines autorisées, leur reprise, l'ingestion continue et l'entretien, ainsi que le scan des dossiers de travail choisis. Le périmètre et les choix acceptés, différés ou refusés sont enregistrés ; une proposition n'installe aucune capacité. Voir la [découverte du travail](docs/work-discovery.md).
 
-Au démarrage, l'agent propose une skill de consultation partagée, l'inventaire des agents de travail et de leurs historiques sur les machines autorisées, la reprise des sessions passées, l'ingestion continue et l'entretien, ainsi qu'un scan des dossiers de travail que vous choisissez. Il présente le périmètre et enregistre vos choix : ces capacités restent facultatives et ne sont pas installées implicitement. Voir la [découverte des sources de travail](docs/work-discovery.md).
-
-Le brain privé enregistre la version du kit qu'il utilise. Les agents lisent cette version figée depuis votre copie locale ou depuis ce dépôt public : la copie locale devient facultative après le démarrage, mais reste utile hors ligne et pour la skill. Voir la [compatibilité agents](docs/agents.md#link-the-brain-to-the-method).
+Le brain privé enregistre le [commit du kit utilisé](docs/agents.md#link-the-brain-to-the-method), consultable localement ou depuis l'origine enregistrée. Gardez une copie locale pour l'usage hors ligne ou la skill.
 
 ## Deux commandes de la skill
 
 | Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
-| Créer ou reprendre le brain privé | `/omitia-brain init` | `$omitia-brain init` |
-| Vérifier les entrées, la recherche et la couverture sans modifier le brain | `/omitia-brain check` | `$omitia-brain check` |
+| Créer ou reprendre | `/omitia-brain init` | `$omitia-brain init` |
+| Vérifier sans modifier le brain | `/omitia-brain check` | `$omitia-brain check` |
 
-Utilisez-les quand la skill du dépôt est découverte, ou sélectionnez `omitia-brain` dans votre interface puis demandez l'action. Ajoutez le chemin du brain privé si nécessaire. `init` préserve l'existant ; `check` rend ses preuves, ses inconnues et les prochaines actions sans réparation ni reconstruction d'index. Une consigne par fichier reste disponible pour tout agent. Voir les [commandes et leur périmètre](docs/commands.md).
+Utilisez la skill du dépôt découverte par votre agent, ou sélectionnez `omitia-brain` dans votre interface puis demandez l'action. Ajoutez le chemin privé si nécessaire. `init` préserve l'existant ; `check` expose preuves, inconnues et prochaines actions sans réparation ni reconstruction d'index. Les [commandes](docs/commands.md) comprennent aussi les consignes par fichier pour les autres agents.
 
 ## Réutiliser les principes
 
-Un CTO peut consulter la documentation sans suivre le démarrage guidé ni adopter l'arborescence proposée :
+| Besoin | Références |
+| --- | --- |
+| Architecture et connaissance | [Principes](docs/principles.md), [assertions, provenance et dates](docs/knowledge-model.md) |
+| Recherche et contexte utile | [Recherche](docs/retrieval.md), [packs et mémoire compacte](docs/context.md) |
+| Contributeurs, autorité et accès | [Gouvernance](docs/governance.md), [documents externes et restrictions](docs/external-references.md) |
+| Sources et travail incomplet | [Sources](docs/sources.md), [continuité](docs/continuity.md) |
+| Travail continu | [Ingestion](docs/ingestion-design.md), [planification](docs/scheduling.md), [fiabilité](docs/reliability.md) |
+| Intégration aux agents | [Agents et espaces de travail](docs/agents.md) |
+| Preuves et limites | [Couverture des mécanismes](docs/mechanism-review.md), [validation](docs/validation.md) |
 
-- [Principes et architecture](docs/principles.md).
-- [Modèle de connaissance, provenance et dates](docs/knowledge-model.md).
-- [Sélection du contexte, résumés et mémoire compacte](docs/context.md).
-- [Autonomie et contributions](docs/governance.md).
-- [Continuité entre ingestions et récupération du contexte](docs/continuity.md).
-- [Recherche et historique](docs/retrieval.md).
-- [Sources](docs/sources.md), [planification](docs/scheduling.md) et [compatibilité agents](docs/agents.md).
-- [Documents conservés dans leurs dossiers ou services et partage contrôlé](docs/external-references.md) : références, consultation ou intégration, avec respect des droits jusque dans les résumés.
-- [Fiabilité, supervision et restauration](docs/reliability.md) et [couverture des mécanismes](docs/mechanism-review.md).
-
-La documentation de référence est en anglais. L'accompagnement et le contenu de votre brain suivent votre langue.
+La référence est en anglais ; l'accompagnement et les notes suivent votre langue. Les principes sont utilisables sans adopter une arborescence fixe.
 
 ## Garder la mémoire utile
 
-Les [missions](missions/README.md) décrivent des objectifs, un périmètre, des permissions et des résultats vérifiables. L'agent choisit les outils pour les exécuter ; le kit n'impose aucun script d'ingestion.
+Commencez par les [apports directs](recipes/direct-contributions.md), les [documents locaux](recipes/local-documents.md) ou les [conversations d'agents](recipes/agent-conversations.md). Le [guide des sources](docs/sources.md) oriente aussi vers les mails, documents partagés, messageries et outils métier.
 
-Les documents locaux, les apports directs et les conversations avec les agents disposent de parcours complets. Des recettes permettent d'adapter l'ingestion aux mails, aux espaces documentaires, aux messageries et aux outils métier disponibles.
+Les [missions](missions/README.md) décrivent le résultat, le périmètre et les preuves attendues. Elles utilisent votre agent à la demande ou votre planificateur après définition des sources, de l'identité, des autorisations, de la cadence et des limites. Un fichier de mission seul ne travaille pas en arrière-plan. Les autorisations déjà accordées sont réutilisées.
 
-Vous choisissez l'autonomie selon les sources et les actions. Les permissions déjà accordées évitent les validations répétitives. Pour exécuter une mission en arrière-plan, il faut un agent et un environnement de planification disponibles ; un fichier Markdown seul ne s'exécute pas.
+Quand l'historique persiste et qu'un agent peut travailler sans intervention, la découverte planifiée est la voie principale d'ingestion ; manquer un hook ne doit pas cacher l'activité éligible. Un historique éphémère nécessite une capture autorisée ou une limite de reprise explicite. La [supervision](missions/supervise.md) observe la couverture réelle ; historique, sauvegarde et [restauration démontrée](missions/recover.md) restent distincts. Ces mécanismes peuvent rester manuels ou non configurés pour un petit brain.
 
-Lorsque l'historique reste accessible et qu'un agent peut travailler en arrière-plan, l'ingestion planifiée est le mécanisme principal. Les hooks sont des accélérateurs ou des moyens de capture facultatifs ; leur absence ne doit pas empêcher le job de découvrir de nouveaux éléments. Si l'historique disparaît avant l'ingestion, une capture autorisée est nécessaire. Voir la [conception des ingestions](docs/ingestion-design.md).
+Le kit fournit une méthode, sans moteur de recherche hébergé ni connecteurs préconfigurés. Vérifiez les [limites de validation](docs/validation.md) pour votre environnement.
 
-Les missions de supervision recherchent aussi les travaux manqués et les contrôles devenus silencieux. La méthode distingue historique, sauvegarde et restauration réellement vérifiée. Ces mécanismes restent proportionnés aux besoins ; ils ne sont pas des prérequis administratifs pour commencer.
-
-Les limites et le périmètre des vérifications sont explicités dans [Validation](docs/validation.md). Les recettes de connecteurs ne sont pas des intégrations préinstallées.
-
-Le kit est sous [licence MIT](LICENSE), utilisable commercialement. Votre brain peut rester privé.
+Pour contribuer : [guide](CONTRIBUTING.md) et [changements](CHANGELOG.md). Les exemples sont fictifs ; les données d'entreprise restent privées. La [licence MIT](LICENSE) permet l'usage commercial.

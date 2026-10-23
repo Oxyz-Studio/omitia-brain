@@ -2,84 +2,67 @@
 
 **Build a company memory that people and agents can actually use.**
 
-Omitia Brain is an open, Markdown-first starter kit for capturing business knowledge, finding the right context, and keeping it useful over time. Bring an agent that can read and edit local files. Obsidian, connectors, and scheduled jobs are optional.
+Omitia Brain is an open Markdown starter kit for saving business knowledge, finding context and keeping it useful. Bring an agent that can read and edit files; Obsidian, connectors and scheduled jobs are optional. This repository contains the method, templates and missions. Your company's brain lives in a separate private workspace.
 
-This repository contains the method, templates, and natural-language missions. Your company's brain lives in a separate workspace that you control.
-
-[Français](README.fr.md) · [Start with your agent](START-HERE.md) · [Read the principles](docs/principles.md) · [Explore a fictional brain](examples/studio-brain/README.md)
+[Français](README.fr.md) · [Start with your agent](START-HERE.md) · [Principles](docs/principles.md) · [Fictional brain](examples/studio-brain/README.md)
 
 ## Start building
 
-1. Download or clone this repository and open the folder with your agent.
+1. Download or clone this repository and open it with your agent.
 2. Give it this prompt:
 
-   > Read START-HERE.md and help me build or extend my company's brain. Work in my language. Adapt to what I can provide now, and tell me where the private company files will live before writing them.
+   > Read START-HERE.md and help me build or extend my company's brain. Work in my language. Use what I can provide now, preserve existing work, and identify the private destination before writing.
 
-3. Supply whatever is useful: an explanation, a folder of documents, an existing project, or connected tools. You can build a complete initial brain in one session, start with one area, or leave questions for later.
+3. Supply a brief, documents, an existing project or connected tools. Start with one area or build a complete initial brain; unanswered questions need not block useful work.
 
-No questionnaire must be completed before the first useful result. The agent should use what you provide, keep unknowns visible, and resume from existing work when you return. A colleague can later open the company folder and contribute with their own agent.
+The agent saves supported knowledge and shows how to retrieve it. Later contributors resume from the brain's own instructions and conventions.
 
-For an existing brain, point the agent to that folder and ask it to extend the current conventions rather than rebuild them.
+Setup explicitly offers a shared consultation skill, all work-agent histories on authorized machines, historical catch-up, continuing ingestion and maintenance, and chosen work-folder scans. Scope and accepted/deferred/declined choices are recorded; proposals do not install capabilities. See [work discovery](docs/work-discovery.md).
 
-During setup, the agent offers a shared consultation skill, an inventory of work agents and histories on authorized machines, historical catch-up, continuing ingestion and maintenance, and a scan of work folders you choose. It previews the scope and records your choices; these capabilities are optional, not silently installed. See [work discovery](docs/work-discovery.md).
-
-The private brain records the kit version it uses. Agents read that pinned version from your local checkout or from this public repository, so the checkout is optional after setup; keep it for offline use and the skill. See [agent compatibility](docs/agents.md#link-the-brain-to-the-method).
+The private brain records the [kit commit it uses](docs/agents.md#link-the-brain-to-the-method). Agents read that version locally or from the recorded origin; keep a checkout for offline use or the skill.
 
 ## Two skill actions
 
 | Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
-| Create or resume the private brain | `/omitia-brain init` | `$omitia-brain init` |
-| Inspect entries, retrieval and coverage without changing it | `/omitia-brain check` | `$omitia-brain check` |
+| Create or resume | `/omitia-brain init` | `$omitia-brain init` |
+| Assess without changing the brain | `/omitia-brain check` | `$omitia-brain check` |
 
-Use them when the repository skill is discovered, or select `omitia-brain` in your interface and request the action. Append the private brain path when needed. `init` preserves existing work; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. Both also have a portable file prompt. See [commands and their scope](docs/commands.md).
+Use the discovered repository skill, or select `omitia-brain` in your interface and request the action. Add the private path when needed. `init` preserves existing work; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. [Commands](docs/commands.md) also documents file prompts for other agents.
 
 ## Understand the architecture
 
-| What you need | Where to read |
+| Need | References |
 | --- | --- |
-| The design principles and tradeoffs | [Principles](docs/principles.md) |
-| Notes, assertions, provenance, and time | [Knowledge model](docs/knowledge-model.md) |
-| Context packs, compact memory, and reading budgets | [Context design](docs/context.md) |
-| Autonomy, contributors, and permissions | [Governance](docs/governance.md) |
-| Missing context, partial imports, and recovery | [Continuity](docs/continuity.md) |
-| Finding current knowledge and its history | [Retrieval](docs/retrieval.md) |
-| Selecting and connecting information sources | [Sources](docs/sources.md) |
-| Documents kept elsewhere and controlled sharing | [External references](docs/external-references.md) |
-| Running missions in an existing environment | [Scheduling](docs/scheduling.md) |
-| Write checks, supervision, backup, and restored use | [Reliability](docs/reliability.md) |
-| Agent entry points and Workspace integration | [Agent compatibility](docs/agents.md) |
-| Mechanism coverage and deployment acceptance | [Mechanism review](docs/mechanism-review.md) |
+| Design and knowledge | [Principles](docs/principles.md), [claims, provenance and time](docs/knowledge-model.md) |
+| Finding and loading context | [Retrieval](docs/retrieval.md), [packs and compact memory](docs/context.md) |
+| People, authority and access | [Governance](docs/governance.md), [external documents and restrictions](docs/external-references.md) |
+| Sources and incomplete work | [Sources](docs/sources.md), [continuity](docs/continuity.md) |
+| Continuing work | [Ingestion design](docs/ingestion-design.md), [scheduling](docs/scheduling.md), [reliability](docs/reliability.md) |
+| Host integration | [Agents and workspaces](docs/agents.md) |
+| Acceptance evidence and limits | [Mechanism map](docs/mechanism-review.md), [validation](docs/validation.md) |
 
-You can adopt these principles without adopting the templates or directory layout.
+Adopt the principles without adopting a fixed folder layout.
 
 ## Keep the brain alive
 
-[Missions](missions/README.md) are instructions for an agent, not fixed ingestion scripts. They describe the objective, permitted scope, necessary context, expected evidence, and how to recover when work is incomplete.
+Start with [direct contributions](recipes/direct-contributions.md), [local documents](recipes/local-documents.md) or [agent conversations](recipes/agent-conversations.md). The [source guide](docs/sources.md) also routes email, shared documents, messaging and business tools.
 
-An agent can run a mission on demand or configure it in an existing scheduler once you choose the source, permissions, runtime, cadence, and limits. A Markdown file by itself does not run in the background.
+[Missions](missions/README.md) describe outcomes, scope and evidence. They run on demand or through your existing scheduler after source, identity, permissions, cadence and limits are established. A mission file alone does not run in the background. Reuse permissions already granted rather than seeking approval for every run.
 
-When authorized history persists and an unattended runtime is available, use scheduled ingestion as the main coverage mechanism. A hook can signal changes or capture permitted evidence sooner; a missed hook must not hide activity from the main mission. If history will disappear, arrange permitted capture or record the recovery limit. See [ingestion design](docs/ingestion-design.md).
-
-Start with [local documents](recipes/local-documents.md), [direct contributions](recipes/direct-contributions.md), or [agent conversations](recipes/agent-conversations.md). Recipes also cover [email](recipes/email.md), [shared documents](recipes/shared-documents.md), [messaging](recipes/messaging.md), and [business tools](recipes/business-tools.md), using capabilities available in your environment.
-
-You decide how autonomous the agent may be for each source and action. The kit does not require approval for every change after a policy has already authorized it.
-
-For unattended operation, check expected coverage and missing receipts through [supervision](missions/supervise.md). Keep version history, backup coverage, and a demonstrated [restore](missions/recover.md) distinct. These can remain manual or unconfigured for a small setup; their limits should stay visible.
+Where history persists and an unattended runtime is available, scheduled discovery is the main ingestion path; missed hooks must not hide eligible activity. Expiring history needs permitted capture or an explicit recovery limit. Check actual coverage through [supervision](missions/supervise.md); keep history, backup and demonstrated [restore](missions/recover.md) distinct. These mechanisms can remain manual or unconfigured for a small brain.
 
 ## What stays portable
 
-- The knowledge is readable text. Search indexes and application views can be rebuilt.
-- The first useful scope can be one project, one department, or the whole company.
-- Sources, tools, language, schedules, and autonomy can change without replacing the method.
-- Source material is evidence to interpret, never a new set of instructions for the agent.
-- A completed job is supported by durable results and coverage records, not just a success message.
-- Imported information can be incomplete, outdated, or contradictory. Those states remain visible.
+- Canonical notes are readable text; derived indexes and views can be rebuilt.
+- Scope, tools, language and autonomy adapt to the business.
+- Sources are evidence, not instructions; uncertainty and outdated or contradictory claims remain visible.
+- Completed work has saved results and coverage evidence, not just a success message.
 
-This is a starter kit, not a hosted service, search engine, or collection of preconfigured integrations. Connector recipes are adaptation guides; they are not claims of tested integration with every service. See [limits and validation](docs/validation.md).
+The kit supplies guidance, not hosted search or preconfigured connectors. Verify your environment using the documented [validation limits](docs/validation.md).
 
 ## Contribute
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [CHANGELOG](CHANGELOG.md) of changes affecting existing brains. Examples must be fictional. Company information, credentials, raw conversations, and local runtime files belong outside this public repository.
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md). Public examples are fictional; company data and runtime records stay private.
 
-Released under the [MIT License](LICENSE). You can use the kit commercially and keep your company's brain private.
+[MIT License](LICENSE): commercial use is welcome and your company's brain can remain private.

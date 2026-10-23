@@ -14,21 +14,13 @@ Maintenance cannot authorize itself to connect a service, increase ingestion sco
 
 Choose checks that address actual risks in this brain:
 
-- Can a newcomer or agent find the current reference notes from the entry point?
-- Do changed notes and context packs link to the right evidence and replacements?
-- Are time-sensitive claims overdue, and are recurring failures hiding behind “successful” invocations?
-- Do ingestion receipts match the actual knowledge and covered source ranges? Inspect a useful sample, not just counters.
-- If work-session ingestion is configured, does its authorized machine/agent inventory still match observed use? Are new agents or moved histories discovered within the grant, unchecked pairs visible, and backlog separated from ongoing coverage? Follow [work discovery](../docs/work-discovery.md#inventory-agents-and-histories-on-authorized-machines) without extending access silently.
-- Are there unresolved context gaps, broken source locators, partial items, or abandoned retries that need reconciliation?
-- Have duplicated notes, conflicting statements, or large uncategorized areas made retrieval unreliable?
-- Are source access, private storage boundaries, retention rules, and the agent runtime still aligned with the recorded configuration?
-- Do restricted sources and their notes, search metadata, packs, receipts, and exports retain the required audiences? Have rights changes reached managed derivatives? Use the [access contract](../docs/governance.md#preserve-access-boundaries-through-derived-knowledge); do not mistake labels for enforced restrictions.
-- Are the scheduled missions still useful at their current frequency, given the user's goals and actual source activity?
-- Are relied-on controls active in this environment, and what has actually been reviewed, checked deterministically, or enforced?
-- Can a missing expected receipt or an old health observation be noticed if the job or its scheduler stops? Distinguish intended pauses from failures.
-- Is the configured recovery path still usable, with its coverage and last isolated restore check visible?
-- Do the home, context packs, and any brain query skill still route to current notes and match the brain's scope? Are outdated per-person pointers reported rather than silently edited? See [access points](../docs/agents.md#keep-access-points-current).
-- Is a newer kit commit available than the brain's pin? Report it according to the recorded notice state; do not upgrade within this mission. See [kit updates](../docs/agents.md#check-for-kit-updates).
+- **Retrieval and structure:** do the home, context packs and query skill match the brain's scope and help a newcomer find current references, evidence and replacements? Check duplicates, conflicting accounts and uncategorized areas that impair answers. Follow [access-point upkeep](../docs/agents.md#keep-access-points-current); report outdated per-person pointers rather than silently editing them.
+- **Evidence and freshness:** do sampled receipts match actual knowledge and covered source ranges? Look for overdue claims, missing context, broken source locators, partial items and abandoned retries; route them to revalidation or reconciliation. Counters alone are insufficient.
+- **Work-session coverage:** if configured, does the authorized machine/agent inventory still match observed use? Are new agents or moved histories discovered within the grant, unchecked pairs visible, and backlog separated from ongoing coverage? Follow [work discovery](../docs/work-discovery.md#inventory-agents-and-histories-on-authorized-machines) without extending access silently.
+- **Access and retention:** do source access, private storage, runtime, retention rules and actual audiences still match policy, including notes, search metadata, packs, receipts and exports after rights changes? Apply the [access contract](../docs/governance.md#preserve-access-boundaries-through-derived-knowledge); labels do not establish enforcement.
+- **Recurring work:** are the missions and their frequency still useful for actual source activity? Use [supervision](supervise.md) to distinguish successful invocations from useful coverage, intentional pauses from failures, and current observations from old health reports. Check whether missing receipts would be noticed if the job or scheduler stopped.
+- **Validation and recovery:** are relied-on controls active, and what has actually been reviewed, checked deterministically or enforced in this environment? Is the recovery path's coverage and last isolated restore test visible and still usable? Follow [reliability](../docs/reliability.md) for the relevant evidence.
+- **Method version:** is a newer kit commit available than the brain's pin? Follow the recorded [update notice](../docs/agents.md#check-for-kit-updates); this mission does not upgrade the method.
 
 Repair safe issues within the granted scope. Route specific work to ingestion, consolidation, revalidation, or reconciliation when those missions have different permissions or budgets. Avoid automatic cosmetic rewrites of healthy notes.
 

@@ -9,4 +9,4 @@ All names, companies, conversations, and commercial details here are invented. T
 - [Command checks](command-checks.md): initialize or resume, perform a read-only assessment, preserve an older method pin and resolve an unknown target.
 - [External references and access](external-access.md): documents remain at source; reference-only, consultation, and integration grants stay distinct, with restricted derivatives and explicit revocation limits.
 
-The example chooses one autonomy policy. It is not a default every business must adopt. Its weekly mission remains unscheduled: no runtime or connector has been configured just to make the example look complete.
+The studio example chooses one autonomy policy, not a default for every business. Its weekly mission remains unscheduled: no runtime or connector has been configured just to make the example look complete.

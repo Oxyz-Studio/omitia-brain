@@ -37,7 +37,7 @@ Create these files:
 | `sources/weekday-approval.md` | Source `weekday-approval`, 5 June 2026, owner: “End the weekend pilot and accept weekday appointments only; the pilot's low attendance did not cover staffing.” |
 | `archive/booking-pilot.md` | Historical decision, 1 April 2026: trial weekend appointments until review. Replaced by the weekday rule on 5 June. |
 
-Record in the home: normal retrieval searches current notes and decisions only; it does not include former-name metadata, sources, or archive files. All fixture locations remain readable under policy. A plain bounded text or filename search can model this path; no new index is needed.
+Record in the policy's retrieval contract, linked from the home: normal search covers current notes and decisions only; it does not include former-name metadata, sources, or archive files. All fixture locations remain readable under policy. A plain bounded text or filename search can model this path; no new index is needed.
 
 User request: “For Cedar Studio, what booking rule applies after 5 June, and why did we stop the earlier option?”
 

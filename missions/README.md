@@ -37,11 +37,9 @@ The agent reads the current private policy at each run. Instructions in imported
 
 ## Durable results, not a success message
 
-Every run leaves a receipt based on [the run-report template](../templates/run-report.md). It identifies the mission, actual source coverage, changes made, items left unresolved, and the next safe continuation. A successful agent invocation does not prove that the source was fully fetched or that useful knowledge was integrated.
+Every run leaves a durable record of the mission, actual source coverage, changes made, unresolved items, and next safe continuation. One existing record can serve as both source receipt and run report when it covers both purposes; otherwise link to the canonical evidence rather than copying it. Use [the run-report template](../templates/run-report.md) when helpful. A successful agent invocation does not prove that the source was fully fetched or that useful knowledge was integrated.
 
-Keep collection, processing, and integration distinct. Use the shared outcomes `collected`, `partial`, `blocked`, `integrated`, `no-durable-change`, and `intentionally-skipped` in [ingestion records](../templates/ingestion-log.md). A source item can be fetched but incomplete; fully read but intentionally produce no durable knowledge; or understood but blocked from integration by policy.
-
-Use stable source identifiers and version or time coverage. Do not advance a watermark past an unresolved gap unless the gap is separately recorded with a reliable recovery path. Repeat runs should recognize work already done and avoid duplicating notes. A completed snapshot or range does not mean a changing source is permanently complete.
+For source work, follow the shared [coverage, outcomes, and recoverable completion contract](../docs/continuity.md). It distinguishes collection, review, and integration, preserves unresolved gaps across cursor advances, and prevents repeated delivery from producing duplicate knowledge. Completion applies only to the source version or range actually examined.
 
 ## Automation is a local choice
 

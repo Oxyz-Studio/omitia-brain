@@ -1,12 +1,12 @@
 # Continuity across ingestions
 
-An agent starts each run with limited context. Durable records must carry the continuity: what was read, which version it came from, what it meant, what changed, and what still needs work. A conversation summary or a successful job status is not enough.
+Durable records must carry what was read, its version and meaning, what changed, and what remains. A conversation summary or successful job status cannot supply that continuity.
 
-Use this contract in the [ingestion mission](../missions/ingest.md). The [maintenance mission](../missions/maintain.md) checks that it remains true over time.
+The [ingestion mission](../missions/ingest.md) applies this contract; [maintenance](../missions/maintain.md) checks it over time.
 
 ## Record coverage, not just a last-run date
 
-For each source, maintain a stable identity and an explicit access and retention policy in the [source record](../templates/source.md). For each processed unit, write a small [ingestion receipt](../templates/ingestion-log.md) that identifies:
+The [source record](../templates/source.md) holds stable identity and explicit access and retention policy. Each processed unit needs a compact [receipt](../templates/ingestion-log.md) identifying:
 
 - The source identity and observed version, revision, or snapshot.
 - The range actually examined, such as message IDs, document sections, pages, records, or a bounded time window with stable item IDs.
@@ -14,13 +14,13 @@ For each source, maintain a stable identity and an explicit access and retention
 - Resulting canonical notes, or the reason no notes were created.
 - A retrieval readback result for knowledge written or changed.
 
-Use the granularity the source supports. A tiny document may be one unit; a long conversation needs ranges. If versioning is unavailable, record the observation time and a suitable fingerprint or retained snapshot where permitted. State the limitation. A source-content fingerprint is a change detector, not evidence of what the source said.
+Use supported granularity: one unit for a tiny document, ranges for a long conversation. Without versioning, record observation time and a suitable fingerprint or permitted snapshot, with its limits. A fingerprint detects change; it does not prove what the source said.
 
-Do not use a session title, a vague "processed through Tuesday," or an agent's memory as the only checkpoint. Overlapping imports, edits to old messages, and interrupted runs make these unreliable.
+A session title, "processed through Tuesday," or agent memory alone cannot checkpoint overlapping imports, edited messages, or interruptions reliably.
 
 ## Keep outcomes distinct
 
-The labels below are a shared example vocabulary for semantic outcomes. They may be written as short values in the receipt; they do not require a fixed schema or workflow engine. One receipt can describe several versions or ranges if their coverage and outcomes remain unambiguous.
+These example outcome labels need no fixed schema or workflow engine. One receipt can cover several versions or ranges if their coverage and outcomes remain unambiguous.
 
 | Outcome | Meaning | Next treatment |
 | --- | --- | --- |
@@ -31,7 +31,7 @@ The labels below are a shared example vocabulary for semantic outcomes. They may
 | `intentionally-skipped` | A permitted policy or authorized decision excludes this unit. | Record the reason and relevant policy; revisit if that changes. |
 | `no-durable-change` | The covered unit was examined and yielded no useful new knowledge or was already represented correctly. | Keep the coverage receipt and reason; reconsider if new context changes its meaning. |
 
-An unreadable attachment is not "no durable change." A truncated excerpt cannot be marked integrated for the full source. If some useful facts were integrated, mark the overall unit partial and describe the narrower completed coverage. An explicit retention or exclusion policy may justify a skip; failure to read does not.
+Unreadable material is not "no durable change," and a truncated excerpt cannot complete a full source. Mark the overall unit partial and describe any narrower integrated coverage. A retention or exclusion policy can justify a skip; failure to read cannot.
 
 ## Reconstruct context before integrating
 
@@ -41,9 +41,9 @@ Consider this fictional sequence:
 >
 > Tuesday: "We chose the second one."
 
-Tuesday alone cannot support a durable pricing decision. Retrieve the relevant preceding exchange or a canonical note that preserves both options. Confirm the referent, decision-maker, and scope. If the source cannot be recovered, keep the unresolved statement and its gap; do not guess that "second" means Standard.
+Retrieve the preceding exchange or a canonical note preserving both options. Confirm the referent, decision-maker, and scope before saving a pricing decision. If evidence is unavailable, preserve the gap instead of guessing what "second" means.
 
-New evidence can make an earlier non-actionable fragment meaningful. Revisit the relevant prior coverage, including units previously marked no durable change, when the new material depends on it.
+Revisit prior coverage, including no-durable-change units, when new evidence depends on it or gives it meaning.
 
 ## Complete a unit in recoverable steps
 
@@ -55,30 +55,30 @@ New evidence can make an earlier non-actionable fragment meaningful. Revisit the
 6. **Read back.** Use a plausible future question to find and open the canonical knowledge from the brain's entry points or normal search. Verify meaning, evidence links, and relevant dates.
 7. **Finalize.** Only then mark that coverage integrated and persist the readback outcome.
 
-The record of an integrated unit must include the saved knowledge, receipt, and successful retrieval readback for the version and range actually examined. These are separate pieces of evidence even when they live in one file. A completion flag, stable source ID, or successful run cannot substitute for them. For no-durable-change or intentionally-skipped outcomes, save the examined coverage and reason; do not create filler notes to satisfy a completion rule.
+Saved knowledge, receipt, and successful retrieval readback are distinct completion evidence for the examined version and range, even in one file. A flag, source ID, or successful run cannot replace them. No-durable-change and intentionally-skipped outcomes need coverage and reasons, not filler notes.
 
-Filesystem edits may not be atomic across files. If a run stops after writing notes but before recording a receipt, the next run must inspect the notes and source references before applying the same change again. If it stops after a pending receipt, resume with readback and reconciliation. Use stable source identity, version, and range to recognize duplicate work. Repeated delivery should converge on one canonical assertion, not repeated copies.
+File edits may not be atomic. After an interruption without a receipt, inspect saved notes and source references before reapplying changes. After a pending receipt, resume readback and reconciliation. Deduplicate by stable source identity, version, and range so repeated delivery converges on one canonical assertion.
 
 ## Handle changing sources
 
-A completed range is complete for the observed version. If that source version changes, compare the affected sections and revalidate dependent assertions. An appended message may need only new coverage; an edited earlier message can invalidate a previous conclusion. A renamed file need not be a new source if its stable identity is preserved.
+Completion applies to the observed version. Compare changes and revalidate dependent assertions: appended messages may need only new coverage; edited messages can invalidate conclusions. A rename with preserved identity need not create a new source.
 
-Before finalizing, check that the receipt identifies the content actually read. If the live source changed meanwhile, preserve supported work against the examined version or permitted snapshot and leave changed ranges and dependent claims eligible for revalidation. Never acknowledge a newer version merely because its source ID matches. If the examined content cannot be identified reliably, keep the affected coverage partial and record that limitation.
+Before finalizing, verify that the receipt identifies what was actually read. If the source changed meanwhile, preserve supported work against that version or permitted snapshot and leave changed ranges and dependent claims for revalidation. A matching source ID cannot acknowledge a newer version. Keep coverage partial if the examined content cannot be identified reliably.
 
-When the source cannot supply reliable change markers, use a documented periodic comparison strategy and acknowledge its limits. A time-window overlap helps recover late arrivals; it does not by itself detect every edit or deletion.
+Without reliable change markers, document a periodic comparison strategy and its limits. Overlapping time windows recover late arrivals but cannot detect every edit or deletion.
 
-Missing material is not proof of withdrawal. Confirm whether the connector returned a partial result, access changed, retention expired, or the source deliberately deleted a record. Apply deletion semantics only when the source contract supports them. Review what dependent knowledge may still be retained under the user's policy.
+Missing material may reflect partial results, changed access, expired retention, or deletion. Apply deletion semantics only when the source contract supports them, and review permitted retention of dependent knowledge.
 
 ## Preserve the path back to evidence
 
-Keep original source locators, permitted retained excerpts, or snapshots according to the user's retention decision. A digest is useful for navigating a long history but must point to evidence. Do not replace the only retained evidence with a summary without applying the retention policy and marking the resulting verification limit.
+Keep locators, excerpts, or snapshots under the retention policy. Digests must point to evidence; replacing the only retained evidence with a summary requires applying that policy and recording the verification limit.
 
-Preserve only what the audience may still receive. A locator or dependency record may itself be confidential. Source-rights changes require reviewing derivative access separately from factual validity; continuity does not override [revocation and retention](governance.md#handle-revocation-without-promising-recall).
+Protect confidential locators and dependency records. Review derivative access separately from factual validity; continuity cannot override [revocation and retention](governance.md#handle-revocation-without-promising-recall).
 
-If the current notes fail to explain a new fragment, search the relevant retained archive. Historical, superseded, or review-due material can supply context; it must not silently become a current fact. Read the [retrieval rules](retrieval.md) before promoting it.
+Search the relevant retained archive for context missing from current notes. Historical, superseded, or review-due material may explain a fragment without becoming current knowledge. Follow [retrieval](retrieval.md).
 
 ## Make the next run intelligible
 
-A short handoff should make remaining work actionable: the source unit, exact gap, why it matters, next attempt or dependency, and any dependent views awaiting refresh. Keep receipts compact and link to evidence. Do not accumulate full agent transcripts as ingestion logs.
+A handoff identifies the source unit, exact gap, consequence, next attempt or dependency, and views awaiting refresh. Link compact receipts to evidence; do not use full agent transcripts as ingestion logs.
 
-Maintenance should detect uncovered ranges, repeated failures, expired evidence access, overdue reviews, broken references, duplicate assertions, and summaries that no longer match canonical notes. Surface meaningful gaps under the chosen [autonomy policy](governance.md); do not request a fresh human approval for work already authorized.
+Maintenance checks uncovered ranges, repeated failures, expired evidence access, overdue reviews, broken links, duplicates, and stale summaries. Surface meaningful gaps under the [autonomy policy](governance.md); already authorized work needs no fresh approval.

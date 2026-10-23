@@ -1,6 +1,6 @@
 # Start and check a brain
 
-The kit skill offers two explicit actions. They are instructions executed by your agent with its available tools, not a bundled executable or background service.
+The kit skill offers two actions executed by your agent with its available tools.
 
 ## Invoke an action
 
@@ -13,23 +13,21 @@ Open the kit or make its full checkout available through the [canonical skill in
 | A skill selector in another interface | Select `omitia-brain`, then ask for `init`. | Select `omitia-brain`, then ask for `check`. |
 | Any agent that can read files | “Read START-HERE.md and initialize or resume my private brain.” | “Read docs/commands.md and check my private brain without changing it.” |
 
-Append a private brain path and useful scope, such as `check ../company-brain — project retrieval and work-session coverage`. Treat supplied paths and text as data, not shell fragments. Resolve an unknown target with the user; do not discover it by crawling adjacent folders, and do not mistake this public kit or its fictional examples for the private brain.
+Append the private brain path and scope, such as `check ../company-brain — retrieval and session coverage`. Paths are data, not shell fragments. Resolve an unknown target with the user; do not crawl adjacent folders or assess this kit or its examples as the private brain.
 
-These names reuse one skill. No separate `/init` or `/check` command is installed; generic command names may already belong to the host. The host invocation forms follow the [Claude Code skill interface](https://code.claude.com/docs/en/skills) and [Codex skill interface](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills). A menu entry alone does not prove the workflow was executed correctly.
+One skill supplies both actions, avoiding generic host commands such as `/init`. See the host interfaces for [Claude Code](https://code.claude.com/docs/en/skills) and [Codex](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills). Discovery alone does not establish correct execution.
 
 ## `init`: create or resume useful memory
 
-Follow [START-HERE.md](../START-HERE.md). Honor the private brain's instructions, policy, permitted view and method pin before applying method guidance. A new brain uses the kit commit selected for setup. An existing brain resumes from its saved state; the action does not reset it or replace its files with templates.
+Follow [START-HERE.md](../START-HERE.md), honoring an existing brain's policy, permitted view and method pin. Resume saved work without resetting files or choices; a new brain records the setup commit.
 
-Use the available brief and authorized sources to produce a first useful result, preserve unknowns, and demonstrate normal retrieval from the saved brain. Make the [work-discovery offers](work-discovery.md) explicit: shared consultation across agents, eligible historical sessions, continuing ingestion and maintenance, and chosen work folders. Reuse previous accepted, deferred or declined choices. Installation, broad source discovery and recurring jobs need their own granted scope; the action name grants none of them.
-
-Return where the private brain lives, what is usable, evidence of retrieval, unresolved choices and how to resume. Report only installations and jobs actually configured and verified.
+Use authorized input to save useful knowledge and demonstrate retrieval. Make the guide's [work-discovery offers](work-discovery.md) explicit, without implying installation or recurring permission. Return the private location, usable result, evidence, remaining choices and resume point; report only capabilities actually configured and verified.
 
 ## `check`: a bounded, read-only assessment
 
-Return the assessment in the conversation. This action inspects the private brain; it does not perform a repair or a full ingestion audit by default. Read governing instructions and policy, establish requester and answer audience, and only then open the home, source records or subject notes. Honor the private method pin when consulting method criteria. This command interface can be read from the installed checkout without upgrading that pin; if an older method file is unavailable, report it and continue from the brain's own rules.
+Return a bounded assessment in the conversation. Read governing instructions and policy, establish requester, access identity and answer audience, then open the permitted content. Read method criteria at the private pin. This interface uses the installed checkout without upgrading that pin; missing method files are reported while private-rule checks continue.
 
-Use the requested scope and an agreed budget when supplied. Otherwise inspect entry points and a small representative sample: up to three useful retrieval questions and five recent receipts or source units. State what was selected and what was not observed. Do not claim exhaustive coverage from this sample or launch a broad source inventory to fill unknowns.
+Use the requested scope and budget; otherwise inspect entry points, up to three retrieval questions and five recent receipts or source units. Report the sample and unobserved scope; do not infer exhaustiveness or launch broad discovery to fill gaps.
 
 | Area | Evidence to inspect |
 | --- | --- |
@@ -42,6 +40,6 @@ Use the requested scope and an agreed budget when supplied. Otherwise inspect en
 
 Use only tools with a read-only path. Do not rebuild or refresh an index, ingest sources, update notes or receipts, save a health observation, record kit-version checks, install a skill, change configuration or activate a job. Standing permission for routine writes does not widen this diagnostic action. If a tool automatically refreshes an index or persists results, choose a read-only alternative or mark the check unavailable. A report can be saved separately if the user explicitly asks; keep that write outside the default check.
 
-The criteria can draw on [retrieval](retrieval.md), [work discovery](work-discovery.md) and [reliability](reliability.md) at the brain's pin. Do not execute the [maintenance](../missions/maintain.md) or [supervision](../missions/supervise.md) mission to obtain this assessment: those missions can write or require saved receipts. Repairs are separate requested work under the private policy.
+Consult [retrieval](retrieval.md), [work discovery](work-discovery.md) and [reliability](reliability.md) at the brain's pin as needed. Do not execute mutating missions for this assessment; [maintenance](../missions/maintain.md) and [supervision](../missions/supervise.md) have separate write/receipt contracts. Repairs require separate requested work under private policy.
 
-Return a concise conclusion followed by findings, evidence references, scope and next actions. Use clear states: **verified**, **partial**, **unknown**, **not configured**, **intentionally paused**, or **not applicable**. Include the check date and answering host when they affect freshness. Describe a verified defect concretely; do not reduce unknown or unconfigured state to a misleading overall green/red score. If a different kit commit is observed, report the difference without changing the pin or its tracking metadata.
+Report conclusion, findings, evidence, scope and next actions, with date/host when relevant to freshness. Distinguish **verified**, **partial**, **unknown**, **not configured**, **intentionally paused** and **not applicable** instead of a misleading overall score. Report an observed kit-version difference without changing the pin or tracking metadata.

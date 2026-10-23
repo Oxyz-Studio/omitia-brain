@@ -4,9 +4,7 @@ The kit defines agent work in Markdown. It does not install an execution engine 
 
 A person may run every mission manually. Recurrence is optional and can be added whenever it becomes useful.
 
-During setup, explicitly offer continuing ingestion and proportionate maintenance alongside historical catch-up, using [work discovery](work-discovery.md). Make the proposed sources, actions, coverage checks and reporting concrete; reuse accepted, deferred or declined choices rather than restarting the discussion. An offer is required, activation is optional and follows the permissions below. Do not create one job per agent, folder or mission by default.
-
-For persistent, authorized sources with a viable unattended runtime, scheduled ingestion is the main coverage mechanism. Hooks may accelerate it or supply permitted captures, but source discovery must survive a missed hook. Use the same mission and coverage records across triggers; see [ingestion design](ingestion-design.md).
+During setup, make the concrete offers in [work discovery](work-discovery.md#offer-concrete-continuing-work): historical catch-up, continuing ingestion and proportionate maintenance. Reuse recorded choices; an offer is required, activation is optional. Follow [ingestion design](ingestion-design.md) for a shared mission across manual, scheduled and optional hook triggers, with discovery independent of hooks. Do not create one job per agent, folder or mission by default.
 
 ## Adapt to the existing environment
 
@@ -70,7 +68,7 @@ Record run identity, coverage, safe checkpoints, and unfinished work before the 
 
 Notify according to the user's chosen policy. Quiet healthy runs are often useful; material failures, missing access, or required decisions should still surface through the configured channel. Notification itself must be authorized when it contacts another person or service.
 
-Use [reliability](reliability.md) and the [supervision mission](../missions/supervise.md) to detect missing receipts and ageing observations independently of the worker being monitored. A stable source can be healthy after a recent verified review with no new knowledge; a successful worker can still leave uncovered source versions. Test a reporting path separately from quiet success. Record the available checks, installed enforcement, and backup or restore evidence without claiming mechanisms that have not been observed.
+Use [reliability](reliability.md#observe-useful-work-and-missing-work) and the [supervision mission](../missions/supervise.md) to assess useful coverage, missing receipts and ageing observations independently of the worker when needed. Verify reporting separately from quiet success and describe only observed checks and mechanisms.
 
 ## Choosing a rhythm
 
