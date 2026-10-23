@@ -20,6 +20,8 @@ Automatic discovery is a convenience. Verify it in the installed host. If the sk
 
 The private brain should have its own entry instructions, based on [brain-agents](../templates/brain-agents.md). Add a short host bridge where needed, such as `CLAUDE.md` pointing to the private `AGENTS.md`, rather than copying the rules. For hosts without automatic discovery, the handover prompt should explicitly ask the agent to read the private entry first. That lets another agent enter the company workspace without depending on the first conversation or a specific person's global configuration.
 
+The private home, `AGENTS.md`, and consultation skill should point to one [retrieval contract](retrieval.md#record-the-brains-retrieval-contract) in the brain's policy or its equivalent. It describes the available path and fallback, including per-host index checks when relevant. Keep everyday consultation usable from these private entries without rereading the kit or depending on one person's configuration.
+
 ## Link the brain to the method
 
 The private brain's own `AGENTS.md` carries the everyday rules: reading, answering, and direct contributions do not depend on the kit. Setup changes, ingestion, missions, new sources, maintenance, and method questions do. Record a short method reference in the brain's `AGENTS.md`, using the slot in the [brain-agents template](../templates/brain-agents.md):

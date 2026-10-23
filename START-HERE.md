@@ -20,7 +20,7 @@ Keep company data outside this public kit. Do not put it in examples, templates,
 
 Private does not mean readable by every colleague. If selected sources have different audiences, use permission-controlled areas or a backend with verified filtering before reading or storing them. A Markdown audience label cannot protect a complete clone shared with everyone. Follow the [access-boundary contract](docs/governance.md#preserve-access-boundaries-through-derived-knowledge) for restricted scope without making multi-user infrastructure a prerequisite for a single-audience brain.
 
-For an existing brain, read its home, agent instructions, knowledge policy, and relevant subject notes. Preserve its organization, sources, and contributors. Do not re-run onboarding or overwrite files just because this kit has newer templates.
+For an existing brain, read its governing agent instructions and knowledge policy first. Establish the requester, access identity, and answer audience before opening its home or discovering subject notes. Within that view, follow its retrieval contract, home, and relevant notes. Preserve its organization, sources, and contributors. Do not re-run onboarding or overwrite files just because this kit has newer templates.
 
 For a new brain, determine enough to do useful work:
 
@@ -52,6 +52,8 @@ Record only supported knowledge. Read [the knowledge model](docs/knowledge-model
 
 Use [context design](docs/context.md) when choosing packs, descriptive domain notes, procedures, or runtime-memory pointers. Keep these roles lightweight; do not create them all by default. A pointer carried across sessions must lead to a note the next agent actually reads, not become an outdated rule of its own.
 
+Record the [retrieval contract](docs/retrieval.md#record-the-brains-retrieval-contract) in the private policy or an existing equivalent, and point to it from the home, agent entry, and consultation skill if present. Navigation and ordinary search are enough when no index is configured. If an index exists, record its actual per-host freshness and refresh procedure; do not confuse synchronized notes with a refreshed index.
+
 Unknown permissions are not authorization for unattended mutation. Initial local note creation requested by the user can proceed within that request; defer only the additional action whose scope is unresolved. Leave unavailable connectors unconfigured while continuing with available sources.
 
 ## Produce the first useful result
@@ -81,6 +83,7 @@ Before claiming success:
 - Reopen the files you changed and verify the important assertions against their sources.
 - Demonstrate that the user's first likely question can be answered from the saved brain, with appropriate provenance and freshness.
 - Check that relative links and source references resolve, or explicitly record what cannot be resolved.
+- Check that the home, agent instructions, and any consultation skill reach the same retrieval contract and that a relevant [retrieval scenario](examples/retrieval-checks.md) works through that entry.
 - Check that the brain's method reference names the kit origin and a full commit that exists, or records why the version is unknown.
 - Reconcile the ingestion record with the actual result, including partial work or intentionally omitted material.
 - Check that private content was written only to the intended workspace.

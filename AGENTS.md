@@ -7,7 +7,7 @@ This is a public starter kit. Real company data belongs in a separate private wo
 - To build, resume, or extend a company brain, read [START-HERE.md](START-HERE.md). Use the user's language and available context. A complete setup or a partial setup are both valid choices.
 - To explain or reuse the architecture, start with [docs/principles.md](docs/principles.md), then load only the relevant reference.
 - To change this kit, read [CONTRIBUTING.md](CONTRIBUTING.md) and preserve its portable, natural-language design.
-- To operate an existing private brain, read its own home, agent instructions, policy, and relevant notes. The kit is not permission to override that brain's governance.
+- To operate an existing private brain, read its own agent instructions and policy, establish the permitted view, then use its canonical retrieval contract, home, and relevant notes. The kit is not permission to override that brain's governance.
 
 Keep the method independent of an agent vendor, scheduler, application, or business type. Obsidian is optional. Missions are natural-language contracts, not fixed ingestion scripts.
 

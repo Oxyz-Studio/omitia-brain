@@ -9,7 +9,7 @@
 {List only entries and metadata this home's intended readers may discover. Use separate enforced views or storage when audiences differ; do not reveal a restricted source through its title or locator here.}
 
 - `AGENTS.md`: instructions for agents working here.
-- `KNOWLEDGE_POLICY.md`: authority, permitted actions, and handling rules.
+- `KNOWLEDGE_POLICY.md`: authority, permitted actions, handling rules, and the canonical retrieval contract or its reference.
 - `SOURCES.md` and `INGESTION_LOG.md`, if created: enabled sources and processing coverage.
 - {List only existing source records and notes that help this scope.}
 
@@ -26,5 +26,6 @@
 - Connected sources: {records of sources actually accessible, or none}.
 - Scheduled missions: {active missions with verified scheduling evidence, or not configured}.
 - Access points: {brain query skill in this brain, per-person pointers or hooks described without personal paths, or none}.
+- Retrieval: {pointer to the contract in `KNOWLEDGE_POLICY.md` or its equivalent; describe only discovery metadata this home's readers may see, without duplicating commands or per-host configuration}.
 
 An incomplete setup can still be useful. Expand the scope when asked or when it supports an authorized task. Never treat an unanswered onboarding question as permission.

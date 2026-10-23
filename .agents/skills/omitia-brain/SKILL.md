@@ -17,7 +17,7 @@ This procedure governs moving a brain between kit versions, so it is not read at
 
 - **New or resumed setup:** read [START-HERE.md](../../../START-HERE.md). Adapt to the user's answers; do not force a gradual setup or a complete questionnaire.
 - **Understand the method:** read [principles](../../../docs/principles.md), then the reference relevant to the question.
-- **Query an existing brain:** read its own home and policy, then use [retrieval](../../../docs/retrieval.md). Load only the needed subject context.
+- **Query an existing brain:** read its governing entry and policy, establish the permitted view, then follow that brain's canonical retrieval contract for configured discovery, index freshness, and fallback. Use [retrieval](../../../docs/retrieval.md) for the method; load only the needed subject context and open the relevant notes. If no index exists, authorized navigation and filename/text search are sufficient.
 - **Incorporate a contribution or source:** read the destination brain's policy, locate the existing subject, then select a [source recipe](../../../docs/sources.md) and the [ingestion mission](../../../missions/ingest.md).
 - **Configure or run maintenance:** use the relevant [mission](../../../missions/README.md) and [scheduling guidance](../../../docs/scheduling.md). Follow the user's source/action permissions without asking again for actions already authorized.
 - **Use the brain from other work:** follow [reaching the brain](../../../docs/agents.md#reach-the-brain-from-other-work) and adapt the [brain-skill template](../../../templates/brain-skill.md). Install in a person's configuration only with consent.

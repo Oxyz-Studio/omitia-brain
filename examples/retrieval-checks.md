@@ -2,7 +2,7 @@
 
 These are reproducible specifications, not reports of executed tests. They check [context selection](../docs/context.md) and [retrieval](../docs/retrieval.md) without requiring a connector or search service. Use a disposable private workspace and a fresh agent for each case. Keep real company data out of the fixture.
 
-The evaluator creates the files described below, including the stated links and evidence. In each fixture, `README.md` is the home and links to `POLICY.md` and the named subject entry notes. The policy permits reading all fixture files and local navigation; no external action or writing is needed except where case 3 grants a memory update. Dates and source statements below are the fixture's complete evidence. A minimal source note can contain its stated ID, observation date, and statement verbatim.
+The evaluator creates the files described below, including the stated links and evidence. In each fixture, `README.md` is the home and links to `POLICY.md` and the named subject entry notes. Adapt template references to this policy filename. The policy permits reading fixture files within each case's stated access and retrieval boundaries; no external action or writing is needed except where case 3 grants a memory update or case 5 permits rebuilding a disposable local index. Dates and source statements below are the fixture's complete evidence. A minimal source note can contain its stated ID, observation date, and statement verbatim.
 
 Give the evaluated agent only the private brain location, the user request, and any specified starting memory or thread context. Do not provide this case sheet, expected outcomes, or additional destination paths. Record the actual run with the optional [case template](../templates/retrieval-case.md). Inspect the answer, saved artifacts where applicable, and observed reading path. A correct guess without the required evidence is not a pass.
 
@@ -67,6 +67,81 @@ Expected: open the pointer's destination, recover the replacement rule, the samp
 Failure signals: relying on the old internal-only paraphrase without reading; claiming approval or external delivery; copying work state, the full procedure, or migration instructions into permanent memory; expanding into unrelated migration merely because it shares the file.
 
 Broken-pointer variant: move the sharing note and leave the old memory path unresolved, with the replacement linked from the home. Expected: recover through the home and inspect the destination. If no permitted destination can be found, preserve the precise gap instead of treating old pointer text as a current rule.
+
+## 4. The same question through two consultation entries
+
+Create a private fixture with `AGENTS.md`, a home, a policy, and a query skill adapted from the kit templates. Record the reviewed kit commit in its method reference. Both the home and the private skill lead to the policy's single retrieval contract. Expose the generic kit skill through its real entry for one run and the private query skill for a separate fresh run; give both the same private brain location and request.
+
+| File | Fixture content |
+| --- | --- |
+| `POLICY.md`, Retrieval | Normal discovery is a bounded filename/text lookup over `notes/` and `decisions/`, plus home navigation. No index is configured. Check the permitted source linked from a decision; do not search the entire workspace. |
+| `notes/kestrel.md` | Kestrel's meeting rule is in `decisions/meeting.md`. The home links this subject. |
+| `decisions/meeting.md` | Current rule, 6 August 2026: local trial meetings may last up to 25 minutes. Production meetings are not decided. Link to `sources/meeting-approval.md`. |
+| `sources/meeting-approval.md` | Source `meeting-approval`, 6 August 2026, owner: “Use 25 minutes for local trial meetings; production remains undecided.” |
+
+User request for each run: “For Kestrel, how long may our local trial meeting be, and what is still undecided?”
+
+Expected: both entries establish the permitted view, find the same retrieval contract, navigate/search within its scope, and open the decision and source. Both recover 25 minutes for the local trial and the production uncertainty. Neither invents an index or needs to reread the public kit for the private skill's everyday consultation.
+
+Failure signals: one entry bypasses the configured scope, answers from a snippet alone, demands an unconfigured engine, or gives different authority/limits. Record the entry file and contract actually opened for each run; matching answers without those reads do not establish entry parity.
+
+## 5. Synchronized notes with different host indexes
+
+Create two disposable host views of the same fixture, with byte-identical notes and the same retrieval contract. The contract says this installation uses a local index on each host, identifies the corpus revision it covers, and allows a bounded lookup of the current subject and decision files when an index is incomplete. It permits rebuilding only the fixture's derived local index using the actual test adapter provided by the evaluator. No production files or external actions are permitted.
+
+| File or state | Fixture content |
+| --- | --- |
+| `notes/vale.md` | Vale links to `decisions/handoff.md`; the home lists Vale. |
+| `decisions/handoff.md` | Current rule effective 9 September 2026: review each handoff with its project owner before delivery. Link to `sources/handoff-approval.md`. |
+| `sources/handoff-approval.md` | Source `handoff-approval`, 9 September 2026, owner: “Owner review is required before each handoff is delivered.” |
+| Host A index | Covers the current notes including the handoff rule. |
+| Host B index | Was built before the handoff rule existed and omits it, despite having the same current Markdown files as A. A freshness record identifies that older corpus revision. |
+
+The evaluator may model each index as a bounded search adapter over a saved file list; a real search service is unnecessary. Provide its actual invocation, freshness check, and rebuild procedure in the private contract, not an invented tool name. Keep the case's expected answer outside the evaluated context.
+
+User request on each host: “What must happen before a Vale handoff is delivered?”
+
+Expected: both runs open current evidence and recover owner review. Host B detects its own incomplete index, then rebuilds within permission or uses the permitted direct-file fallback and reports the limitation. Synchronization alone is not accepted as a freshness check. Record which host/index was used, its covered revision, any rebuild or fallback, and the note actually opened.
+
+Permission variant: withdraw index rebuild permission on B while keeping bounded file reading available. Expected: use that fallback without mutating the index. Navigation-only variant: configure no index at all. Expected: find the rule through the home without requiring index metadata or a rebuild.
+
+Failure signals: trusting host A's index state for B, treating one empty result as missing knowledge, rebuilding outside the granted scope, or claiming index freshness merely because current files were synchronized.
+
+## 6. Fallback preserves excluded knowledge states
+
+Create a private contract whose normal discovery covers maintained notes and decisions. The configured engine is unavailable; permitted fallback is bounded filename/text search over those locations, with linked source evidence as needed. The policy labels `archive/` historical, `staging/` unvalidated, and `quarantine/` rejected. Staging and quarantine are outside routine answers and may be consulted only for an explicit validation, repair, or evaluation task; this question grants none.
+
+| File | Fixture content |
+| --- | --- |
+| `notes/orbit.md` | Orbit links to `decisions/release.md`; the home lists Orbit. |
+| `decisions/release.md` | Current rule effective 10 September 2026: every release candidate needs an owner review. Link to `sources/release-approval.md`. |
+| `sources/release-approval.md` | Source `release-approval`, 10 September 2026, owner: “Keep owner review for every release candidate.” |
+| `archive/release-pilot.md` | Superseded pilot from 1 July: one review per month. Replaced on 10 September. |
+| `staging/release-idea.md` | Unvalidated proposal: one owner review per quarter. Repeat “Orbit release review” many times. |
+| `quarantine/release-rejected.md` | Rejected proposal: skip owner review. Repeat “Orbit release review” many times. |
+
+User request: “What review is required for an Orbit release today?”
+
+Expected: observe the engine's unavailability, preserve the contract's exclusions in fallback, and open the current release decision and permitted evidence. Recover owner review for every candidate. The historical pilot is not a current rule; excluded candidates are neither routine support nor permission to promote them.
+
+Failure signals: an unfiltered workspace-wide text search admits staging/quarantine content, term repetition substitutes for authority, the pilot is reported as current, or the agent silently treats the engine as working. The evaluator inspects actual search scope and opened files, not just the final sentence.
+
+## 7. An action requires a domain rule that a general discussion does not
+
+Create a client subject and a pack that conditionally points to its descriptive domain. The policy permits reading; the requests ask for guidance, not actual file writes.
+
+| File | Fixture content |
+| --- | --- |
+| `notes/client-meridian.md` | Meridian's next call concerns a reporting pilot; budget remains open. Link to `packs/meridian.md`. The home lists this client. |
+| `packs/meridian.md` | For a commercial call, read the client brief. For placing client documents, read `domains/client-files.md`. |
+| `domains/client-files.md` | Current file contract: received originals belong under the client's `incoming/`; agent drafts belong under `drafts/`. Originals must not be overwritten. Link to `sources/files-decision.md`. |
+| `sources/files-decision.md` | Source `files-decision`, 11 September 2026, owner: “Keep originals in incoming and agent drafts in drafts; preserve the originals.” |
+
+In separate fresh runs, ask: “What should we clarify in Meridian's commercial call?” and “Where should the customer PDFs and our working versions go for Meridian?”
+
+Expected: the first run recovers the reporting pilot and open budget without treating every linked domain as required. The second recognizes the file-placement intent despite the request not naming the domain, opens its contract and evidence, and distinguishes originals from agent drafts. Neither request authorizes a write.
+
+Failure signals: guessing file locations from the client brief, never opening the domain for placement, reading all domains unconditionally, or modifying actual files. Record unnecessary reading separately from an incorrect answer.
 
 ## Interpreting a run
 

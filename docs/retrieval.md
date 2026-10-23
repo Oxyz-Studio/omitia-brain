@@ -6,7 +6,7 @@ The brain is useful when a later person or agent can recover the right knowledge
 
 1. **Understand the task and time.** Identify the subject, the intended action, and whether the user needs the current state or a historical explanation.
 2. **Establish the authorized view.** Apply the [access-boundary contract](governance.md#preserve-access-boundaries-through-derived-knowledge) to the requester, execution identity, and answer audience before discovery or retrieval. Source metadata can itself be restricted. A broad service credential is not the requester's permission; if the boundary cannot be enforced, withhold affected material before loading it into the model.
-3. **Read the entry point.** Follow the brain's authorized guide and the relevant subject overview or context pack. Use a focused pack when it matches the task.
+3. **Read the entry point and retrieval contract.** Follow the brain's authorized guide and configured discovery rules, then the relevant subject overview or context pack. Use a focused pack when it matches the task.
 4. **Find the canonical account.** Search names, stable IDs, aliases, and related concepts in that view. Open the relevant note rather than relying on a result snippet.
 5. **Check evidence and validity.** Read the supporting permitted source references, effective dates, review needs, unresolved conflicts, and authority relevant to the question.
 6. **Fill targeted gaps.** Consult the connected source if permitted, then retained evidence or history when useful. Expand only as far as needed.
@@ -15,6 +15,28 @@ The brain is useful when a later person or agent can recover the right knowledge
 Use ordinary text and filename search if no semantic index is available. A search index can improve recall but remains replaceable. It must not be the only place storing provenance, permissions, or coverage state.
 
 Follow [context selection](context.md) for task routing, packs, pointers, and adaptive reading budgets. Test actual names and aliases through the configured discovery path: an alias written in metadata is not necessarily indexed. Preserve source identifiers and check identity before creating another note for a variant name.
+
+## Record the brain's retrieval contract
+
+Keep a short account of the discovery path actually available in the private brain's policy, using the [retrieval section](../templates/knowledge-policy.md#retrieval) or an existing equivalent. The private home, agent instructions, and consultation skill should all point to that same contract. Everyday consultation must not depend on finding an instruction only in the public kit.
+
+Record only what changes how a reader finds and uses knowledge:
+
+- The configured tool or command and when to use it: an open question, an unknown subject, an alias, or a gap after navigation. A known note can be opened directly.
+- Its covered locations, indexed fields and aliases, current-knowledge filters, and material result limits. An absent top result does not prove a note is absent.
+- The permitted fallback when the path is unavailable or incomplete: bounded navigation, filename/text search, or a permitted source lookup. Preserve the same access boundaries and knowledge-state distinctions through every fallback.
+- How to open and verify the canonical note and supporting evidence rather than answer from a snippet.
+- If an index is used, its local or shared nature, freshness check, and refresh responsibility described below.
+
+When no index is configured, say so and use the authorized home, links, and ordinary filename/text search. Do not require a search service, invent a command, or block a known-note read. If the contract is missing, use the brain's existing policy within its permitted scope, report the discovery limitation, and add or repair the contract only when writing is authorized.
+
+## Keep indexes current on the answering host
+
+This applies only when the configured path uses an index. Record where that host's index is resolved, whether it is local or shared, which corpus or revision it covers, how freshness is checked, and the actual refresh/rebuild command or procedure. Identify the responsible role or trigger and the permission needed to run it. Keep per-person paths in appropriate local configuration; expose only references suitable for the contract's readers.
+
+Synchronizing notes, pulling Git commits, or restoring files does not necessarily refresh a derived index on another machine. After those events, or when an expected note is missing, check the index used by the host that will answer. A recent build date alone does not establish coverage: check a changed or newly added note through the normal path and open its current file. Index freshness and the validity of its assertions remain separate checks.
+
+Refresh within the recorded permission. Otherwise use the permitted fallback and state the limit; do not present old index results as a complete search. Rebuilding an index does not grant new source access or make staged material admissible. A small brain with navigation only needs no index metadata or rebuild step.
 
 ## Current questions need current support
 
@@ -29,6 +51,8 @@ Follow the configured review and autonomy policy. If the source cannot be checke
 Current retrieval should favor the maintained canonical account. When it lacks an explanation or refers to missing context, search the relevant historical and retained-source material, including review-due, superseded, or archived records.
 
 That fallback can explain how a decision was reached or resolve a phrase such as "the second option." It does not make an old price current or restore a superseded policy. Check scope, chronology, and later replacements before using the material. Preserve historical labels in the answer.
+
+Readable does not mean admissible as current knowledge. Keep unvalidated staging, quarantined material, and rejected candidates out of routine current answers, including when switching to filename/text search or widening a query. Consult them only for an explicitly scoped validation, repair, or evaluation task, without automatically promoting their claims. Retained source evidence may still support an answer when its use is permitted and verified; a review-due or historical record is not automatically false. The brain's contract records the relevant locations and states rather than assuming a universal directory or metadata schema.
 
 If a context pack conflicts with its canonical note, inspect the evidence and refresh the derived view within permission. Do not average the two accounts or trust the shorter one by default.
 

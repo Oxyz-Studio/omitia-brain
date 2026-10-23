@@ -31,6 +31,17 @@ Actions might include reading, collecting, updating factual notes, changing a de
 
 Record what was verified and when. Missing content in a new import is not a deletion instruction. Separate a claim's validity period from the date it was imported.
 
+## Retrieval
+
+{Keep the discovery contract here, or replace this section with a pointer to an existing equivalent. The home, agent instructions, and brain query skill should use the same reference. Adapt only what this scope needs.}
+
+- Normal discovery path and when to use it: {authorized home/links and filename/text search, or an actually configured tool/command for open questions and targeted gaps; known notes may be opened directly}.
+- Coverage and limits: {locations, fields/aliases, exclusions, result limits, and how canonical notes and evidence are opened}.
+- Permitted fallback: {bounded navigation/search/source lookup if the normal path fails; preserve access boundaries and distinguish current knowledge, historical evidence, and unvalidated staging/quarantine/rejected candidates}.
+- Index, if used: {local or shared; host-specific resolver; covered corpus/revision; freshness check and last observation; actual refresh procedure and responsible role/trigger; permission to refresh}. Omit this line when no index is used.
+
+Unvalidated or rejected material is not current support merely because a fallback can read it. Consultation for validation, repair, or evaluation requires that task's scope. Synchronizing the notes does not prove an index is current on the answering host; check coverage and open the current note. Keep assertion-level freshness checks separate.
+
 ## Sources and retention
 
 - Approved source locations and access methods: not configured; record each enabled source separately.

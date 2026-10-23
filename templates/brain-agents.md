@@ -1,9 +1,10 @@
 # Working with this brain
 
-Read the authorized `README.md` and `KNOWLEDGE_POLICY.md` first. Establish the requester, actual access identity, and answer audience before discovering or retrieving notes, sources, or receipts. Find the relevant permitted canonical notes and source records before answering or changing knowledge. Follow only the links needed for the task; do not load the entire brain.
+Read `KNOWLEDGE_POLICY.md` first. Establish the requester, actual access identity, and answer audience before opening `README.md` or discovering notes, sources, or receipts. Within that view, use the policy's retrieval contract or its linked equivalent to find the relevant permitted canonical notes and source records before answering or changing knowledge. Follow only the links needed for the task; do not load the entire brain.
 
 ## Read and reason
 
+- Use the retrieval contract recorded in `KNOWLEDGE_POLICY.md` or its linked equivalent. For open questions or unknown notes, use its configured discovery path and permitted fallback; a known note may be opened directly. Check any required index on the answering host, and preserve access and knowledge-state exclusions when falling back. Open the canonical note before relying on it.
 - State what is known, inferred, missing, stale, or disputed. A note's existence is not evidence that it is current.
 - For a present-tense answer, check claim-level freshness and authority. Use superseded material to explain history, not as the current instruction.
 - If a new message depends on earlier context, retrieve the earlier options, discussion, or original source before resolving it. Record an incomplete item when that context is unavailable; continue independent work.

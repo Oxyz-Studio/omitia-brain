@@ -16,8 +16,9 @@ Resolve the real location of this `SKILL.md`, following links. The brain root is
 ## Consult
 
 1. Read only the brain's governing entries: `AGENTS.md` and its knowledge policy. Establish the requester, access identity, and answer audience before opening the home, packs, or notes; the current workspace may be shared with people outside the brain's audience. If that view cannot be established, stop and say what is missing.
-2. Within that view, start from {the relevant context pack or home section}. Open only the canonical notes and evidence the task needs; never load the whole brain.
-3. Answer with the notes consulted, their freshness, and what is unknown, stale, or disputed.
+2. Within that view, use the retrieval contract in the brain's knowledge policy or its linked equivalent. Follow the configured path for an open question or unknown note, check any required index on the answering host, and use only the permitted fallback with its access and knowledge-state exclusions. If no index exists, use the authorized navigation and filename/text search; a known note may be opened directly. Report a missing contract or unavailable capability rather than invent one.
+3. Start from {the relevant context pack or home section} when useful. Open only the canonical notes and evidence the task needs; never load the whole brain or answer solely from a snippet.
+4. Answer with the notes consulted, their freshness, and what is unknown, stale, or disputed.
 
 ## Limits
 

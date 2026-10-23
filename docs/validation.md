@@ -50,6 +50,14 @@ An independent documentation review caught two inconsistencies before publicatio
 
 This exercise checked instructions and saved artifacts, not security enforcement. Its directory layout is an intended audience map; operating-system permissions, a multi-user backend, actual identities, source resolvers, Microsoft integration, and revocation were not configured or tested. The fixture explicitly withholds serving restricted content to real members until those boundaries are installed and verified. Use the [external access cases](../examples/external-access.md) to test a real deployment's delivery paths separately.
 
+## Retrieval-contract checks, 23 October 2026
+
+The retrieval guidance and templates now share one private contract for configured discovery and fallback, with optional index checks on the answering host. An independent documentation review checked the entry paths and the four added [retrieval scenarios](../examples/retrieval-checks.md#4-the-same-question-through-two-consultation-entries). It found an older home-before-policy ordering in the setup guide and private agent template; both were aligned with the policy/view-first consultation path and the focused rereview found no remaining inconsistency.
+
+Controlled walkthroughs in a disposable fictional workspace checked that the adapted private agent and query-skill entries reach the same policy, decision, and evidence; modeled a current and a stale host-local index using saved corpus manifests; ran bounded text fallback with staging/quarantine outside its search arguments; and traced the client pack's conditional domain route for discussion versus file placement. The stale view recovered through the permitted file fallback without mutating its index. Local file targets and section anchors, skill frontmatter, and the relative Claude skill link were also checked.
+
+These are artifact and route checks, not fresh-model executions of every scenario, actual host discovery, live search-service validation, or proof that an agent will enforce the contract. The generic/private entry-parity scenario, permission variants, and full cross-host behavior remain reproducible specifications for each deployment's real tools and agents. No runtime or executable test suite was added to the kit.
+
 ## What these checks do not establish
 
 Explicit file entry makes the method portable. It does not establish automatic skill discovery in every agent host, reliable access to every conversation format, or the quality of every model's interpretation.
