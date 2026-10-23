@@ -51,6 +51,8 @@ La référence est en anglais ; l'accompagnement et les notes suivent votre lang
 
 Commencez par les [apports directs](recipes/direct-contributions.md), les [documents locaux](recipes/local-documents.md) ou les [conversations d'agents](recipes/agent-conversations.md). Le [guide des sources](docs/sources.md) oriente aussi vers les mails, documents partagés, messageries et outils métier.
 
+Transformez les corrections observées en [procédures vérifiées dans leur périmètre](recipes/experience-to-procedure.md), ou [conservez une analyse utile](recipes/direct-contributions.md#preserve-a-useful-synthesis-from-a-question) lorsque c'est autorisé. Ces parcours gardent les preuves, les limites et les besoins de révision.
+
 Les [missions](missions/README.md) décrivent le résultat, le périmètre et les preuves attendues. Elles utilisent votre agent à la demande ou votre planificateur après définition des sources, de l'identité, des autorisations, de la cadence et des limites. Un fichier de mission seul ne travaille pas en arrière-plan. Les autorisations déjà accordées sont réutilisées.
 
 Quand l'historique persiste et qu'un agent peut travailler sans intervention, la découverte planifiée est la voie principale d'ingestion ; manquer un hook ne doit pas cacher l'activité éligible. Un historique éphémère nécessite une capture autorisée ou une limite de reprise explicite. La [supervision](missions/supervise.md) observe la couverture réelle ; historique, sauvegarde et [restauration démontrée](missions/recover.md) restent distincts. Ces mécanismes peuvent rester manuels ou non configurés pour un petit brain.

@@ -4,7 +4,9 @@ All names, companies, conversations, and commercial details here are invented. T
 
 - [Northstar Bike Studio brain](studio-brain/README.md): a small project brain that a second contributor can enrich. It includes a policy, current knowledge, source evidence, a decision, ingestion coverage, and run receipts.
 - [Continuity walkthrough](continuity.md): why “the second one” cannot be integrated safely without the earlier options; how a later run recovers the meaning.
-- [Retrieval checks](retrieval-checks.md): fictional cases for subject routing, old names, historical reasons, stale pointers, and bounded reading. Candidate context is separate from evaluation expectations.
+- [Retrieval checks](retrieval-checks.md): fictional cases for subject routing, old names, historical reasons, stale pointers, bounded reading, misleading citations and questions without established answers. Candidate context is separate from evaluation expectations.
+- [Procedure checks](procedure-checks.md): observed corrections become bounded procedures; new formats, unproved lessons and changed conditions retain their limits.
+- [Synthesis checks](synthesis-checks.md): save an authorized comparison, recover it in a new session and revise its dependencies while preserving read-only and consultation-only limits.
 - [Work-discovery checks](work-discovery-checks.md): explicit setup offers, multi-agent/machine coverage, selective project distillation, clarification, and bounded folder choices.
 - [Command checks](command-checks.md): initialize or resume, perform a read-only assessment, preserve an older method pin and resolve an unknown target.
 - [External references and access](external-access.md): documents remain at source; reference-only, consultation, and integration grants stay distinct, with restricted derivatives and explicit revocation limits.

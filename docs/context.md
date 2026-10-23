@@ -14,7 +14,7 @@ Within the [authorized view](retrieval.md), read the brain's entry and policy, a
 | --- | --- | --- |
 | Context pack | A task-oriented selection of canonical notes, with brief orientation and reasons to open them. | Use it to choose relevant reading; check the underlying notes for claims the answer depends on. |
 | Descriptive domain note | Shared terms, entities, locations, states, invariants, and known limits of a subject. | Use it to interpret knowledge and apply local rules consistently. |
-| Procedure, playbook, or skill | Steps and conditions for performing repeatable work. | Read it when that work is needed, within the established permissions. |
+| Procedure, playbook, or skill | Steps and conditions for performing repeatable work. | Read it when that work is needed, within the established permissions. Use [experience to procedure](../recipes/experience-to-procedure.md) to turn an observed correction into bounded, tested guidance. |
 
 These roles can be sections; no extra folders or three files per subject are required. Packs are derived views: link durable rules to their canonical home. Use the optional [context-pack template](../templates/context-pack.md) where helpful.
 

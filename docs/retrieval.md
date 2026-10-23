@@ -93,3 +93,5 @@ Save the result in the receipt. If the configured path requires an unrefreshed i
 Lead with the result and provide evidence, dates, and uncertainty needed to assess it. Ask only for information that materially blocks authorized work; continue independent work.
 
 Say plainly when no answer is established. Preserve what the organization does not know.
+
+If an analysis is worth keeping, use [the synthesis contribution path](../recipes/direct-contributions.md#preserve-a-useful-synthesis-from-a-question) within the existing retention and write permissions. Consultation and read-only checks do not become writes merely because the answer is useful.

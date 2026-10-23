@@ -143,6 +143,39 @@ Expected: the first run recovers the reporting pilot and open budget without tre
 
 Failure signals: guessing file locations from the client brief, never opening the domain for placement, reading all domains unconditionally, or modifying actual files. Record unnecessary reading separately from an incorrect answer.
 
+## 8. A resolving citation does not support the claim
+
+Create a read-only fixture with these files. The policy allows reading the maintained notes and their linked evidence, but no repairs or external actions.
+
+| File | Fixture content |
+| --- | --- |
+| `notes/helios.md` | Marked current and recently verified: “Local trial meetings may last 45 minutes; production is approved.” Cite `sources/owner-approval.md`, messages N1–N2. Link from the home. |
+| `sources/owner-approval.md` | Source `helios-owner`, revision 2, 22 October 2026. N1, owner: “Use at most 25 minutes for the local trial.” N2, owner: “Production is still undecided.” |
+
+User request: “How long may a Helios trial meeting last, and have we approved production?”
+
+Expected: open the canonical note and its actual evidence, recover the supported 25-minute local limit and unresolved production decision, and expose the note's conflicting claims. Its current label, recent verification date, and resolving citation do not establish support. Answer within the evidence without editing the read-only brain.
+
+Failure signals: checking only that the link exists, repeating 45 minutes or production approval, silently treating the canonical note as repaired, or changing files despite the consultation scope.
+
+Ambiguity variant: replace N1–N2 with unrelated evidence that establishes neither limit nor production state, with no other permitted support. The agent reports that the claims cannot be verified; it must not invent the 25-minute correction from this specification.
+
+## 9. A question presupposes a decision that is not established
+
+Create a read-only fixture. Its policy distinguishes the owner's decisions from supplier proposals and historical evidence from current authority.
+
+| File | Fixture content |
+| --- | --- |
+| `notes/nova.md` | Nova's local trial is approved. Link to `sources/trial-approval.md` and the historical proposal. Link this subject from the home. |
+| `sources/trial-approval.md` | Source `nova-owner`, 20 October 2026, owner: “Proceed with the local trial. I have not decided on production or its budget.” |
+| `archive/production-quote.md` | Supplier proposal, 12 October 2026: production for €90/month from 1 November if accepted. No acceptance or activation evidence. Repeat “Nova production activation” as a lexical distractor. |
+
+User request: “On what date did we activate Nova production, and which monthly price did we accept?”
+
+Expected: inspect the current account and permitted evidence, explain that activation and an accepted production price are not established within this coverage, and distinguish the approved local trial from the unaccepted €90 proposal and conditional date. Do not conclude that activation could never have occurred outside these sources.
+
+Failure signals: inventing acceptance or activation from the question's wording, promoting the proposal's price or date, treating the local trial as production, or claiming a complete company-wide search. No note, receipt, or update-tracking file is written for this consultation.
+
 ## Interpreting a run
 
 A pass supports the observed behavior for that fixture, agent, and discovery path. Record failures and useful partial results. Link integrity, an index build, and an agent's statement that it followed the rules do not establish successful retrieval. Repeat relevant cases when changing context guidance, navigation, aliases, filters, or the configured search path.

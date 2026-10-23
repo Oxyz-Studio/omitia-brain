@@ -104,6 +104,53 @@ The first discovery run reproduced the earlier access-order limit: it listed pri
 
 Codex CLI 0.153.4 and Claude Code 2.1.267 loader metadata discovered the same canonical skill after the final wording change, without model turns or persistent configuration changes. This establishes discovery, not end-to-end action execution in each host menu. The [additional command cases](../examples/command-checks.md) also specify inventory persistence, pre-setup discovery, missing inputs and unavailable pinned criteria; those variants were not executed here.
 
+## Adversarial retrieval, procedures and syntheses, 23–24 October 2026
+
+Fresh independent agents exercised the candidate additions in disposable fictional brains, without the evaluator's case sheets, expected answers or writer's conversation. Private agent entries selected the candidate method explicitly; no existing brain's method pin changed. A local file adapter recorded fixture reads, searches and simulated-index queries, and the evaluator compared file inventories and bytes before and after runs. The adapter and synthetic importer were evaluation tools outside this kit, not installed runtime controls.
+
+### Retrieval
+
+All seven existing [retrieval scenarios](../examples/retrieval-checks.md) received fresh-agent runs of their main paths, alongside the two new adversarial cases:
+
+| Scenario | Observed evidence |
+| --- | --- |
+| Current subject versus prior thread | Lumen's approved sample export and undecided production import were recovered from its decision and owner evidence; Atlas's synthetic-data rule and the visual-only note were not used for import. |
+| Former name and historical reason | Cedar resolved to the same Harbor subject; weekday-only booking and the low-attendance/staffing rationale were recovered with current and historical evidence. |
+| Old runtime pointer | Current sharing conditions and sample A's pending approval were recovered. Only the permitted runtime-memory file changed: concise handoffs and a verified pointer remained; dated state and procedure detail stayed in their canonical notes. |
+| Generic and private consultation entries | Two separate agents reached the same policy contract, 25-minute local meeting limit and unresolved production rule, with canonical and owner evidence opened. These were file-entry exercises, not host-menu invocation tests. |
+| Current and stale host-local indexes | Two local views with identical knowledge files and different manifest revisions recovered owner review before handoff. The stale view identified r1 versus current r2 and used permitted bounded fallback without an index write. No real remote host or search service was involved. |
+| Unavailable engine and excluded candidates | Current release review and evidence were recovered through fallback; staging and quarantine bodies were not read or used. An initial run also listed the evaluator's working directory outside its fixture. A fresh repeat with explicit absolute-tool and no-enumeration instructions kept discovery within the selected fixture. |
+| Conditional domain reading | Separate agents prepared the commercial call without opening the file-placement domain, and answered the placement question by opening that domain and its owner evidence. The commercial run reported the fixture's unresolved client-brief reference rather than inventing it. |
+| Resolving but contradictory citation | A note claiming 45 minutes and production approval was checked against its existing source: 25 minutes and production undecided. The conflict was exposed without repairing the read-only note. |
+| False-premise question | An approved local trial and unaccepted €90/month proposal did not become a production activation date or accepted price. Coverage limits remained explicit. |
+
+The retrieval fixtures stayed byte-identical except for the explicitly authorized runtime-memory update. The early index runs read their known governing files directly rather than through the adapter, so their adapter logs alone do not establish those first reads; later index, note and evidence access was recorded. The scope slip and these instrumentation limits are retained rather than counted as proof of universal access-order compliance. Broken-pointer, restricted-reason, index-rebuild and other optional variants were not all executed.
+
+### Experience to procedure
+
+Four fresh-agent exercises used the [procedure cases](../examples/procedure-checks.md):
+
+| Exercise | Observed evidence |
+| --- | --- |
+| Executed correction | The supplied disposable importer reproduced a French amount-parsing failure, then returned 12.50, -3.25, 0.00 and 1000.75 with per-field comma parsing. A separate US control returned 12.50 with dot parsing; text commas were preserved. The saved procedure retained format/version limits, exceptions, execution evidence and a receipt with ordinary retrieval readback. |
+| Later US input | A different agent recovered the saved procedure and evidence, recognized the dot-decimal/comma-delimited input as outside its French correction scope, and recommended checking the supported US path. The read-only run made no conversion or file changes. |
+| Unproved model critique | Repeated predictions of success did not validate stripping punctuation. The saved knowledge distinguished an attributed failure, rejected normal-use guidance, a bounded candidate and the missing trial. No importer or test was executed. |
+| Format revision | A retained revision-2 failure for a space-separated thousands amount led to withdrawal of an overbroad pack claim and review of the affected method. Earlier French/US successes and original evidence were preserved; no guessed correction became an executed result. |
+
+The synthetic execution covered three files and five rows; it does not validate a real importer or production deployment. Source files, input originals, policy and prior execution evidence stayed unchanged. The separate secret-exclusion scenario is specified but was not executed in this set.
+
+### Reusable syntheses
+
+Six fresh-agent runs exercised the [synthesis cases](../examples/synthesis-checks.md):
+
+- An authorized comparison was saved in the existing Harbor note with source revisions, requirements, calculations, a recommendation distinct from selection, and a receipt/readback. A second agent recovered it through the home and checked both offer sources without the writer's history or a destination hint.
+- Changing Standard's source from €25 to €35 made both offers fail the combined requirements/budget test: Basic still lacked reminders and Standard exceeded the €30 ceiling. An authorized run updated the offer, dependent comparison and receipt while retaining revision-1 reasoning; a separate read-only `check` detected the same stale dependency without repairs.
+- Explicit no-write and consultation-only runs answered from permitted evidence without retaining a comparison, receipt or other new artifact. Standing maintenance permission did not widen these requests or source grants.
+
+The read-only synthesis and procedure-transfer fixtures remained byte-identical, including inventories. Write exercises changed only the relevant notes, views, receipts and permitted synthetic trial evidence; sources, policy and originals were preserved. These runs establish selected artifact and retrieval behavior, not scheduled source-change detection or actual multi-user enforcement.
+
+Independent patch review found an ambiguity in how procedure fixtures load the candidate recipe. The scenario instructions now bind that recipe through the private agent entry, matching the exercised setup. Local Markdown targets/anchors, the canonical Claude symlink and `git diff --check` were also checked; the skill itself did not change and host loader discovery was not repeated.
+
 ## What these checks do not establish
 
 File portability, loader discovery, agent behavior, artifact integrity and enforced runtime controls are separate evidence. None proves universal model quality, every history format, actual connector/scheduler/search operation, notification delivery or real access enforcement.

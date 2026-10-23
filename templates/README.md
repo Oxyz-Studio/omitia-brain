@@ -11,6 +11,7 @@ The agent can complete setup in one conversation or leave a smaller working brai
 | [Knowledge policy](knowledge-policy.md) | User-selected authority, autonomy, source, and retention rules. |
 | [Source](source.md) | One source's access, boundaries, and processing coverage. |
 | [Note](note.md) | A durable fact, practice, hypothesis, or reference. |
+| [Procedure](procedure.md) | Optional bounded method with preconditions, exceptions, observed validation and a review trigger. |
 | [Decision](decision.md) | An actual decision, its authority, reasons, and consequences. |
 | [Ingestion log](ingestion-log.md) | Versioned source coverage and unresolved items. |
 | [Mission](mission.md) | A natural-language job for the existing agent environment. |

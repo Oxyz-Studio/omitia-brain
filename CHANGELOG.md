@@ -4,6 +4,14 @@ Changes that can affect an existing private brain. A brain records the kit commi
 
 Impact classes: **action recommended** (an existing brain should adapt a file), **optional** (useful improvement), **none** (no effect on existing brains).
 
+## 2026-10-24
+
+### Bounded procedures, reusable syntheses and adversarial retrieval cases
+
+- Changes: the optional experience-to-procedure recipe and template distinguish observed outcomes, candidate explanations, executed trials and methods usable within tested conditions. Direct contributions include authorized reuse of a useful analysis with evidence, dependencies and source-change review. Fictional cases cover misleading citations, questions without established answers, procedure transfer and exceptions, synthesis retrieval and revision, and consultation without retention.
+- Impact: **optional**. Existing brains can adopt these paths within their current source, retention, write and execution grants. No method pin, permission, personal skill installation or recurring work changes automatically.
+- Files: `recipes/experience-to-procedure.md`, `templates/procedure.md`, `recipes/direct-contributions.md`, `examples/retrieval-checks.md`, `examples/procedure-checks.md`, `examples/synthesis-checks.md`, `docs/context.md`, `docs/retrieval.md`, `docs/mechanism-review.md`, README EN/FR, template/example indexes and `docs/validation.md`.
+
 ## 2026-10-23
 
 ### Ingestion, discovery and maintenance actions

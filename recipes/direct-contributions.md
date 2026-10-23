@@ -33,6 +33,17 @@ A person's preference does not automatically become company policy. An agent's p
 
 Read the current note before writing in a shared folder. If another contributor edited it, merge the meaning or leave a clear conflict instead of replacing their work with an older version.
 
+## Preserve a useful synthesis from a question
+
+A comparison or analysis can create useful knowledge by relating existing notes. Keep it only when it adds a reusable conclusion, explanation, or unresolved question that the brain does not already preserve, and retention is authorized by the user's request or an existing grant covering the sources, action, destination, and audience. Answering a question alone does not authorize saving every answer. A [read-only check](../docs/commands.md#check-a-bounded-read-only-assessment), an explicit no-write request, or a [consultation-only source](../docs/external-references.md#choose-what-a-reference-enables) keeps the result within its permitted use even when routine writes are otherwise allowed.
+
+1. Find the existing subject and choose a section in its canonical note or a linked derived view, using the [knowledge model](../docs/knowledge-model.md). A new note kind, transcript archive, or parallel answer store is unnecessary.
+2. Save the question's scope, useful conclusion, assumptions and remaining uncertainty. Identify an agent inference or recommendation explicitly; only an authorized choice is a decision. Preserve the evidence references, versions or observation dates and dependencies needed to reconstruct each material conclusion. A saved synthesis can explain reasoning but cannot become independent proof of its own source claims.
+3. Make the result discoverable from the subject's ordinary entry. Use [continuity](../docs/continuity.md) for a proportionate receipt of the examined evidence and resulting view, then retrieve it through a plausible later question before finalizing. Preserve a pending readback or refresh as partial rather than claiming completion.
+4. When a dependency changes, refresh the affected conclusion under existing authority or mark it review due with the dependency and consequence. A source revision need not invalidate the whole synthesis; an unchanged summary is not evidence that its price or recommendation remains current.
+
+Apply [governance](../docs/governance.md) to derived content and its dependency records. If saving is not useful or permitted, answer within the authorized consultation scope without creating a note or retention record just to document that answer. See the [fictional synthesis checks](../examples/synthesis-checks.md).
+
 ## Make the outcome visible
 
 For a small contribution, use a proportionate durable record: source or contribution locator, observation time, notes affected, remaining uncertainty, and the outcome. There is no need to create a full transcript archive if that is unnecessary or disallowed.

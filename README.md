@@ -51,6 +51,8 @@ Adopt the principles without adopting a fixed folder layout.
 
 Start with [direct contributions](recipes/direct-contributions.md), [local documents](recipes/local-documents.md) or [agent conversations](recipes/agent-conversations.md). The [source guide](docs/sources.md) also routes email, shared documents, messaging and business tools.
 
+Turn observed corrections into [bounded, verified procedures](recipes/experience-to-procedure.md), or [retain a useful analysis](recipes/direct-contributions.md#preserve-a-useful-synthesis-from-a-question) when authorized. Both paths preserve evidence, scope and later review needs.
+
 [Missions](missions/README.md) describe outcomes, scope and evidence. They run on demand or through your existing scheduler after source, identity, permissions, cadence and limits are established. A mission file alone does not run in the background. Reuse permissions already granted rather than seeking approval for every run.
 
 Where history persists and an unattended runtime is available, scheduled discovery is the main ingestion path; missed hooks must not hide eligible activity. Expiring history needs permitted capture or an explicit recovery limit. Check actual coverage through [supervision](missions/supervise.md); keep history, backup and demonstrated [restore](missions/recover.md) distinct. These mechanisms can remain manual or unconfigured for a small brain.
