@@ -31,6 +31,12 @@ For a new brain, determine enough to do useful work:
 
 Do not require all of these as an upfront form. Ask only questions that affect the work at hand. If the user provides a full brief, process it together. If they prefer one topic at a time, follow that pace. Record unknowns explicitly and make the setup resumable.
 
+## Offer the work-discovery path explicitly
+
+During setup, offer a shared brain consultation skill, an inventory of all locally used work agents and accessible histories on each authorized machine, catch-up over all eligible work sessions, and continuing ingestion plus proportionate maintenance. Also offer an inventory of work folders and a scan of the folders the user chooses. Follow [work discovery](docs/work-discovery.md) for the scope preview, coverage records, progressive project accounts, and grouped questions after reading. A whole-computer scan requires an explicit choice and agreed exclusions.
+
+These are explicit offers, not prerequisites or automatic grants. Reuse recorded accepted, deferred or declined choices. Continue extracting supported knowledge from already authorized input while source or scheduling choices remain open; reading all eligible sessions does not mean retaining every statement as memory.
+
 ## Create only what serves the current scope
 
 Use [templates](templates/README.md) as material to adapt, not mandatory files to stamp out.
@@ -64,6 +70,8 @@ Before consolidating, find the existing subject and enough surrounding context t
 
 If input is ambiguous or incomplete, preserve the usable facts and mark the unresolved part. Do not invent a missing answer or mark a truncated source fully integrated. Follow [continuity](docs/continuity.md) when context is missing.
 
+Create or update project accounts from converging source evidence, not one note per session. After a bounded reading batch, offer grouped, source-linked questions on ambiguities, contradictions, scope and current state; save independent supported facts without waiting for answers. Use the [project and clarification guidance](docs/work-discovery.md#distil-projects-then-ask-useful-questions).
+
 ## Add sources and missions when useful
 
 Use [sources](docs/sources.md) to record what is connected, permitted, unavailable, or deferred. The user may connect everything now or expand later. A suggested source is not a connected source.
@@ -90,6 +98,6 @@ Before claiming success:
 
 Then give a concise handover: what is usable, where it lives, what remains unknown or unavailable, and how the user or a colleague can continue. Mention scheduled work only if it was actually configured and verified. Do not portray a partial scope as a failure or an uninstalled recipe as an active integration.
 
-If the user wants the brain used beyond its folder, offer the [user-level skill installation](docs/agents.md#install-the-skill-once-per-contributor) and the [consultation entries](docs/agents.md#reach-the-brain-from-other-work): a brain query skill, a standing pointer, or an optional hook. Install in a person's configuration only with consent, keep restricted subjects out of globally visible descriptions, and verify discovery in the actual host.
+At handover, confirm the [work-discovery offers](docs/work-discovery.md) and their accepted, deferred, declined or unavailable state. Explicitly offer the [consultation entries](docs/agents.md#reach-the-brain-from-other-work) across the user's agents if that choice is still open: a shared brain query skill, a standing pointer, or an optional hook. Distinguish the brain query skill from the generic kit skill's [user-level installation](docs/agents.md#install-the-skill-once-per-contributor). Install in a person's configuration only with consent, keep restricted subjects out of globally visible descriptions, and verify discovery in each intended host. Present proposed catch-up, continuous ingestion and maintenance separately from jobs actually configured and verified.
 
 For follow-up work, start from the saved home and policy rather than requiring the user to explain the company again.

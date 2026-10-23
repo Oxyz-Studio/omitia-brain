@@ -12,6 +12,8 @@ Read only the authorized entry and policy material needed to establish the [acce
 
 Within that authorized view, read the applicable source registration, this mission's local configuration, and its previous receipt. Consult the existing reference notes and source context needed to understand the new material. Use [retrieval guidance](../docs/retrieval.md), [continuity guidance](../docs/continuity.md), and the relevant [quality and coverage checks](../docs/reliability.md).
 
+For work-session catch-up or continuing ingestion, use the recorded [work-discovery scope](../docs/work-discovery.md): machine/agent inventory, eligible sessions and versions, exclusions, coverage checkpoints, and policy for newly found agents. Discover source changes independently of hooks. Keep unchecked sources and historical backlog separate from current-run coverage; do not widen the grant to make a complete-looking report.
+
 Confirm that the runtime has the access and authorized actions required for this run. If a source is unavailable, continue independent work within scope and record the missing coverage. Do not turn an access failure into an empty-source conclusion.
 
 A [reference-only or consultation-only source](../docs/external-references.md) does not authorize distillation; registering a link is not integration of its contents.
@@ -25,6 +27,7 @@ Use the following constraints to choose an appropriate method:
 - Inspect enough surrounding context to resolve references such as “the second option,” “as agreed,” or a bare reply. Search prior material and reference notes before drawing a conclusion.
 - Separate durable knowledge from routine chatter, duplicates, personal details outside scope, and secrets. Apply the configured data minimization and retention rules before storing content.
 - Compare the claim with current knowledge. A changed source can update a fact; an opinion or proposal does not silently become a company decision. Preserve conflicting evidence when it cannot be resolved.
+- Reconcile project identities across sessions and agents before creating another account. Offer grouped, source-linked questions after reading a bounded batch about ambiguous identity, contradictions, scope or dated state. Save independent supported facts while leaving dependent conclusions unresolved; follow [project distillation](../docs/work-discovery.md#distil-projects-then-ask-useful-questions).
 - Update the reference note and the summaries, links, or context packs materially affected by the change. Keep history or a clear replacement link where needed.
 - Attribute the new knowledge to its source and make its freshness visible. Do not infer that an older fact is false because it is absent from a later extract.
 - Preserve applicable source restrictions in every derived note, summary, pack, index, and report. Do not publish restricted knowledge through a broadly readable receipt or treat a privileged job's access as the audience's permission.

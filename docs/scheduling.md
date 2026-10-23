@@ -4,6 +4,8 @@ The kit defines agent work in Markdown. It does not install an execution engine 
 
 A person may run every mission manually. Recurrence is optional and can be added whenever it becomes useful.
 
+During setup, explicitly offer continuing ingestion and proportionate maintenance alongside historical catch-up, using [work discovery](work-discovery.md). Make the proposed sources, actions, coverage checks and reporting concrete; reuse accepted, deferred or declined choices rather than restarting the discussion. An offer is required, activation is optional and follows the permissions below. Do not create one job per agent, folder or mission by default.
+
 For persistent, authorized sources with a viable unattended runtime, scheduled ingestion is the main coverage mechanism. Hooks may accelerate it or supply permitted captures, but source discovery must survive a missed hook. Use the same mission and coverage records across triggers; see [ingestion design](ingestion-design.md).
 
 ## Adapt to the existing environment

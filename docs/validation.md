@@ -58,6 +58,14 @@ Controlled walkthroughs in a disposable fictional workspace checked that the ada
 
 These are artifact and route checks, not fresh-model executions of every scenario, actual host discovery, live search-service validation, or proof that an agent will enforce the contract. The generic/private entry-parity scenario, permission variants, and full cross-host behavior remain reproducible specifications for each deployment's real tools and agents. No runtime or executable test suite was added to the kit.
 
+## Work-discovery guidance checks, 23 October 2026
+
+The setup guide now explicitly offers shared consultation, authorized work-agent/host inventories, historical catch-up, continuing ingestion and maintenance, and selected work-folder scans. A structural check covered local link targets and section anchors across the kit, including the new [work-discovery guidance](work-discovery.md) and [fictional scenarios](../examples/work-discovery-checks.md). The canonical Claude skill link still resolves; no skill content or runtime was changed.
+
+A controlled artifact walkthrough used supplied fictional sessions from two agents on one accessible machine, an unreachable second machine, an excluded personal unit, and a session with no lasting knowledge. Reading the sources produced one renamed project with attributed evidence, a trial approval distinguished from execution, a local-export constraint, grouped current-state questions and a receipt preserving the unresolved range. Normal navigation recovered those claims and limits. The documentation author performed this walkthrough with the fixture expectations available; it is not an independent fresh-model test. A separate untouched fixture was prepared for that evaluation.
+
+The added scenarios specify deferred/declined setup choices, interrupted and revised sources, newly discovered agents, bounded folder scans and an explicit whole-computer variant. Those variants were not executed as part of this structural walkthrough. No real application history, personal folders, remote machine, skill installation, connector or recurring job was accessed or configured.
+
 ## What these checks do not establish
 
 Explicit file entry makes the method portable. It does not establish automatic skill discovery in every agent host, reliable access to every conversation format, or the quality of every model's interpretation.

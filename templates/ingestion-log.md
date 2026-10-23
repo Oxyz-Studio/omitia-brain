@@ -28,6 +28,7 @@ A `no-durable-change` or `intentionally-skipped` item needs examined coverage an
 ## Coverage checkpoint
 
 - Observed through: {ranges actually inspected}.
+- Source discovery, if configured: {machine/agent or folder inventory and last enumeration bounds; known eligible units, reviewed no-change units, pending/excluded units and unchecked sources; do not treat partial enumeration as all-source coverage}.
 - Fully integrated through: {ranges fully reconciled, with gaps explicitly listed}.
 - Open items carried forward: {stable IDs and missing context}.
 - Evidence retained / recovery location: {resolvable references within permitted retention}.

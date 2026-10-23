@@ -21,6 +21,7 @@
 ## Coverage
 
 - Last observed range: {what was seen, even if not integrated}.
+- Discovery bounds, when enumerating work sources: {authorized machine/agent or folder scope, actual discovery time and range, enumerated denominator and limits, and policy for newly discovered sources; omit for a single supplied item}.
 - Last fully integrated range: {what was actually reconciled with notes, with a saved receipt and successful retrieval readback}.
 - Outstanding items: {link to incomplete claims or none}.
 - Last useful success: {receipt and result, or never}.

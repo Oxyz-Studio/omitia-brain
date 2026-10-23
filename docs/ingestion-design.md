@@ -8,6 +8,8 @@ Use the same [ingestion mission](../missions/ingest.md) for manual requests, sch
 
 When recurrence is authorized, sources persist, and a suitable agent runtime can revisit them, scheduled ingestion is the main mechanism for maintaining coverage. Each run examines the registered sources within its budget, recognizes new or changed units, and carries incomplete work forward. Its discovery must work without an end-of-session hook. Manual ingestion remains valid when recurrence is unnecessary or unavailable.
 
+During setup, explicitly offer historical work-session catch-up and continuing ingestion after an authorized [machine/agent inventory](work-discovery.md#inventory-agents-and-histories-on-authorized-machines). Initial catch-up and live coverage have separate observed checkpoints. Continuing work rechecks the permitted inventory for new agents and history locations as well as sessions; inclusion of new sources follows the existing grant or requires a missing scope choice. Full eligible-source review is not full transcript retention or automatic promotion of every claim into the brain.
+
 ## Hooks and captures are optional inputs
 
 A hook may signal that a conversation changed or capture permitted evidence for later reading. It can reduce delay, but a missing hook event does not prove there was no source activity. The main mission checks source coverage through the available authorized history or change interface.

@@ -6,6 +6,12 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ## 2026-10-23
 
+### Explicit work discovery and continuing memory offers
+
+- Changes: setup explicitly offers a shared consultation skill, an inventory of all locally used work agents and accessible histories on authorized machines, historical work-session catch-up, continuing ingestion and maintenance, and an inventory/scan of selected work folders. Scope previews, recorded choices, per-source coverage and rediscovery keep proposals separate from permissions and active jobs. Project knowledge is consolidated progressively across sessions with provenance; grouped clarification questions follow reading without blocking independent facts. A whole-computer scan remains a separate explicit choice with personal/secret exclusions. Full eligible-source review remains distinct from transcript retention and promotion into memory.
+- Impact: **action recommended**. Existing setup and handover guidance has explicit offers and resumable choices to review. Work-session deployments have inventory/coverage and new-source grants to review. No job, connector, personal skill installation or whole-machine scan is activated by this change; source/template fields remain adaptable to scope.
+- Files: `START-HERE.md`, `README.md`, `README.fr.md`, `docs/work-discovery.md`, `docs/agents.md`, `docs/ingestion-design.md`, `docs/scheduling.md`, `recipes/agent-conversations.md`, `recipes/local-documents.md`, `missions/ingest.md`, `missions/maintain.md`, `templates/brain-home.md`, `templates/source.md`, `templates/ingestion-log.md`, `examples/work-discovery-checks.md`, `examples/README.md`, `docs/validation.md`.
+
 ### Retrieval contracts across entries and hosts
 
 - Changes: private homes, agent entries, and query skills reference one retrieval contract in the brain's policy or an existing equivalent. The contract describes configured discovery and fallback, with per-host index freshness and refresh responsibility when an index exists. Current-answer exclusions for unvalidated staging, quarantine, and rejected candidates remain in force during fallback. Four additional fictional scenarios cover entry parity, host freshness, excluded candidates, and task-dependent domain reading.

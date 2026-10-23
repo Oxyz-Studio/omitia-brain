@@ -4,6 +4,8 @@ Use files already available to the user to establish useful knowledge without a 
 
 ## Agree on the useful scope
 
+During setup, offer a [work-folder inventory and selected scan](../docs/work-discovery.md#offer-a-bounded-work-folder-inventory). Preview the authorized roots and exclusions before reading contents. Inventorying the whole computer is a separate explicit choice, with personal areas and secret-bearing files excluded; a missing project path does not authorize a broad search. A grant for one root does not automatically cover links or mounts outside it.
+
 Ask what the documents should help the brain understand. Accept a selected file, folder, or bounded collection. Clarify exclusions, private storage, permitted retention, and whether the agent may update reference notes automatically under the current policy.
 
 The agent should inspect available formats and reading capabilities before promising coverage. Text, scanned documents, spreadsheets, slides, images, and archives may require different tools. If a document cannot be read reliably, leave an explicit gap instead of treating it as empty.

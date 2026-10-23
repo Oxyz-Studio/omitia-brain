@@ -67,7 +67,7 @@ The skill reads a brain's method reference before opening kit files and applies 
 
 ## Reach the brain from other work
 
-An agent opened inside the brain finds its `AGENTS.md`. Work elsewhere, such as a client project, a proposal, or an email, does not reach the brain unless the contributor adds a consultation entry. Offer these at handover when the user wants the brain used beyond its folder; none is required.
+An agent opened inside the brain finds its `AGENTS.md`. Work elsewhere, such as a client project, a proposal, or an email, does not reach the brain unless the contributor adds a consultation entry. During setup, explicitly offer a shared brain query skill across the agents the user uses; confirm the choice at handover if still open. Follow [work discovery](work-discovery.md), reuse recorded choices, and keep installation optional. One canonical skill can serve several agents through supported links or entry bridges; verify each intended host rather than assuming discovery transfers between them.
 
 | Entry | Role | Where it lives |
 | --- | --- | --- |

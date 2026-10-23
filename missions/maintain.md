@@ -18,6 +18,7 @@ Choose checks that address actual risks in this brain:
 - Do changed notes and context packs link to the right evidence and replacements?
 - Are time-sensitive claims overdue, and are recurring failures hiding behind “successful” invocations?
 - Do ingestion receipts match the actual knowledge and covered source ranges? Inspect a useful sample, not just counters.
+- If work-session ingestion is configured, does its authorized machine/agent inventory still match observed use? Are new agents or moved histories discovered within the grant, unchecked pairs visible, and backlog separated from ongoing coverage? Follow [work discovery](../docs/work-discovery.md#inventory-agents-and-histories-on-authorized-machines) without extending access silently.
 - Are there unresolved context gaps, broken source locators, partial items, or abandoned retries that need reconciliation?
 - Have duplicated notes, conflicting statements, or large uncategorized areas made retrieval unreliable?
 - Are source access, private storage boundaries, retention rules, and the agent runtime still aligned with the recorded configuration?
