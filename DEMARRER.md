@@ -18,6 +18,8 @@ Quelques demandes possibles :
 - « J'arrive dans l'équipe. Lis les conventions et intègre ce document au bon endroit. »
 - « Je veux comprendre les principes pour les adapter à notre architecture. »
 
+Le brain privé garde une référence à la version du kit utilisée : un agent ouvert dans le brain retrouve ainsi les missions et la méthode, depuis votre copie locale ou depuis le dépôt public. Si vous voulez que vos agents consultent le brain pendant d'autres travaux (projet client, proposition, mail), l'agent peut vous proposer une skill de consultation et une courte consigne pour votre agent ; il ne les installe qu'avec votre accord.
+
 Les missions d'entretien peuvent être lancées à la demande. Si vous souhaitez les planifier, l'agent vous aide à définir les sources, l'autonomie et les limites, puis utilise votre environnement existant. Ce kit ne contient pas de moteur d'exécution ni de scripts d'ingestion à installer.
 
 Pour retrouver les ressources : [README français](README.fr.md), [modèles](templates/README.md), [missions](missions/README.md) et [exemple fictif](examples/studio-brain/README.md).

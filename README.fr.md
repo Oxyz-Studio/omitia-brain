@@ -21,6 +21,8 @@ Il n'est pas nécessaire de terminer un questionnaire pour obtenir un premier r�
 
 Si vous avez déjà un brain, demandez à l'agent de l'enrichir en respectant ses conventions plutôt que de le reconstruire.
 
+Le brain privé enregistre la version du kit qu'il utilise. Les agents lisent cette version figée depuis votre copie locale ou depuis ce dépôt public : la copie locale devient facultative après le démarrage, mais reste utile hors ligne et pour la skill. Pour que vos agents consultent le brain pendant que vous travaillez ailleurs, demandez une skill de consultation du brain. Voir la [compatibilité agents](docs/agents.md#link-the-brain-to-the-method).
+
 ## Réutiliser les principes
 
 Un CTO peut consulter la documentation sans suivre le démarrage guidé ni adopter l'arborescence proposée :

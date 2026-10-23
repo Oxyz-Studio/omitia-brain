@@ -25,5 +25,6 @@
 - Resume point: {where to continue and which information would help}.
 - Connected sources: {records of sources actually accessible, or none}.
 - Scheduled missions: {active missions with verified scheduling evidence, or not configured}.
+- Access points: {brain query skill in this brain, per-person pointers or hooks described without personal paths, or none}.
 
 An incomplete setup can still be useful. Expand the scope when asked or when it supports an authorized task. Never treat an unanswered onboarding question as permission.

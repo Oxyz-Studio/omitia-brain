@@ -9,7 +9,7 @@ The review compared the starter with primary documentation, implementation detai
 | Mechanism | Public contract | Useful acceptance evidence |
 | --- | --- | --- |
 | Adaptive first use and later contributions | [Start](../START-HERE.md), [direct contributions](../recipes/direct-contributions.md) | A complete brief works immediately; missing answers or connectors do not block unrelated scope; a colleague can resume from saved files. |
-| Private workspace and portable agent entry | [Agents](agents.md), [governance](governance.md) | Company data stays separate; a new host loads the actual private instructions; canonical skill links resolve. |
+| Private workspace and portable agent entry | [Agents](agents.md), [governance](governance.md) | Company data stays separate; a new host loads the actual private instructions; canonical skill links resolve; the brain's method reference reaches the pinned kit version; consultation entries expose only approved metadata. |
 | Authority, permissions, and source trust | [Governance](governance.md) | Existing grants are reused, suggestions stay attributed, and imported commands cannot grant permission. |
 | Source access, transport, lifetime, and retention | [Sources](sources.md), [source record](../templates/source.md) | The executing identity can revisit the evidence; permitted captures and recovery limits are known. |
 | External references without relocation | [External references](external-references.md) | A document stays at source; reference-only, consultation, and integration grants are distinct; another runtime does not invent access. |

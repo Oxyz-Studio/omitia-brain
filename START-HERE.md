@@ -38,7 +38,7 @@ Use [templates](templates/README.md) as material to adapt, not mandatory files t
 A small brain can start with a home note and a subject note. When useful, add:
 
 - `README.md`, based on [brain-home](templates/brain-home.md): purpose, current scope, where to look, unknowns, and how to resume.
-- `AGENTS.md`, based on [brain-agents](templates/brain-agents.md): instructions for agents entering this private brain.
+- `AGENTS.md`, based on [brain-agents](templates/brain-agents.md): instructions for agents entering this private brain, including its method reference: this kit's public origin and the full commit in use. Without it, a later agent in the brain cannot find the missions, recipes, or method. See [linking the brain to the method](docs/agents.md#link-the-brain-to-the-method).
 - A short host entry when needed, such as `CLAUDE.md` pointing to `AGENTS.md`: let another contributor's agent discover the same private instructions without duplicating them.
 - `KNOWLEDGE_POLICY.md`, based on [knowledge-policy](templates/knowledge-policy.md): audience, source authority, autonomy, retention, and unresolved choices.
 - `SOURCES.md`: a compact source registry, with [source records](templates/source.md) when needed.
@@ -81,9 +81,12 @@ Before claiming success:
 - Reopen the files you changed and verify the important assertions against their sources.
 - Demonstrate that the user's first likely question can be answered from the saved brain, with appropriate provenance and freshness.
 - Check that relative links and source references resolve, or explicitly record what cannot be resolved.
+- Check that the brain's method reference names the kit origin and a full commit that exists, or records why the version is unknown.
 - Reconcile the ingestion record with the actual result, including partial work or intentionally omitted material.
 - Check that private content was written only to the intended workspace.
 
 Then give a concise handover: what is usable, where it lives, what remains unknown or unavailable, and how the user or a colleague can continue. Mention scheduled work only if it was actually configured and verified. Do not portray a partial scope as a failure or an uninstalled recipe as an active integration.
+
+If the user wants the brain used beyond its folder, offer the [user-level skill installation](docs/agents.md#install-the-skill-once-per-contributor) and the [consultation entries](docs/agents.md#reach-the-brain-from-other-work): a brain query skill, a standing pointer, or an optional hook. Install in a person's configuration only with consent, keep restricted subjects out of globally visible descriptions, and verify discovery in the actual host.
 
 For follow-up work, start from the saved home and policy rather than requiring the user to explain the company again.

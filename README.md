@@ -21,6 +21,8 @@ No questionnaire must be completed before the first useful result. The agent sho
 
 For an existing brain, point the agent to that folder and ask it to extend the current conventions rather than rebuild them.
 
+The private brain records the kit version it uses. Agents read that pinned version from your local checkout or from this public repository, so the checkout is optional after setup; keep it for offline use and the skill. To let agents consult the brain while you work on something else, ask for a brain query skill. See [agent compatibility](docs/agents.md#link-the-brain-to-the-method).
+
 ## Understand the architecture
 
 | What you need | Where to read |

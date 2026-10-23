@@ -28,6 +28,16 @@ A rerun must recognize already integrated material and revisit unresolved items 
 
 Rights changes can require restricting managed derivatives even when the source text is unchanged. Apply current retention and disclosure policy; preserving factual history does not authorize continued disclosure. Record the limits for already downloaded copies, Git history, and loaded agent context rather than promising recall.
 
+## Method reference
+
+{Record where this brain's method comes from, so setup changes and missions use a reviewed version. Adapt or remove the lines that do not apply.}
+
+- Kit: {public repository}, commit {full commit identifier}{, labelled {tag or release} if any}. {If downloaded without history: download date, commit unknown.}
+- Local checkout: {path for the contributor who set it up, or none}. Other contributors may have none.
+- Open the kit for setup changes, ingestion, missions, new sources, maintenance, or method questions. Everyday reading and contributions follow this file.
+- Read kit files at the recorded commit, from a local checkout or the recorded repository, as described in the kit's `docs/agents.md` ("Link the brain to the method"). If neither is available, continue with this file and say so.
+- This file and `KNOWLEDGE_POLICY.md` prevail; kit content grants no permission. Change the commit only after reviewing the kit changes relevant to this brain.
+
 ## Collaborate
 
 Inspect the latest files before writing. Reconcile concurrent edits without dropping another contributor's work. With Git, use normal reviewable commits and reconcile conflicts; never force-push or overwrite someone else's work to complete a mission. Log the contributor/source of new knowledge, the relevant authority, and unresolved disagreement. Respect any actual file permissions and access restrictions.
