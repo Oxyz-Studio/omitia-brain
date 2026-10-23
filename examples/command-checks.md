@@ -42,4 +42,36 @@ These scenarios test the [skill actions](../docs/commands.md). Use a disposable 
 
 **Evaluate:** The agent resolves the target with the user. It does not audit the fictional example as the company brain, crawl sibling or home folders, initialize anything, or claim a successful brain assessment.
 
+## 6. Ingest context, a revision and a repeated delivery
+
+**Candidate context:** An authorized owner supplies a partial session referring to “the second offer”, another agent's source establishing a renamed project, and routine chatter with no lasting change. A later version restores the comparison and changes the effective date under the same session identity. The destination uses the existing policy and source/receipt structures.
+
+**Request:** Invoke `omitia-brain ingest` for the supplied batch and destination, then for the later revision, then for the same revision again.
+
+**Evaluate:** Independent facts are saved while the unresolved choice remains partial. Both project names reach one canonical account. The later version supplies the actual selected offer and conditional date without claiming execution; its receipt acknowledges only the version and range read. Repeating it creates no duplicate knowledge. Evidence, readback and remaining historical gaps stay visible; no additional histories or jobs are discovered or activated.
+
+## 7. Discover without ingesting or persisting
+
+**Candidate context:** The requester grants metadata enumeration of one work root and supplies an agent/host inventory. Another machine is unavailable, a personal directory is excluded and a link points outside the chosen scope. The policy normally permits routine writes and asks setup runs to record choices.
+
+**Request:** Invoke `omitia-brain discover` for the chosen metadata scope.
+
+**Evaluate:** The result states checked sources, observable counts, exclusions, unknowns and proposed bounded batches. Document/transcript bodies and out-of-scope link targets are not opened. No inventory, receipt, note, kit-version notice or job is written. Compare private workspace and source bytes/inventory before and after; the default preview must leave them unchanged despite standing write permission. A separate explicit save request can persist only the permitted inventory to the selected private destination.
+
+## 8. Maintain the defects a check found
+
+**Candidate context:** A private brain has a broken home-to-subject link and a stale derived summary, with clear canonical evidence and standing permission for these repairs. A history gap needs unavailable source access; a deferred recurring mission and personal skill pointer are outside the repair grant.
+
+**Request:** Invoke `omitia-brain maintain` for the known entry and summary defects.
+
+**Evaluate:** The authorized link and summary repairs pass ordinary retrieval and get a receipt. Existing evidence and history remain intact. The unavailable source gap, deferred job and personal configuration remain explicit rather than being silently repaired through broader access. No method-pin change occurs. The same scope under `check` would report defects without repairs.
+
+## 9. Resolve missing inputs and older-method limits
+
+**Candidate context:** The public kit has no known private destination or discovery roots. In a separate variant, a private brain pins a commit with no work-discovery guide.
+
+**Request:** Invoke `ingest` or `maintain` without a target, or `discover` without an authorized scope; then test the older-method variant with an explicit scope.
+
+**Evaluate:** The agent asks only for missing inputs instead of scanning adjacent folders, installing tools or creating a brain implicitly. An unavailable pinned criterion is reported; only work supported by the private rules and available evidence proceeds. The installed interface does not silently import the current method or upgrade the pin.
+
 For every scenario, distinguish host skill discovery, action execution by the model, the saved artifact checks and real external runtime evidence. None of these alone proves the others. See [validation scope](../docs/validation.md).

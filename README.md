@@ -21,14 +21,17 @@ Setup explicitly offers a shared consultation skill, all work-agent histories on
 
 The private brain records the [kit commit it uses](docs/agents.md#link-the-brain-to-the-method). Agents read that version locally or from the recorded origin; keep a checkout for offline use or the skill.
 
-## Two skill actions
+## Skill actions
 
 | Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
 | Create or resume | `/omitia-brain init` | `$omitia-brain init` |
 | Assess without changing the brain | `/omitia-brain check` | `$omitia-brain check` |
+| Ingest a source or bounded history | `/omitia-brain ingest <source>` | `$omitia-brain ingest <source>` |
+| Inventory work sources in scope | `/omitia-brain discover <scope>` | `$omitia-brain discover <scope>` |
+| Repair and maintain in scope | `/omitia-brain maintain <scope>` | `$omitia-brain maintain <scope>` |
 
-Use the discovered repository skill, or select `omitia-brain` in your interface and request the action. Add the private path when needed. `init` preserves existing work; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. [Commands](docs/commands.md) also documents file prompts for other agents.
+Use the discovered repository skill, or select `omitia-brain` in your interface and request the action. Add the private path when needed. `init` preserves existing work; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. `discover` inventories metadata and proposes sources or batches without ingesting, installing capabilities or scheduling jobs. `ingest` and `maintain` use the brain's existing policy and permissions. [Commands](docs/commands.md) also documents file prompts for other agents.
 
 ## Understand the architecture
 

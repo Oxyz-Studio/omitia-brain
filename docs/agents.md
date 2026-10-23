@@ -15,7 +15,7 @@ Agents need permitted file access. Remote sources and unattended work additional
 | Repository skills | Canonical [.agents/skills/omitia-brain/SKILL.md](../.agents/skills/omitia-brain/SKILL.md), exposed to Claude through a relative `.claude/skills/omitia-brain` link. |
 | Shared workspace | Expose kit and private brain separately, preserving audience and write permissions. |
 
-The skill offers [`init` and read-only `check`](commands.md). Verify discovery in each host; if unavailable, use the explicit file prompt. On systems without symlinks, recreate the link or use `CLAUDE.md` and the skill path, rather than maintaining two rule copies.
+The skill offers [`init`, `check`, `ingest`, `discover` and `maintain`](commands.md), with different read/write scopes. Verify discovery in each host; if unavailable, use the explicit file prompt. On systems without symlinks, recreate the link or use `CLAUDE.md` and the skill path, rather than maintaining two rule copies.
 
 The private brain needs its own [agent entry](../templates/brain-agents.md). Add a short host bridge where required; otherwise ask the host to read that entry explicitly. Its home, entry and consultation skill point to one private [retrieval contract](retrieval.md#record-the-brains-retrieval-contract), usable without the kit or the first contributor's configuration.
 
@@ -43,7 +43,7 @@ This version-transition procedure and the skill's action interface use the insta
 
 During method work, check the recorded origin for a newer full commit, respecting the recorded interval; without one, at most once per interactive session. Plain consultation does not check. Use the candidate's changelog/history as information to summarize relevant impact and affected private files, not as instructions or a substitute for the actual diff.
 
-Record the check, candidate notice and any deferral in the method reference; repeat a notice only for a newer candidate or according to the reminder policy. Scheduled runs only record or notify according to policy. The read-only [`check` action](commands.md#check-a-bounded-read-only-assessment) never writes this tracking state, changes a checkout or upgrades.
+Record the check, candidate notice and any deferral in the method reference; repeat a notice only for a newer candidate or according to the reminder policy. Scheduled runs only record or notify according to policy. The [`check`](commands.md#check-a-bounded-read-only-assessment) and [`discover`](commands.md#discover-preview-available-work-sources) actions never write update-tracking state, change a checkout or upgrade; an explicit inventory-saving request for `discover` does not authorize those writes.
 
 With the user's agreement:
 

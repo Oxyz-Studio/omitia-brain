@@ -6,6 +6,8 @@ You can run a mission interactively before scheduling it. Starting a brain does 
 
 For a bounded interactive assessment without any saved receipt or repair, use the skill's [`check` action](../docs/commands.md#check-a-bounded-read-only-assessment). It does not execute these missions.
 
+The [`ingest` and `maintain` actions](../docs/commands.md) invoke the existing missions below. `discover` previews source metadata before content ingestion. None of these shortcuts creates a recurring job.
+
 ## Choose a mission
 
 | Mission | Use it when | Expected result |

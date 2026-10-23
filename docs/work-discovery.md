@@ -4,6 +4,8 @@ During initial setup or a requested expansion, offer the capabilities below expl
 
 Use the authorized material already supplied to produce useful knowledge while these choices remain open. Discovery, content reading, retaining sources, updating notes, installing a consultation entry, and running unattended jobs are distinct actions. Apply the existing policy to each; resolve only missing choices that affect the next action.
 
+The interactive [`discover` action](commands.md#discover-preview-available-work-sources) uses these inventory criteria for a read-only preview: return findings and choices in the conversation without persisting them. Save an inventory only when explicitly requested and permitted; the setup/ingestion handover records below do not override that default.
+
 ## Offer consultation across agents
 
 Offer a brain query skill shared by the agents the user uses, so work outside the brain can retrieve its knowledge. Keep one canonical brain-specific skill and expose it through supported links or short entry bridges; verify discovery separately in each intended host. The [agent guidance](agents.md#reach-the-brain-from-other-work) defines installation, metadata, audience, and read-only consultation. Do not silently edit personal configurations or promise that every host supports skills.

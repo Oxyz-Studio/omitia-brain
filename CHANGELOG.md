@@ -6,6 +6,12 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ## 2026-10-23
 
+### Ingestion, discovery and maintenance actions
+
+- Changes: the canonical skill exposes `ingest`, `discover` and `maintain` alongside `init` and `check`. Ingestion and maintenance use existing pinned missions; historical catch-up remains bounded ingestion. Discovery previews authorized metadata in the conversation, with inventory persistence only when explicitly requested and permitted. Discovery does not open source bodies, ingest, install or schedule, and does not persist kit-update tracking state. Entry points and command scenarios cover the five actions.
+- Impact: **optional**. The installed action interface adds shortcuts without moving private method pins, installing personal configuration or activating jobs. Existing discovery/setup guidance has an explicit read-only-preview boundary to preserve when adapting it.
+- Files: canonical skill, `docs/commands.md`, `docs/agents.md`, `docs/work-discovery.md`, `AGENTS.md`, README EN/FR, `DEMARRER.md`, `missions/README.md`, `examples/command-checks.md`, `docs/validation.md`.
+
 ### Less duplication across setup, missions and records
 
 - Changes: guidance links to the canonical continuity states and finalization steps instead of repeating them. One durable record can serve as source coverage, run receipt and report, with links to the same evidence. Setup, host guidance and reference prose are shorter; validation observations are grouped while their detailed history remains commit-addressed. Templates clarify optional manual/runtime fields and link adaptation when copied. The fictional studio now reads policy before home and uses one private retrieval contract.

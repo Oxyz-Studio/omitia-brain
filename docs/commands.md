@@ -1,21 +1,28 @@
-# Start and check a brain
+# Brain skill actions
 
-The kit skill offers two actions executed by your agent with its available tools.
+Five actions route requests to the existing setup guide, source-discovery criteria and missions. Your agent executes them with its available tools.
 
 ## Invoke an action
 
 Open the kit or make its full checkout available through the [canonical skill installation](agents.md#install-the-skill-once-per-contributor). Check discovery in the host you use.
 
-| Host | Start or resume | Inspect without changing the brain |
+| Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
-| Claude Code | `/omitia-brain init` | `/omitia-brain check` |
-| Codex CLI or IDE extension | `$omitia-brain init` | `$omitia-brain check` |
-| A skill selector in another interface | Select `omitia-brain`, then ask for `init`. | Select `omitia-brain`, then ask for `check`. |
-| Any agent that can read files | “Read START-HERE.md and initialize or resume my private brain.” | “Read docs/commands.md and check my private brain without changing it.” |
+| Create or resume | `/omitia-brain init` | `$omitia-brain init` |
+| Assess without changing the brain | `/omitia-brain check` | `$omitia-brain check` |
+| Integrate selected input | `/omitia-brain ingest` | `$omitia-brain ingest` |
+| Preview authorized source metadata | `/omitia-brain discover` | `$omitia-brain discover` |
+| Repair within existing policy | `/omitia-brain maintain` | `$omitia-brain maintain` |
 
-Append the private brain path and scope, such as `check ../company-brain — retrieval and session coverage`. Paths are data, not shell fragments. Resolve an unknown target with the user; do not crawl adjacent folders or assess this kit or its examples as the private brain.
+In another interface, select `omitia-brain` and request the action. Any file-capable agent can instead be asked to read `.agents/skills/omitia-brain/SKILL.md` and execute the named action; `init` also has the direct [START-HERE.md](../START-HERE.md) entry.
 
-One skill supplies both actions, avoiding generic host commands such as `/init`. See the host interfaces for [Claude Code](https://code.claude.com/docs/en/skills) and [Codex](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills). Discovery alone does not establish correct execution.
+Add inputs and scope in ordinary text: `ingest ../exports/session.md — brain ../company-brain`, `discover ../work — filenames and history metadata only`, or `maintain ../company-brain — links in project notes`. Paths are data, not shell fragments or permission to scan adjacent folders.
+
+Reuse a known private target and policy. Resolve a missing brain destination before ingestion or repairs, and a missing discovery scope/audience before enumeration; do not search sibling/home folders for them. Discovery may preview an explicitly permitted scope before brain setup, without creating a workspace. For an existing brain, establish its policy and permitted view before discovering subject or source metadata.
+
+The action interface uses the installed checkout; missions and method criteria stay at the private pin. Report missing pinned files and continue only where private rules and available evidence suffice, without substituting current methods or moving the pin. None of these actions installs a skill, connects a new source or activates recurring work merely from its name.
+
+One skill supplies these actions, avoiding generic host commands such as `/init`. See the host interfaces for [Claude Code](https://code.claude.com/docs/en/skills) and [Codex](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills). Discovery alone does not establish correct execution.
 
 ## `init`: create or resume useful memory
 
@@ -43,3 +50,29 @@ Use only tools with a read-only path. Do not rebuild or refresh an index, ingest
 Consult [retrieval](retrieval.md), [work discovery](work-discovery.md) and [reliability](reliability.md) at the brain's pin as needed. Do not execute mutating missions for this assessment; [maintenance](../missions/maintain.md) and [supervision](../missions/supervise.md) have separate write/receipt contracts. Repairs require separate requested work under private policy.
 
 Report conclusion, findings, evidence, scope and next actions, with date/host when relevant to freshness. Distinguish **verified**, **partial**, **unknown**, **not configured**, **intentionally paused** and **not applicable** instead of a misleading overall score. Report an observed kit-version difference without changing the pin or tracking metadata.
+
+## `ingest`: integrate selected source material
+
+Use the private brain's [ingestion mission](../missions/ingest.md) and the relevant [source recipe](sources.md). The request selects a contribution, document, conversation or bounded registered source set. Reuse its grants and receipts; register new material only within the requested source/action scope. A link authorized only for reference or live consultation cannot be distilled by this action.
+
+Read enough context, find the existing subject, select durable knowledge and preserve evidence, uncertainty and relevant dates. Save coverage and perform normal retrieval readback before finalizing, following [continuity](continuity.md); a reviewed no-change result needs a receipt, not a filler note. Source revisions and interrupted work resume through that same contract, without duplicate knowledge.
+
+Historical catch-up is this action with explicit machines, agents, projects/date range, exclusions and a batch budget. If source discovery or access is unresolved, propose the missing bounded scope instead of launching a machine-wide search. Distinguish historical backlog from current coverage and carry gaps forward. Recurrence is separate [scheduling](scheduling.md) work.
+
+Return what was integrated or left partial, exact examined versions/ranges, evidence and retrieval results, and the next continuation. Counts describe observed coverage, not every history on every machine.
+
+## `discover`: preview available work sources
+
+Use [work discovery](work-discovery.md) at the brain's pin, where applicable, to inventory authorized agents/history locations or selected work-folder metadata. Reuse recorded exclusions and choices. Permission to enumerate metadata is distinct from reading bodies: source names, paths, dates and counts can themselves be restricted. If the available tool would return source bodies or follow a target outside the grant, do not invoke it for this metadata-only preview; report the limit.
+
+By default, return the bounded inventory in the conversation: what was checked, accessible, excluded, unavailable or unknown, the observed denominator, and proposed ingestion batches or missing choices. An installed agent or discovered session is not proof that its content was read. Do not open documents/transcripts, follow links or mounts beyond scope, ingest, install, configure jobs, or write notes, receipts, choices, inventories or kit-update tracking metadata.
+
+If the user explicitly asks to save the inventory, first establish the private destination and write permission, then use its existing source records. That request authorizes only the selected inventory write, not content collection, installation, scheduling or update-tracking writes. The setup guide's persistent handover requirements do not override this action's default preview mode.
+
+## `maintain`: repair a bounded part of the brain
+
+Run the private brain's [maintenance mission](../missions/maintain.md). Reuse the requested scope, recorded mission budget and existing repair grants. Without a specific pass, state a small scope based on recent changes or check findings; do not silently turn routine upkeep into a full source/history scan.
+
+Diagnose, repair routine issues within policy, verify the saved result through ordinary retrieval and leave a durable receipt identifying changes, evidence, unresolved issues and continuation. Consolidation, revalidation or reconciliation can use their existing contracts when the scope and permissions cover them. A configured index can be refreshed only with the actual recorded procedure and permission; otherwise retain the permitted fallback and report the limitation.
+
+Unlike `check`, this action can write authorized repairs. It cannot broaden ingestion, connect services, alter source/retention/access policy, edit personal configuration, move the method pin or create/change jobs to finish the pass. Missing authority blocks only the affected action; continue independent permitted work. Report what was actually repaired and tested rather than declaring every control healthy.
