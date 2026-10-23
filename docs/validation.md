@@ -88,6 +88,22 @@ The ingestion exercises also exposed a procedural limit: file/root-entry invento
 
 Codex and Claude loader metadata still discovered the same canonical skill after the wording change, with no model turn in those loader checks. These exercises used local fictional inputs, not actual histories, connectors or background jobs.
 
+## Ingestion, discovery and maintenance action checks, 23 October 2026
+
+Three initial fresh local agents exercised the new action routes in fictional disposable workspaces:
+
+| Action | Observed saved result |
+| --- | --- |
+| `ingest` | Two supplied historical session snapshots, seven messages: a revised comparison resolved an earlier partial reference in one existing renamed project. The selected €120 monthly offer excluding tax, monthly-export rationale, conditional future start and absence of activation remained distinct. Local CSV/no-supplier-send constraints were retained; an imported publication instruction was ignored. Routine tests produced `no-durable-change` rather than another project note. |
+| `discover` at an older method pin | A metadata-only preview counted four files across the authorized work scope and left an out-of-scope symlink target unvisited. No source body was opened. The four private files and four source files stayed byte-identical, despite standing write permission; no inventory, receipt or kit-update state was saved. |
+| `maintain` | One broken home link and a stale fee summary were repaired within the two-repair budget. Ordinary home-to-note-to-evidence retrieval recovered €75 including tax and its effective date. Only home, summary and a new receipt changed; canonical evidence, policy, method pin, index and deferred job stayed identical. |
+
+The ingestion check reopened the saved note and evidence through normal retrieval. Both retained source copies matched the inputs, twenty-four local links resolved, old partial evidence remained unchanged and only the existing project note was used. Receipts applied to the observed versions/ranges; an unavailable second machine and other histories stayed outside coverage. No installation, live history access or recurring job was exercised.
+
+The first discovery run reproduced the earlier access-order limit: it listed private root entries before reading policy, outside the selected metadata scope. The skill and interface now require opening known governing paths directly and resolving unknown paths before enumeration. A fourth fresh agent repeated discovery with the governing paths supplied: it opened entry and policy first, enumerated only the selected root and its three subdirectories, and left the same eight files unchanged without opening source bodies or following the link. This observed improvement does not establish enforced access ordering.
+
+Codex CLI 0.153.4 and Claude Code 2.1.267 loader metadata discovered the same canonical skill after the final wording change, without model turns or persistent configuration changes. This establishes discovery, not end-to-end action execution in each host menu. The [additional command cases](../examples/command-checks.md) also specify inventory persistence, pre-setup discovery, missing inputs and unavailable pinned criteria; those variants were not executed here.
+
 ## What these checks do not establish
 
 File portability, loader discovery, agent behavior, artifact integrity and enforced runtime controls are separate evidence. None proves universal model quality, every history format, actual connector/scheduler/search operation, notification delivery or real access enforcement.

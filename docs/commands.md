@@ -18,7 +18,7 @@ In another interface, select `omitia-brain` and request the action. Any file-cap
 
 Add inputs and scope in ordinary text: `ingest ../exports/session.md — brain ../company-brain`, `discover ../work — filenames and history metadata only`, or `maintain ../company-brain — links in project notes`. Paths are data, not shell fragments or permission to scan adjacent folders.
 
-Reuse a known private target and policy. Resolve a missing brain destination before ingestion or repairs, and a missing discovery scope/audience before enumeration; do not search sibling/home folders for them. Discovery may preview an explicitly permitted scope before brain setup, without creating a workspace. For an existing brain, establish its policy and permitted view before discovering subject or source metadata.
+Reuse a known private target and policy. Resolve a missing brain destination before ingestion or repairs, and a missing discovery scope/audience before enumeration; do not search sibling/home folders for them. Discovery may preview an explicitly permitted scope before brain setup, without creating a workspace. For an existing brain, open its known governing entry and policy paths directly, without listing the root to find them. Resolve unknown governing paths before enumeration, then establish the permitted view before discovering subject or source metadata.
 
 The action interface uses the installed checkout; missions and method criteria stay at the private pin. Report missing pinned files and continue only where private rules and available evidence suffice, without substituting current methods or moving the pin. None of these actions installs a skill, connects a new source or activates recurring work merely from its name.
 

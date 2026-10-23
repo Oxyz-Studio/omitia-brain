@@ -56,7 +56,7 @@ These scenarios test the [skill actions](../docs/commands.md). Use a disposable 
 
 **Request:** Invoke `omitia-brain discover` for the chosen metadata scope.
 
-**Evaluate:** The result states checked sources, observable counts, exclusions, unknowns and proposed bounded batches. Document/transcript bodies and out-of-scope link targets are not opened. No inventory, receipt, note, kit-version notice or job is written. Compare private workspace and source bytes/inventory before and after; the default preview must leave them unchanged despite standing write permission. A separate explicit save request can persist only the permitted inventory to the selected private destination.
+**Evaluate:** The governing entry and policy are opened directly at known paths before any private enumeration; unknown governing paths are resolved without listing the root. The result states checked sources, observable counts, exclusions, unknowns and proposed bounded batches. Document/transcript bodies and out-of-scope link targets are not opened. No inventory, receipt, note, kit-version notice or job is written. Compare private workspace and source bytes/inventory before and after; the default preview must leave them unchanged despite standing write permission. A separate explicit save request can persist only the permitted inventory to the selected private destination.
 
 ## 8. Maintain the defects a check found
 

@@ -8,7 +8,7 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ### Ingestion, discovery and maintenance actions
 
-- Changes: the canonical skill exposes `ingest`, `discover` and `maintain` alongside `init` and `check`. Ingestion and maintenance use existing pinned missions; historical catch-up remains bounded ingestion. Discovery previews authorized metadata in the conversation, with inventory persistence only when explicitly requested and permitted. Discovery does not open source bodies, ingest, install or schedule, and does not persist kit-update tracking state. Entry points and command scenarios cover the five actions.
+- Changes: the canonical skill exposes `ingest`, `discover` and `maintain` alongside `init` and `check`. Ingestion and maintenance use existing pinned missions; historical catch-up remains bounded ingestion. Discovery previews authorized metadata in the conversation, with inventory persistence only when explicitly requested and permitted. Governing paths are opened directly before private enumeration. Discovery does not open source bodies, ingest, install or schedule, and does not persist kit-update tracking state. Entry points and command scenarios cover the five actions.
 - Impact: **optional**. The installed action interface adds shortcuts without moving private method pins, installing personal configuration or activating jobs. Existing discovery/setup guidance has an explicit read-only-preview boundary to preserve when adapting it.
 - Files: canonical skill, `docs/commands.md`, `docs/agents.md`, `docs/work-discovery.md`, `AGENTS.md`, README EN/FR, `DEMARRER.md`, `missions/README.md`, `examples/command-checks.md`, `docs/validation.md`.
 
