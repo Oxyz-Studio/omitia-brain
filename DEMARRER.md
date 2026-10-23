@@ -6,6 +6,8 @@ Ouvrez ce dossier avec votre agent et dites-lui :
 
 [START-HERE.md](START-HERE.md) est la procédure de référence pour l'agent. Cette page est son entrée en français.
 
+Si la skill `omitia-brain` est découverte, vous pouvez aussi lancer `/omitia-brain init` dans Claude Code, ou `$omitia-brain init` dans Codex CLI / IDE. Remplacez `init` par `check` pour un diagnostic en lecture seule d'un brain existant. Ajoutez son chemin si nécessaire ; dans une interface à sélecteur de skills, sélectionnez `omitia-brain` puis demandez l'action. Voir les [commandes](docs/commands.md).
+
 Vous pouvez apporter une présentation complète de l'entreprise, quelques documents, une conversation, un projet ou simplement un besoin. Vous pouvez répondre à toutes les questions, en passer certaines ou reprendre plus tard. Les connecteurs ne sont pas obligatoires.
 
 L'agent identifie avec vous l'emplacement du **brain privé**, séparé de ce dépôt public. Il y crée ou enrichit les notes utiles, distingue ce qui est confirmé de ce qui manque et explique comment retrouver les informations enregistrées.

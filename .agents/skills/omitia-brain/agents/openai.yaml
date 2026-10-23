@@ -1,4 +1,4 @@
 interface:
   display_name: "Omitia Brain"
-  short_description: "Build and maintain a portable company brain"
+  short_description: "Initialize, check, and maintain a company brain"
   default_prompt: "Use $omitia-brain to build or extend my company’s Markdown brain with the context I can provide now."

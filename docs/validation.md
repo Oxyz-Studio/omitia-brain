@@ -68,6 +68,22 @@ A fresh independent subagent then exercised that untouched fixture without the s
 
 The added scenarios also specify declined setup choices, interrupted sources, newly discovered agents, bounded folder scans and an explicit whole-computer variant. Those variants were not executed in these walkthroughs. No real application history, personal folders, remote machine, skill installation, connector or recurring job was accessed or configured.
 
+## Initialization and read-only command checks, 23 October 2026
+
+The canonical skill now exposes the [`init` and `check` actions](commands.md), with one action reference and file-based fallbacks. An independent documentation review found no remaining conflict between the read-only action, pinned private methods, receipt-writing missions, index refreshes and version-check metadata. Local Markdown targets and section anchors, skill frontmatter, UI metadata and the relative Claude directory link were checked.
+
+Codex CLI 0.153.4's `skills/list` discovered the enabled repository skill at its canonical path and exposed the updated UI description. Claude Code 2.1.267's SDK initialization discovered the project skill through the same canonical directory. These loader checks sent no model turn and made no persistent host-configuration changes.
+
+Fresh independent agents then executed five bounded exercises without receiving the scenario evaluation expectations:
+
+- **New initialization:** an owner's complete fictional brief became a private brain outside the public kit. Normal entry recovered a confirmed €72 hourly fee including tax, its effective date and source, while payment conditions remained unknown. The eight saved files had 27 resolving relative links, and the retained brief matched the supplied bytes. Consultation, histories, catch-up, scans and continuing missions remained explicitly offered and deferred.
+- **Read-only check with an older pin:** a brain pinned to the previous kit commit had a broken project link, an index containing an obsolete €65 fee, partial agent-history coverage and a deferred ingestion proposal. The assessment recovered the current €75 fee and evidence through permitted file fallback, identified the broken route and backlog, and distinguished a manual receipt from scheduled execution. The private workspace's eleven-file inventory and bytes were identical before and after the check, including method and version-check metadata.
+- **Resumed initialization:** a new owner contribution updated the existing project account with a successful reading test while deployment remained unverified. The earlier trial approval, method pin, folder-scan refusal and deferred ingestion were preserved. Targeted entry/freshness repairs, a retained source and a completed receipt supported normal retrieval; the old index was not rebuilt.
+- **Unresolvable method pin:** the agent reported an unavailable local commit and recovered the scoped fee and owner evidence using the private brain's own rules, without substituting the current method or contacting an external origin. All six private files remained byte-identical.
+- **Unknown private destination:** from the public kit, the agent requested the target path and did not claim to have assessed a private brain.
+
+These were local agent workflow exercises using invented material, not end-to-end typing tests in each host's command menu. They do not establish automatic discovery in every interface, behavior of every model, enforced access boundaries, a real application's history coverage, or live search/scheduler/connector operation. No runtime, personal skill installation or unattended job was added. The [command scenarios](../examples/command-checks.md) remain available for a deployment's own acceptance checks.
+
 ## What these checks do not establish
 
 Explicit file entry makes the method portable. It does not establish automatic skill discovery in every agent host, reliable access to every conversation format, or the quality of every model's interpretation.

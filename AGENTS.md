@@ -4,6 +4,7 @@ This is a public starter kit. Real company data belongs in a separate private wo
 
 ## Route the request
 
+- For explicit `omitia-brain init` or `omitia-brain check` actions, use [docs/commands.md](docs/commands.md). `init` resumes setup; `check` returns a bounded read-only assessment without running mutating missions or updating version-check metadata. Private method rules remain pinned.
 - To build, resume, or extend a company brain, read [START-HERE.md](START-HERE.md). Use the user's language and available context. A complete setup or a partial setup are both valid choices.
 - To explain or reuse the architecture, start with [docs/principles.md](docs/principles.md), then load only the relevant reference.
 - To change this kit, read [CONTRIBUTING.md](CONTRIBUTING.md) and preserve its portable, natural-language design.

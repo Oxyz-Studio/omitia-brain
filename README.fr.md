@@ -25,6 +25,15 @@ Au démarrage, l'agent propose une skill de consultation partagée, l'inventaire
 
 Le brain privé enregistre la version du kit qu'il utilise. Les agents lisent cette version figée depuis votre copie locale ou depuis ce dépôt public : la copie locale devient facultative après le démarrage, mais reste utile hors ligne et pour la skill. Voir la [compatibilité agents](docs/agents.md#link-the-brain-to-the-method).
 
+## Deux commandes de la skill
+
+| Action | Claude Code | Codex CLI / IDE |
+| --- | --- | --- |
+| Créer ou reprendre le brain privé | `/omitia-brain init` | `$omitia-brain init` |
+| Vérifier les entrées, la recherche et la couverture sans modifier le brain | `/omitia-brain check` | `$omitia-brain check` |
+
+Utilisez-les quand la skill du dépôt est découverte, ou sélectionnez `omitia-brain` dans votre interface puis demandez l'action. Ajoutez le chemin du brain privé si nécessaire. `init` préserve l'existant ; `check` rend ses preuves, ses inconnues et les prochaines actions sans réparation ni reconstruction d'index. Une consigne par fichier reste disponible pour tout agent. Voir les [commandes et leur périmètre](docs/commands.md).
+
 ## Réutiliser les principes
 
 Un CTO peut consulter la documentation sans suivre le démarrage guidé ni adopter l'arborescence proposée :

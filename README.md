@@ -25,6 +25,15 @@ During setup, the agent offers a shared consultation skill, an inventory of work
 
 The private brain records the kit version it uses. Agents read that pinned version from your local checkout or from this public repository, so the checkout is optional after setup; keep it for offline use and the skill. See [agent compatibility](docs/agents.md#link-the-brain-to-the-method).
 
+## Two skill actions
+
+| Action | Claude Code | Codex CLI / IDE |
+| --- | --- | --- |
+| Create or resume the private brain | `/omitia-brain init` | `$omitia-brain init` |
+| Inspect entries, retrieval and coverage without changing it | `/omitia-brain check` | `$omitia-brain check` |
+
+Use them when the repository skill is discovered, or select `omitia-brain` in your interface and request the action. Append the private brain path when needed. `init` preserves existing work; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. Both also have a portable file prompt. See [commands and their scope](docs/commands.md).
+
 ## Understand the architecture
 
 | What you need | Where to read |

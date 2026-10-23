@@ -6,6 +6,12 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ## 2026-10-23
 
+### Explicit initialization and read-only checks
+
+- Changes: the canonical kit skill routes `init` to new or resumed setup and `check` to a bounded, read-only assessment of entries, retrieval, source coverage and operational evidence. The interface documents Claude Code, Codex CLI/IDE and explicit-file invocation, preserves existing private method pins, and keeps diagnosis separate from receipt-writing missions, index refreshes and version-check metadata writes.
+- Impact: **optional**. Existing brains can use the installed interface without resetting their content or moving their method pin. No runtime, separate command copies, personal installation or background job is added.
+- Files: `.agents/skills/omitia-brain/SKILL.md`, `.agents/skills/omitia-brain/agents/openai.yaml`, `docs/commands.md`, `AGENTS.md`, `START-HERE.md`, `README.md`, `README.fr.md`, `DEMARRER.md`, `docs/agents.md`, `missions/README.md`, `examples/command-checks.md`, `examples/README.md`, `docs/validation.md`.
+
 ### Explicit work discovery and continuing memory offers
 
 - Changes: setup explicitly offers a shared consultation skill, an inventory of all locally used work agents and accessible histories on authorized machines, historical work-session catch-up, continuing ingestion and maintenance, and an inventory/scan of selected work folders. Scope previews, recorded choices, per-source coverage and rediscovery keep proposals separate from permissions and active jobs. Project knowledge is consolidated progressively across sessions with provenance; grouped clarification questions follow reading without blocking independent facts. A whole-computer scan remains a separate explicit choice with personal/secret exclusions. Full eligible-source review remains distinct from transcript retention and promotion into memory.

@@ -2,6 +2,8 @@
 
 This is the agent-facing entry point. Work in the user's language. The outcome is a useful company memory, not a completed questionnaire or a copy of this repository.
 
+The skill's `init` action reaches this guide. For a read-only assessment of an existing brain, use the [`check` action](docs/commands.md#check-a-bounded-read-only-assessment) instead of rerunning setup.
+
 ## Establish the task
 
 Distinguish three requests:
