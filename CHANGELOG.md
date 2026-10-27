@@ -4,6 +4,14 @@ Changes that can affect an existing private brain. A brain records the kit commi
 
 Impact classes: **action recommended** (an existing brain should adapt a file), **optional** (useful improvement), **none** (no effect on existing brains).
 
+## 2026-10-27
+
+### Annotated design bibliography
+
+- Changes: the public bibliography records the references evaluated on 23 October, known versions, useful ideas, adaptations and unresolved attributions. The README entries and mechanism review link to it; operational contracts and validation evidence remain separate.
+- Impact: **none**. No private brain migration, permission, method-pin or runtime change.
+- Files: `docs/design-references.md`, README EN/FR and `docs/mechanism-review.md`.
+
 ## 2026-10-24
 
 ### Keep useful work under existing grants

@@ -4,6 +4,8 @@ Design review: 21 October 2026. This map connects the knowledge lifecycle to con
 
 The review compared primary documentation, implementation and selected read-only evidence from a private company brain. No private records are published. Documented intent, code behavior, observed operation and fictional tests were assessed separately.
 
+The [annotated bibliography](design-references.md) records the public references evaluated in the later 23 October audit, their adaptations and limits. It does not establish that every reference informed the original design or was part of this 21 October review.
+
 ## Coverage map
 
 | Mechanism | Public contract | Useful acceptance evidence |
