@@ -12,6 +12,7 @@ The agent can complete setup in one conversation or leave a smaller working brai
 | [Source](source.md) | One source's access, boundaries, and processing coverage. |
 | [Note](note.md) | A durable fact, practice, hypothesis, or reference. |
 | [Procedure](procedure.md) | Optional bounded method with preconditions, exceptions, observed validation and a review trigger. |
+| [Metric](metric.md) | Optional recurring calculation with a definition, grain, population, execution evidence and review dependencies. |
 | [Decision](decision.md) | An actual decision, its authority, reasons, and consequences. |
 | [Ingestion log](ingestion-log.md) | Versioned source coverage and unresolved items. |
 | [Mission](mission.md) | A natural-language job for the existing agent environment. |

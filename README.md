@@ -38,6 +38,7 @@ Use the discovered repository skill, or select `omitia-brain` in your interface 
 | Need | References |
 | --- | --- |
 | Design and knowledge | [Principles](docs/principles.md), [claims, provenance and time](docs/knowledge-model.md) |
+| Business meaning and recurring calculations | [Domain definitions](docs/context.md#define-terms-that-affect-the-task), [relationships](docs/knowledge-model.md#relationships-express-a-specific-claim), [metrics](docs/metrics.md) |
 | Design references and adaptations | [Annotated bibliography](docs/design-references.md) |
 | Finding and loading context | [Retrieval](docs/retrieval.md), [packs and compact memory](docs/context.md) |
 | People, authority and access | [Governance](docs/governance.md), [external documents and restrictions](docs/external-references.md) |

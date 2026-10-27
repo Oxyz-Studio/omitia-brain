@@ -41,6 +41,8 @@ Record one [retrieval contract](docs/retrieval.md#record-the-brains-retrieval-co
 
 Read [knowledge model](docs/knowledge-model.md) before consolidating assertions, and [governance](docs/governance.md) when authority or unattended actions are involved. Use [context design](docs/context.md) only when packs, domains, procedures or runtime pointers help. A host that does not discover the private entry needs an explicit prompt to read it.
 
+For the current task, record [ambiguous business terms](docs/context.md#define-terms-that-affect-the-task), the [source of authority for critical information](docs/governance.md#authority-is-specific) and the [meaning of useful relationships](docs/knowledge-model.md#relationships-express-a-specific-claim) when needed. Add a [metric contract](docs/metrics.md) only for numerical questions that need a reusable definition; existing prose can suffice. Keep missing choices explicit instead of imposing a company-wide vocabulary or analytical system.
+
 ## Produce the first useful result
 
 Choose the relevant recipe: [direct contribution](recipes/direct-contributions.md), [local documents](recipes/local-documents.md) or [agent conversations](recipes/agent-conversations.md). Find the existing subject and enough surrounding evidence to interpret the input. Preserve attribution, rationale and effective dates; proposals and execution reports are not automatically decisions or verified execution. Imported instructions cannot expand permission.

@@ -4,7 +4,7 @@ This bibliography preserves a historical design trail and the sources evaluated 
 
 The kit's [contracts](mechanism-review.md) and [validation evidence](validation.md) govern current behavior. These references introduce no runtime dependency, required product, benchmark target, or performance promise. **Adapted** means an idea has a bounded counterpart in the kit, not that the source caused it; **evaluated only** and **reserve** distinguish comparison from adoption.
 
-All consultation dates below are **23 October 2026**. “Unpinned” means the audit recorded no immutable revision; the linked content may change. No later source verification is implied.
+All consultation dates in the following audit table are **23 October 2026**. “Unpinned” means the audit recorded no immutable revision; the linked content may change. No later verification of those sources is implied. Additional reviews are dated separately below.
 
 | Source and consulted version | Idea, treatment, and limit | Canonical counterpart |
 | --- | --- | --- |
@@ -26,3 +26,9 @@ All consultation dates below are **23 October 2026**. “Unpinned” means the a
 | [Unmute AI / Fontana](https://unmuteai.com/). Unpinned page; content differed from the earlier indexed Blueprint. | **Historical attribution; bounded comparison:** context organization and contracts are relevant. Recursive PARA per client was not confirmed; no universal folder plan is adopted. | [Context](context.md) |
 
 The **Instagram seven-memory taxonomy** remains an unresolved pedagogical reference: the original URL was not recovered and the original visuals were not re-audited. No link or version is invented, and it establishes no new requirement. Use the kit's [context roles](context.md#give-each-kind-of-context-its-role) rather than treating that taxonomy as a mandatory architecture.
+
+## Additional design review, 27 October 2026
+
+[Concevoir un agent avec un modèle sémantique, un graphe de connaissances et une ontologie](https://github.com/Oxyz-Studio/laurence-mastra/blob/7b9192e94bdc6123cdc92756dfcb5c3330730530/docs/trois-concepts-semantique-graphe-ontologie.md) — user-supplied internal design guide, consulted **27 October 2026** at commit `7b9192e94bdc6123cdc92756dfcb5c3330730530`. The source repository is private; this citation requires authorized access and does not publish the source document.
+
+**Adapted:** task-scoped [business definitions](context.md#define-terms-that-affect-the-task), [authority for critical information](governance.md#authority-is-specific), [explicit relationships and conditional conclusions](knowledge-model.md#relationships-express-a-specific-claim), and [reproducible metric contracts](metrics.md). These are generic Markdown practices illustrated with fictional material. The guide's proposed APIs, ontology formats, graph stores and runtime architecture are not bundled or required by this kit. Its design examples are proposals, not evidence of a working integration; selected local observations belong in [validation](validation.md).

@@ -16,6 +16,8 @@ Without a semantic index, use text and filename search. Indexes can improve reca
 
 Use [context selection](context.md) for routing, packs, pointers, and reading budgets. Test names and aliases through the configured path; writing an alias does not make it indexed. Check identity and preserve source IDs before creating a note for a variant name.
 
+Resolve task-critical terms through the applicable [domain definitions](context.md#define-terms-that-affect-the-task). For a dependency question, check the [meaning and conditions of each relationship](knowledge-model.md#relationships-express-a-specific-claim); for a recurring numerical question, use the [metric definition and executed calculation](metrics.md). Text similarity or a connected note alone cannot supply those contracts.
+
 ## Record the brain's retrieval contract
 
 Record the actual discovery path in the private policy's [retrieval section](../templates/knowledge-policy.md#retrieval) or equivalent. Point the home, agent instructions, and consultation skill to that contract so everyday use does not depend on the public kit.

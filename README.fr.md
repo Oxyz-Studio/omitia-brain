@@ -38,6 +38,7 @@ Utilisez la skill du dépôt découverte par votre agent, ou sélectionnez `omit
 | Besoin | Références |
 | --- | --- |
 | Architecture et connaissance | [Principes](docs/principles.md), [assertions, provenance et dates](docs/knowledge-model.md) |
+| Sens métier et calculs récurrents | [Définitions métier](docs/context.md#define-terms-that-affect-the-task), [relations](docs/knowledge-model.md#relationships-express-a-specific-claim), [métriques](docs/metrics.md) |
 | Références et adaptations | [Bibliographie commentée](docs/design-references.md) |
 | Recherche et contexte utile | [Recherche](docs/retrieval.md), [packs et mémoire compacte](docs/context.md) |
 | Contributeurs, autorité et accès | [Gouvernance](docs/governance.md), [documents externes et restrictions](docs/external-references.md) |

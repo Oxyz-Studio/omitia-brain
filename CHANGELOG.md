@@ -6,6 +6,12 @@ Impact classes: **action recommended** (an existing brain should adapt a file), 
 
 ## 2026-10-27
 
+### Business definitions, relationships and metric contracts
+
+- Changes: task-scoped definitions include examples, counterexamples and ownership; critical information has explicit authority and freshness. Relationships preserve their meaning, conditions and evidence before supporting an inference. Optional metric guidance and a template describe grain, population, units, periods, missing values and executed calculation evidence. The bibliography adds the access-controlled design document reviewed on 27 October.
+- Impact: **optional**. Existing brains can adapt the relevant sections at an approved method update when ambiguous terms, dependencies or recurring calculations need them. No vocabulary, metric definition, tool, permission or private method pin changes automatically.
+- Files: context, governance, knowledge model, retrieval, metrics guide/template, setup/navigation, bibliography, fictional semantic checks and validation evidence.
+
 ### Annotated design bibliography
 
 - Changes: the public bibliography records the references evaluated on 23 October, known versions, useful ideas, adaptations and unresolved attributions. The README entries and mechanism review link to it; operational contracts and validation evidence remain separate.

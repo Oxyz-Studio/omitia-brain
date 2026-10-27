@@ -40,6 +40,16 @@ Prefer stable source IDs where available so renames and moves preserve the trail
 
 If retention is prohibited, keep a permitted locator and its access dependency. If access or retention expires, mark affected claims as no longer independently verifiable from the brain; a dead link is not proof. See [sources](sources.md).
 
+## Relationships express a specific claim
+
+When a relationship affects an answer, name its meaning and direction: a project **depends on** an asset, an offer **replaces** another, or a person **approves** a delivery within a stated role. A generic link can support navigation without establishing any of these claims. Use the existing canonical subjects and identifiers; a similar name or related topic is not identity.
+
+Keep the relation's endpoints, scope, evidence, applicable time and relevant conditions together in prose or a small table. Distinguish recorded facts from inferred or proposed relationships. Follow [domain definitions](context.md#define-terms-that-affect-the-task) and [information authority](governance.md#authority-is-specific); no fixed vocabulary, graph database or extra note per edge is required.
+
+For example, “Birch launch depends on approved photographs from Studio Vale” needs the applicable launch, which photographs, their required date and the source establishing the dependency. If those photographs are already accepted, a later supplier delay need not affect this launch. If acceptance is unknown, report a possible impact and the missing check rather than a confirmed delay.
+
+For a conclusion across several links, inspect every material step, its conditions and current evidence within the permitted view. A path alone does not prove causation, delay or permission. Cite its premises and label the inference; inaccessible or missing evidence keeps that conclusion bounded. Changes to an endpoint, relationship or satisfied condition can require review of the dependent conclusion under [changes preserve meaning](#changes-preserve-meaning).
+
 ## Three different dates
 
 Use these names for structured dates, or express the distinctions in prose.

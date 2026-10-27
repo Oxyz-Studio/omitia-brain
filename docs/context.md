@@ -22,6 +22,12 @@ A saved domain contract does not prove a tool reads it; verify the reader before
 
 Links and text search are often enough. Follow relationships for dependencies or prior reasoning; add an index or graph only for recurring retrieval problems. Keep knowledge and evidence usable without it.
 
+## Define terms that affect the task
+
+Keep useful domain definitions in the relevant canonical note: scope, meaning, a positive example, a counterexample, and any allowed synonyms. For example, a fictional shop defines “booked visit” as a visit with a confirmed slot: tomorrow's confirmed repair qualifies; an unconfirmed request does not. A synonym names the same concept; an entity alias names the same individual object. Do not use one to infer the other.
+
+For changeable definitions, link the owner, evidence, and applicable version or date using [scoped authority](governance.md#authority-is-specific). If a definition is absent, preserve that gap instead of inventing it. Add only terms needed by actual tasks; teams need no universal vocabulary or new folders.
+
 ## Keep runtime memory compact
 
 If the host loads memory across conversations, reserve it for brief, stable orientation that changes behavior, matters frequently, and is costly to forget: a durable preference, standing constraint, or pointer to the brain's entry or canonical rule.

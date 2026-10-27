@@ -12,6 +12,18 @@ The kit's MIT license permits commercial reuse and modification with its copyrig
 
 Record who can establish knowledge or decide in each domain under the user's rules. Neither setting up the folder nor holding a senior title establishes universal authority.
 
+For consequential fields or assertions, connect the information to its authoritative source or role, freshness requirement, and applicable scope. Keep this mapping with the relevant canonical knowledge and reuse [source records](../templates/source.md); no separate authority registry is required. A source of operational truth does not necessarily have authority to decide policy or publish information. This mapping records authority; it grants no new permissions.
+
+For a fictional repair shop:
+
+| Information | Authoritative source or role | Freshness and applicable scope |
+| --- | --- | --- |
+| Agreed service price | Signed agreement and authorized amendments | Version applicable to this booking |
+| Confirmed slot | Booking service | Current state for this visit |
+| Meaning of “booked visit” | Definition owner and approved note | Definition version for this workflow |
+
+A newer dashboard cannot replace the applicable agreement or owner evidence for a different assertion. Compare source roles and scope before dates; use [conflict resolution](#resolve-differences-with-evidence) when authority remains unresolved. Use the [domain definition guidance](context.md#define-terms-that-affect-the-task) for terms affecting interpretation.
+
 Keep observations and preferences attributed until an authorized decision adopts them. Agents contribute interpretations and receipts; file-editing access gives them no business authority.
 
 ## Configure autonomy by source, action, and scope
