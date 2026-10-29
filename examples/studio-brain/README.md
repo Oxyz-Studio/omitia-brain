@@ -20,4 +20,14 @@ The brain has local fictional conversation sources. No mailbox, live booking sys
 
 The latest reviewed input is 15 October 2026. The last useful change was on 14 October: the agent recovered the missing options, recorded the owner's booking decision, and integrated the confirmed €45 service price. See the [latest receipt](receipts/2026-10-15.md). The dates describe this example's snapshot; they are not a claim of present-day freshness.
 
+## Readiness
+
+| Item | Choice / state | Scope or evidence reference | Last verified | Revisit or threshold |
+| --- | --- | --- | --- | --- |
+| Consultation skill | deferred | Not yet created in this brain. | 15 Oct 2026 | Revisit on 1 Nov 2026. |
+| Historical catch-up | done for Mira's launch conversation; Luca's agent not inventoried | [Source registry](SOURCES.md), [R02](receipts/2026-10-14.md) | 15 Oct 2026 | Offer Luca's catch-up at his next session. |
+| Continuing ingestion | manual | [Ingestion log](INGESTION_LOG.md), [latest receipt](receipts/2026-10-15.md) | 15 Oct 2026 | New launch sessions reviewed within 7 days. |
+| Maintenance and health | manual; [weekly review](missions/weekly-review.md) written, not scheduled | No health observation yet. | 15 Oct 2026 | Report if no review for 14 days. |
+| Work-folder scan | declined | Not applicable. | 13 Oct 2026 | None. |
+
 The reusable kit is available [two levels above this folder](../../README.md). Real company content belongs in a separate private location chosen during setup.

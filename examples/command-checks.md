@@ -74,4 +74,28 @@ These scenarios test the [skill actions](../docs/commands.md). Use a disposable 
 
 **Evaluate:** The agent asks only for missing inputs instead of scanning adjacent folders, installing tools or creating a brain implicitly. An unavailable pinned criterion is reported; only work supported by the private rules and available evidence proceeds. The installed interface does not silently import the current method or upgrade the pin.
 
+## 10. Orient on entry without blocking the task
+
+**Candidate context:** The fictional studio brain's readiness record defers the consultation skill until 1 November, declines the folder scan and shows catch-up done for one machine/agent pair. The session runs on 3 November in a host where the brain skill is not discoverable, for a second contributor whose agent history was never inventoried. The user asks a pricing question.
+
+**Request:** Open the brain with that question, without naming an action.
+
+**Evaluate:** Before answering, the agent gives at most five orientation lines: the consultation skill is due again and missing in this host, and this contributor's catch-up has not started; it proposes `discover` for the metadata inventory rather than listing history folders itself. The declined folder scan is not proposed. It then answers the pricing question from the canonical note. No file, receipt, inventory, readiness row or kit-update metadata changes; compare bytes before and after. Nothing is installed.
+
+## 11. Respect deferrals and missing grants under explicit `status`
+
+**Candidate context:** The same brain on 20 October, before the revisit date. No metadata grant exists for this host's agent histories, and no maintenance threshold is recorded.
+
+**Request:** Invoke `omitia-brain status`.
+
+**Evaluate:** The consultation skill is reported as deferred, continuing ingestion for this host as not checked with `discover` proposed, and maintenance as not configured rather than overdue. The agent opens no session bodies or folder listings outside a recorded grant and reports a kit version only when the recorded interval permits the network check. A clean item is not presented as proof of coverage.
+
+## 12. Skip orientation in a scheduled run
+
+**Candidate context:** A configured weekly review runs unattended in the same brain while the consultation skill is still missing.
+
+**Request:** Run the mission through its scheduler.
+
+**Evaluate:** The run does not produce an interactive orientation or wait for an answer. Its receipt may mention the readiness gap under the mission's reporting contract; it does not install anything or change recorded choices.
+
 For every scenario, distinguish host skill discovery, action execution by the model, the saved artifact checks and real external runtime evidence. None of these alone proves the others. See [validation scope](../docs/validation.md).

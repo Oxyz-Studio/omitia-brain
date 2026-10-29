@@ -1,6 +1,6 @@
 # Discover work and refine the brain
 
-During initial setup or a requested expansion, offer the capabilities below explicitly. Do not wait for the user to know their names. Explain the useful result, show the proposed scope, and reuse choices already recorded. An offer is not an installed skill, a source grant, or an active job. Record accepted, deferred, declined, and unavailable options so later sessions resume rather than repeat onboarding.
+During initial setup or a requested expansion, offer the capabilities below explicitly. Do not wait for the user to know their names. Explain the useful result, show the proposed scope, and reuse choices already recorded. An offer is not an installed skill, a source grant, or an active job. Record accepted, deferred, declined, and unavailable options, with a revisit date or condition for deferrals, in the home's readiness record so later sessions resume rather than repeat onboarding. The session-start [`status` orientation](commands.md#status-orient-at-the-start-of-a-session) reads that record to surface what remains to do in each host.
 
 Use the authorized material already supplied to produce useful knowledge while these choices remain open. Discovery, content reading, retaining sources, updating notes, installing a consultation entry, and running unattended jobs are distinct actions. Apply the existing policy to each; resolve only missing choices that affect the next action.
 

@@ -6,7 +6,7 @@ The agent can complete setup in one conversation or leave a smaller working brai
 
 | Template | Intended use |
 | --- | --- |
-| [Brain home](brain-home.md) | Scope, entry points, current usefulness, setup resume point. |
+| [Brain home](brain-home.md) | Scope, entry points, current usefulness, setup resume point, readiness record for the session-start `status` orientation. |
 | [Agent instructions](brain-agents.md) | Reading, writing, continuity, and collaboration rules. |
 | [Knowledge policy](knowledge-policy.md) | User-selected authority, autonomy, source, and retention rules. |
 | [Source](source.md) | One source's access, boundaries, and processing coverage. |

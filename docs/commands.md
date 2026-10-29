@@ -1,6 +1,6 @@
 # Brain skill actions
 
-Five actions route requests to the existing setup guide, source-discovery criteria and missions. Your agent executes them with its available tools.
+Six actions route requests to the existing setup guide, source-discovery criteria and missions. Your agent executes them with its available tools.
 
 ## Invoke an action
 
@@ -9,6 +9,7 @@ Open the kit or make its full checkout available through the [canonical skill in
 | Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
 | Create or resume | `/omitia-brain init` | `$omitia-brain init` |
+| Orient at session start | `/omitia-brain status` | `$omitia-brain status` |
 | Assess without changing the brain | `/omitia-brain check` | `$omitia-brain check` |
 | Integrate selected input | `/omitia-brain ingest` | `$omitia-brain ingest` |
 | Preview authorized source metadata | `/omitia-brain discover` | `$omitia-brain discover` |
@@ -29,6 +30,29 @@ One skill supplies these actions, avoiding generic host commands such as `/init`
 Follow [START-HERE.md](../START-HERE.md), honoring an existing brain's policy, permitted view and method pin. Resume saved work without resetting files or choices; a new brain records the setup commit.
 
 Use authorized input to save useful knowledge and demonstrate retrieval. Make the guide's [work-discovery offers](work-discovery.md) explicit, without implying installation or recurring permission. Return the private location, usable result, evidence, remaining choices and resume point; report only capabilities actually configured and verified.
+
+## `status`: orient at the start of a session
+
+A short, read-only orientation that tells the current agent and user what the brain is missing to be well used from here, then lets the requested work continue. The private agent entry asks for it once per interactive session when an agent enters the brain; the explicit action runs the same orientation on demand. It is not an audit: `check` inspects retrieval, knowledge quality and recovery.
+
+Open the governing entry and policy directly, establish requester, access identity and audience, then read only the home's readiness record and the method reference. Use metadata and recorded state; do not open source bodies, transcripts, notes or receipts beyond what a readiness item names, and do not launch discovery to fill gaps.
+
+Assess these items in order, stopping at the budget (default: six items, a few metadata reads each):
+
+| Item | Signal worth surfacing |
+| --- | --- |
+| Governance and method | Missing policy or retrieval contract; method origin or full commit unresolvable. |
+| Consultation in this host | The brain query skill or standing pointer is accepted but not discoverable in the current host, or was never offered. Per-person installation is verified live, never recorded with personal paths. |
+| Historical catch-up | Accepted but never completed, or completed for other machine/agent pairs only, for the current pair. Compare with receipts that identify the pair without exposing paths. |
+| Continuing ingestion | The newest receipt's reviewed range ends before the latest observable session or version in an already authorized inventory scope. Without a recorded metadata grant for this host, report "not checked" and propose `discover`. |
+| Maintenance and health | The last maintenance receipt or health observation is older than the recorded threshold; no threshold means "not configured", not overdue. |
+| Kit version | A newer commit at the recorded origin, only when the recorded interval allows the network check; otherwise "not checked". |
+
+Respect recorded choices. A declined offer is not proposed again; a deferred one returns only after its recorded revisit date or condition; an intentional pause is not a missed run. Report each item as **ok**, **to do**, **deferred**, **declined**, **not checked** or **not configured**, and show only items needing attention plus a one-line count of the others.
+
+Return at most five lines before the user's task, each with one proposed next action and the action that would perform it (`init`, `ingest`, `discover`, `maintain`, an installation step requiring consent). Then continue the requested work; never block it on an answer. Proposing is not doing: installation, catch-up, discovery, scheduling or a version upgrade each still needs an existing grant or the user's agreement.
+
+Like `check`, this action writes nothing: no readiness state, receipt, inventory, kit-update metadata or "already shown" marker. Repetition is avoided within the conversation; across sessions, deferrals and declines are recorded only through a separate permitted write the user requests, such as updating the home's readiness record. Scheduled runs and missions do not run the interactive orientation; they report readiness gaps in their own receipts. A clean orientation proves only the inspected items; it is not evidence of coverage, retrieval quality or a running schedule.
 
 ## `check`: a bounded, read-only assessment
 

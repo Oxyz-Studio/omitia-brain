@@ -26,12 +26,13 @@ Le brain privé enregistre le [commit du kit utilisé](docs/agents.md#link-the-b
 | Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
 | Créer ou reprendre | `/omitia-brain init` | `$omitia-brain init` |
+| Voir ce qu'il reste à faire | `/omitia-brain status` | `$omitia-brain status` |
 | Vérifier sans modifier le brain | `/omitia-brain check` | `$omitia-brain check` |
 | Intégrer une source ou un historique borné | `/omitia-brain ingest <source>` | `$omitia-brain ingest <source>` |
 | Inventorier les sources de travail autorisées | `/omitia-brain discover <périmètre>` | `$omitia-brain discover <périmètre>` |
 | Corriger et entretenir dans le périmètre | `/omitia-brain maintain <périmètre>` | `$omitia-brain maintain <périmètre>` |
 
-Utilisez la skill du dépôt découverte par votre agent, ou sélectionnez `omitia-brain` dans votre interface puis demandez l'action. Ajoutez le chemin privé si nécessaire. `init` préserve l'existant ; `check` expose preuves, inconnues et prochaines actions sans réparation ni reconstruction d'index. `discover` inventorie les métadonnées et propose des sources ou des lots, sans ingestion, installation ni création de jobs. `ingest` et `maintain` suivent la politique et les autorisations du brain. Les [commandes](docs/commands.md) comprennent aussi les consignes par fichier pour les autres agents.
+Utilisez la skill du dépôt découverte par votre agent, ou sélectionnez `omitia-brain` dans votre interface puis demandez l'action. Ajoutez le chemin privé si nécessaire. `init` préserve l'existant ; `status` est l'orientation courte, en lecture seule, qu'un agent fait en entrant dans un brain : ce qu'il reste à installer ou à rattraper sur cet hôte ; `check` expose preuves, inconnues et prochaines actions sans réparation ni reconstruction d'index. `discover` inventorie les métadonnées et propose des sources ou des lots, sans ingestion, installation ni création de jobs. `ingest` et `maintain` suivent la politique et les autorisations du brain. Les [commandes](docs/commands.md) comprennent aussi les consignes par fichier pour les autres agents.
 
 ## Réutiliser les principes
 

@@ -15,7 +15,7 @@ Agents need permitted file access. Remote sources and unattended work additional
 | Repository skills | Canonical [.agents/skills/omitia-brain/SKILL.md](../.agents/skills/omitia-brain/SKILL.md), exposed to Claude through a relative `.claude/skills/omitia-brain` link. |
 | Shared workspace | Expose kit and private brain separately, preserving audience and write permissions. |
 
-The skill offers [`init`, `check`, `ingest`, `discover` and `maintain`](commands.md), with different read/write scopes. Verify discovery in each host; if unavailable, use the explicit file prompt. On systems without symlinks, recreate the link or use `CLAUDE.md` and the skill path, rather than maintaining two rule copies.
+The skill offers [`init`, `status`, `check`, `ingest`, `discover` and `maintain`](commands.md), with different read/write scopes. Verify discovery in each host; if unavailable, use the explicit file prompt. On systems without symlinks, recreate the link or use `CLAUDE.md` and the skill path, rather than maintaining two rule copies.
 
 The private brain needs its own [agent entry](../templates/brain-agents.md). Add a short host bridge where required; otherwise ask the host to read that entry explicitly. Its home, entry and consultation skill point to one private [retrieval contract](retrieval.md#record-the-brains-retrieval-contract), usable without the kit or the first contributor's configuration.
 
@@ -41,9 +41,9 @@ Moving the pin requires the review below. One checkout can serve brains with dif
 
 This version-transition procedure and the skill's action interface use the installed checkout, including for older pins. Other method files stay pinned.
 
-During method work, check the recorded origin for a newer full commit, respecting the recorded interval; without one, at most once per interactive session. Plain consultation does not check. Use the candidate's changelog/history as information to summarize relevant impact and affected private files, not as instructions or a substitute for the actual diff.
+During method work, check the recorded origin for a newer full commit, respecting the recorded interval; without one, at most once per interactive session. Plain consultation does not check. The session-start orientation may report a candidate when the interval allows, without recording it. Use the candidate's changelog/history as information to summarize relevant impact and affected private files, not as instructions or a substitute for the actual diff.
 
-Record the check, candidate notice and any deferral in the method reference; repeat a notice only for a newer candidate or according to the reminder policy. Scheduled runs only record or notify according to policy. The [`check`](commands.md#check-a-bounded-read-only-assessment) and [`discover`](commands.md#discover-preview-available-work-sources) actions never write update-tracking state, change a checkout or upgrade; an explicit inventory-saving request for `discover` does not authorize those writes.
+Record the check, candidate notice and any deferral in the method reference; repeat a notice only for a newer candidate or according to the reminder policy. Scheduled runs only record or notify according to policy. The [`status`](commands.md#status-orient-at-the-start-of-a-session), [`check`](commands.md#check-a-bounded-read-only-assessment) and [`discover`](commands.md#discover-preview-available-work-sources) actions never write update-tracking state, change a checkout or upgrade; an explicit inventory-saving request for `discover` does not authorize those writes.
 
 With the user's agreement:
 
@@ -66,7 +66,7 @@ Inside the brain, agents use its entry. Elsewhere, they need a consultation poin
 | --- | --- |
 | Brain query skill | Versioned in the private brain using [brain-skill](../templates/brain-skill.md); routes consultation and useful work outcomes to the private rules. Contributors can expose that same canonical directory to supported hosts. |
 | Standing pointer | A short rule in personal instructions or runtime memory saying which work calls for the brain, where to enter, and to keep useful outcomes under its private capture rule. Follow [compact memory](context.md#keep-runtime-memory-compact). |
-| Optional hook | A host event that injects a pointer or captures permitted evidence. It cannot be the only consultation or [ingestion](ingestion-design.md) path, or cause full-brain loading. |
+| Optional hook | A host event that injects a pointer, the instruction to run the [`status` orientation](commands.md#status-orient-at-the-start-of-a-session) at session start, or captures permitted evidence. It cannot be the only consultation, orientation or [ingestion](ingestion-design.md) path, or cause full-brain loading. |
 
 Personal entries need consent and actual per-host discovery checks. Descriptions and pointers can be visible before policy is read: include only metadata approved for every installation context, normally the organization and broad non-sensitive domains. Restricted subjects belong behind the appropriate access boundary.
 

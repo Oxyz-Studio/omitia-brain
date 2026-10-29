@@ -11,9 +11,10 @@ Before listing or reading a private brain's subject/source files, open its gover
 
 ## Explicit actions
 
-Interpret `init`, `check`, `ingest`, `discover` and `maintain` plus their source, private brain or scope as actions, not shell commands; equivalent natural-language requests work too. The installed [command interface](../../../docs/commands.md) is read from this checkout without upgrading the private method pin. Other method references stay pinned; report missing criteria instead of substituting current guidance.
+Interpret `init`, `status`, `check`, `ingest`, `discover` and `maintain` plus their source, private brain or scope as actions, not shell commands; equivalent natural-language requests work too. The installed [command interface](../../../docs/commands.md) is read from this checkout without upgrading the private method pin. Other method references stay pinned; report missing criteria instead of substituting current guidance.
 
 - **`init`:** follow [START-HERE.md](../../../START-HERE.md) to create or resume. Preserve existing content, conventions and recorded choices. Resolve an unknown private destination before writing; never initialize company data inside this kit.
+- **`status`:** run the short read-only [session orientation](../../../docs/commands.md#status-orient-at-the-start-of-a-session): governance and method, consultation in this host, catch-up, continuing ingestion, maintenance and kit version, from recorded readiness and metadata only. Respect declined and deferred choices, return at most five lines with proposed actions, then continue the requested work. Write nothing.
 - **`check`:** assess the permitted view in the conversation, without changing notes, receipts, indexes, configuration, jobs or version-check metadata, even with standing maintenance permission. Do not run mutating missions. Use read-only retrieval or file fallback if search would write, and report unknown state.
 - **`ingest`:** identify the destination brain and selected source, then use its pinned [ingestion mission](../../../missions/ingest.md) and relevant [recipe](../../../docs/sources.md). Historical catch-up is the same mission with explicit scope and bounded batches. Preserve coverage, evidence and normal retrieval before finalization.
 - **`discover`:** preview authorized agents, histories or work folders using [work discovery](../../../docs/work-discovery.md) at the pin. Default to read-only metadata and a result in the conversation, without opening source bodies, saving inventory/choices, ingesting, installing or scheduling. Persist an inventory only when explicitly requested and permitted. A preview can precede brain setup when its scope and audience are established.
@@ -21,7 +22,7 @@ Interpret `init`, `check`, `ingest`, `discover` and `maintain` plus their source
 
 ## Kit updates
 
-The [update procedure](../../../docs/agents.md#check-for-kit-updates) is read from this checkout, including for older pins. During method work, compare the recorded origin's latest commit with the pin, respecting the recorded interval and notice state. Summarize relevant changes and record the check. Upgrade only with agreement after reviewing the actual diff; record the approved full commit. Scheduled runs only record or notify; `check` and `discover` never persist update-tracking metadata or upgrade.
+The [update procedure](../../../docs/agents.md#check-for-kit-updates) is read from this checkout, including for older pins. During method work, compare the recorded origin's latest commit with the pin, respecting the recorded interval and notice state. Summarize relevant changes and record the check. Upgrade only with agreement after reviewing the actual diff; record the approved full commit. Scheduled runs only record or notify; `status`, `check` and `discover` never persist update-tracking metadata or upgrade.
 
 ## Select the work
 
@@ -29,6 +30,7 @@ Without an explicit action, select only the relevant path:
 
 | Work | Read |
 | --- | --- |
+| Agent enters a private brain interactively | Its entry and policy, then the [`status` orientation](../../../docs/commands.md#status-orient-at-the-start-of-a-session) once per session before the requested work. |
 | New or resumed setup | [START-HERE.md](../../../START-HERE.md); adapt to available input without a mandatory questionnaire. |
 | Understand the method | [Principles](../../../docs/principles.md), then the relevant reference. |
 | Query a brain | Its entry and policy, permitted view, then its retrieval contract and relevant notes. Use [retrieval](../../../docs/retrieval.md) for method questions. |
