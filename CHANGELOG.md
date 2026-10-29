@@ -4,6 +4,14 @@ Changes that can affect an existing private brain. A brain records the kit commi
 
 Impact classes: **action recommended** (an existing brain should adapt a file), **optional** (useful improvement), **none** (no effect on existing brains).
 
+## 2026-10-29
+
+### Session-start `status` orientation
+
+- Changes: the canonical skill adds a read-only `status` action. Once per interactive session, an agent entering a private brain reports in at most five lines what remains to do from there: missing governance or method pin, consultation skill not discoverable in this host, historical catch-up or continuing ingestion missing for the current machine/agent pair, overdue maintenance and a newer kit commit. It proposes the action that would resolve each item, then continues the requested work. Declined offers are not repeated and deferred ones return after their revisit date. The orientation writes nothing, reads only recorded readiness and metadata, and is skipped by scheduled runs. The home template gains a readiness record; the private agent entry template asks for the orientation; optional hooks may inject that instruction but are not its only path.
+- Impact: **action recommended** for brains that want the orientation. At an approved method update, add the orientation paragraph to the private `AGENTS.md` and a readiness record to the home, moving existing setup choices into it without personal paths. No skill, hook, grant, schedule or method pin changes automatically.
+- Files: `docs/commands.md`, canonical kit skill, home/agent-entry templates, `docs/agents.md`, `docs/work-discovery.md`, `START-HERE.md`, `missions/README.md`, README EN/FR, `DEMARRER.md`, fictional studio brain and command checks.
+
 ## 2026-10-27
 
 ### Business definitions, relationships and metric contracts

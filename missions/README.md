@@ -4,7 +4,7 @@ A mission describes an outcome for an agent. It gives the agent room to choose t
 
 You can run a mission interactively before scheduling it. Starting a brain does not require any recurring jobs.
 
-For a bounded interactive assessment without any saved receipt or repair, use the skill's [`check` action](../docs/commands.md#check-a-bounded-read-only-assessment). It does not execute these missions.
+For a short session-start orientation, use [`status`](../docs/commands.md#status-orient-at-the-start-of-a-session). For a bounded interactive assessment without any saved receipt or repair, use the skill's [`check` action](../docs/commands.md#check-a-bounded-read-only-assessment). It does not execute these missions.
 
 The [`ingest` and `maintain` actions](../docs/commands.md) invoke the existing missions below. `discover` previews source metadata before content ingestion. None of these shortcuts creates a recurring job.
 

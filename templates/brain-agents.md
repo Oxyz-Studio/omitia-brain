@@ -2,6 +2,10 @@
 
 Read `KNOWLEDGE_POLICY.md` first. Establish the requester, actual access identity, and answer audience before opening `README.md` or discovering notes, sources, or receipts. Within that view, use the policy's retrieval contract or its linked equivalent to find the relevant permitted canonical notes and source records before answering or changing knowledge. Follow only the links needed for the task; do not load the entire brain.
 
+## Orient at the start of a session
+
+Once per interactive session, after establishing the view above, run the read-only `status` orientation (kit `docs/commands.md`, installed action interface) against the readiness record in `README.md`: governance and method, consultation in this host, historical catch-up and continuing ingestion for the current machine/agent pair, maintenance and health, kit version. Show at most five lines of items needing attention, each with a proposed action, then do the requested work without waiting. Do not repeat declined offers or deferred ones before their revisit date. Write nothing for the orientation itself; record a new choice only when the user asks and the policy permits. Scheduled runs skip it and report gaps in their receipts. If the kit is unavailable, this paragraph is sufficient.
+
 ## Read and reason
 
 - Use the retrieval contract recorded in `KNOWLEDGE_POLICY.md` or its linked equivalent. For open questions or unknown notes, use its configured discovery path and permitted fallback; a known note may be opened directly. Check any required index on the answering host, and preserve access and knowledge-state exclusions when falling back. Open the canonical note before relying on it.

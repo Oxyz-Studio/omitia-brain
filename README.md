@@ -26,12 +26,13 @@ The private brain records the [kit commit it uses](docs/agents.md#link-the-brain
 | Action | Claude Code | Codex CLI / IDE |
 | --- | --- | --- |
 | Create or resume | `/omitia-brain init` | `$omitia-brain init` |
+| See what the brain still needs | `/omitia-brain status` | `$omitia-brain status` |
 | Assess without changing the brain | `/omitia-brain check` | `$omitia-brain check` |
 | Ingest a source or bounded history | `/omitia-brain ingest <source>` | `$omitia-brain ingest <source>` |
 | Inventory work sources in scope | `/omitia-brain discover <scope>` | `$omitia-brain discover <scope>` |
 | Repair and maintain in scope | `/omitia-brain maintain <scope>` | `$omitia-brain maintain <scope>` |
 
-Use the discovered repository skill, or select `omitia-brain` in your interface and request the action. Add the private path when needed. `init` preserves existing work; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. `discover` inventories metadata and proposes sources or batches without ingesting, installing capabilities or scheduling jobs. `ingest` and `maintain` use the brain's existing policy and permissions. [Commands](docs/commands.md) also documents file prompts for other agents.
+Use the discovered repository skill, or select `omitia-brain` in your interface and request the action. Add the private path when needed. `init` preserves existing work; `status` is the short read-only orientation an agent runs when entering a brain, listing what remains to set up or catch up in this host; `check` reports evidence, unknowns and next actions without repairs or index rebuilds. `discover` inventories metadata and proposes sources or batches without ingesting, installing capabilities or scheduling jobs. `ingest` and `maintain` use the brain's existing policy and permissions. [Commands](docs/commands.md) also documents file prompts for other agents.
 
 ## Understand the architecture
 

@@ -1,6 +1,6 @@
 # Start or extend a company brain
 
-Work in the user's language. The outcome is useful company memory, adapted to available input. The skill's `init` action reaches this guide; use [`check`](docs/commands.md#check-a-bounded-read-only-assessment) for a read-only assessment instead.
+Work in the user's language. The outcome is useful company memory, adapted to available input. The skill's `init` action reaches this guide; use [`status`](docs/commands.md#status-orient-at-the-start-of-a-session) for a short orientation or [`check`](docs/commands.md#check-a-bounded-read-only-assessment) for a read-only assessment instead.
 
 ## Establish the task
 
