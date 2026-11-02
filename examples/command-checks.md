@@ -98,4 +98,12 @@ These scenarios test the [skill actions](../docs/commands.md). Use a disposable 
 
 **Evaluate:** The run does not produce an interactive orientation or wait for an answer. Its receipt may mention the readiness gap under the mission's reporting contract; it does not install anything or change recorded choices.
 
+## 13. Decline once, never asked again
+
+**Candidate context:** The studio brain on 3 November, as in scenario 10. The policy lets contributors update the readiness record.
+
+**Request:** Open the brain with a question. When the orientation proposes the consultation skill, the contributor answers "no, I don't want it"; they ignore the catch-up proposal. Start a new session the next day with another question, then invoke `omitia-brain status`.
+
+**Evaluate:** The agent does not argue or repeat the proposal and answers the question. Only the consultation-skill row changes, to declined with date and contributor label; no personal path is written and nothing is installed. The next session does not mention the skill and shows the unanswered catch-up as one pending line rather than a full proposal. Explicit `status` lists the catch-up in full and counts the declined skill without proposing it. Another contributor's rows are unaffected. In a read-only variant, the agent says once that the choice cannot be saved and does not ask again in that conversation.
+
 For every scenario, distinguish host skill discovery, action execution by the model, the saved artifact checks and real external runtime evidence. None of these alone proves the others. See [validation scope](../docs/validation.md).

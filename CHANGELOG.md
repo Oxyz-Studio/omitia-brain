@@ -4,6 +4,14 @@ Changes that can affect an existing private brain. A brain records the kit commi
 
 Impact classes: **action recommended** (an existing brain should adapt a file), **optional** (useful improvement), **none** (no effect on existing brains).
 
+## 2026-11-02
+
+### `status` proposals can be declined once
+
+- Changes: every orientation item is explicitly an optional proposal; the agent does not insist or block the requested work. A no is recorded as declined in the item's readiness row and never proposed again unless reopened; a later is recorded as deferred with the user's date or 30 days. Unanswered proposals are not recorded and collapse into one pending line in later sessions. Recording an answer is the only write; choices concerning one contributor apply only to them, and a brain that cannot store the answer falls back to the user's own memory or a single notice. Scheduled runs respect declined items.
+- Impact: **action recommended** for brains that adopted the 2026-10-29 orientation paragraph: replace it to record declines and deferrals and stop repeating unanswered proposals. No grant, schedule, installation or method pin changes automatically.
+- Files: `docs/commands.md`, canonical kit skill, home/agent-entry templates, fictional studio brain and command checks.
+
 ## 2026-10-29
 
 ### Session-start `status` orientation

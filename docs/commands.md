@@ -33,7 +33,7 @@ Use authorized input to save useful knowledge and demonstrate retrieval. Make th
 
 ## `status`: orient at the start of a session
 
-A short, read-only orientation that tells the current agent and user what the brain is missing to be well used from here, then lets the requested work continue. The private agent entry asks for it once per interactive session when an agent enters the brain; the explicit action runs the same orientation on demand. It is not an audit: `check` inspects retrieval, knowledge quality and recovery.
+A short orientation, read-only except for recording the user's answers, that shows the current agent and user what could help the brain be well used from here, then lets the requested work continue. The private agent entry asks for it once per interactive session when an agent enters the brain; the explicit action runs the same orientation on demand. It is not an audit: `check` inspects retrieval, knowledge quality and recovery.
 
 Open the governing entry and policy directly, establish requester, access identity and audience, then read only the home's readiness record and the method reference. Use metadata and recorded state; do not open source bodies, transcripts, notes or receipts beyond what a readiness item names, and do not launch discovery to fill gaps.
 
@@ -48,11 +48,28 @@ Assess these items in order, stopping at the budget (default: six items, a few m
 | Maintenance and health | The last maintenance receipt or health observation is older than the recorded threshold; no threshold means "not configured", not overdue. |
 | Kit version | A newer commit at the recorded origin, only when the recorded interval allows the network check; otherwise "not checked". |
 
-Respect recorded choices. A declined offer is not proposed again; a deferred one returns only after its recorded revisit date or condition; an intentional pause is not a missed run. Report each item as **ok**, **to do**, **deferred**, **declined**, **not checked** or **not configured**, and show only items needing attention plus a one-line count of the others.
+### Proposals only, asked once
 
-Return at most five lines before the user's task, each with one proposed next action and the action that would perform it (`init`, `ingest`, `discover`, `maintain`, an installation step requiring consent). Then continue the requested work; never block it on an answer. Proposing is not doing: installation, catch-up, discovery, scheduling or a version upgrade each still needs an existing grant or the user's agreement.
+Every item is a proposal. The user may decline any of them, and the brain stays usable without them. Proposing is not doing: installation, catch-up, discovery, scheduling or a version upgrade each still needs an existing grant or the user's explicit agreement in this session. Never insist, argue, block the requested work on an answer or ask again in the same conversation.
 
-Like `check`, this action writes nothing: no readiness state, receipt, inventory, kit-update metadata or "already shown" marker. Repetition is avoided within the conversation; across sessions, deferrals and declines are recorded only through a separate permitted write the user requests, such as updating the home's readiness record. Scheduled runs and missions do not run the interactive orientation; they report readiness gaps in their own receipts. A clean orientation proves only the inspected items; it is not evidence of coverage, retrieval quality or a running schedule.
+Report each item as **ok**, **to do**, **deferred**, **declined**, **not checked** or **not configured**. Return at most five lines before the user's task, each with one proposed next action and the action that would perform it (`init`, `ingest`, `discover`, `maintain`, an installation step requiring consent), and say that each can be declined or deferred. Then continue the requested work. An intentional pause is not a missed run.
+
+Handle the user's answer per item:
+
+| Answer | Effect |
+| --- | --- |
+| Yes | Perform the proposed action only within its own contract and grants; the answer authorizes that action, not adjacent ones. |
+| No | Record **declined** for the item and its scope. Never propose it again, at session start or under explicit `status`, unless the user reopens it. A related new item, such as another agent appearing, is a distinct proposal; it does not reopen the declined one. |
+| Later | Record **deferred** with the user's revisit date or condition; without one, 30 days. Do not propose it before then. |
+| No answer | Nothing is recorded. In later sessions, collapse every proposal already left unanswered into one line ("n proposals pending; `status` for details") instead of repeating each one. Explicit `status` shows them in full. |
+
+Recording a no or a later is a narrow write the answer itself requests: only the item's row in the home's readiness record, with date and contributor label, never personal paths. A choice that concerns one contributor, such as installing the skill in their hosts, is recorded under their label and applies only to them. If policy does not permit that write, or the brain is read-only for this user, keep the choice in the user's own runtime memory or personal instructions when they agree, and otherwise say once that it cannot be saved. Do not keep asking because a choice could not be saved.
+
+Declined items appear only in the one-line count of other items. The user can reopen one at any time by asking; recording that also changes only its row.
+
+### Writes and limits
+
+Apart from recording the user's answers, this action writes nothing: no receipt, inventory, kit-update metadata or "already shown" marker. Scheduled runs and missions do not run the interactive orientation or ask anything; they report readiness gaps in their own receipts and respect declined items there too. A clean orientation proves only the inspected items; it is not evidence of coverage, retrieval quality or a running schedule.
 
 ## `check`: a bounded, read-only assessment
 
