@@ -34,11 +34,11 @@ An incomplete setup can still be useful. Expand the scope when asked or when it 
 
 ## Readiness
 
-Shared state read by the session-start `status` orientation. Record choices and evidence references, never personal paths, hostnames, credentials or sensitive titles; per-person installation and local history state are verified live by each agent.
+Shared state read by the session-start `status` orientation. Every item is optional: a declined or deferred row stops the proposal until it is reopened or its revisit date passes. A choice that concerns one contributor is recorded under their label and applies only to them. Record choices and evidence references, never personal paths, hostnames, credentials or sensitive titles; per-person installation and local history state are verified live by each agent.
 
 | Item | Choice / state | Scope or evidence reference | Last verified | Revisit or threshold |
 | --- | --- | --- | --- | --- |
-| Consultation skill or pointer | {accepted / deferred / declined / unavailable / not offered} | {brain skill path in this brain; which hosts were verified, without personal paths} | {date} | {revisit date or condition, if deferred} |
+| Consultation skill or pointer | {accepted / deferred / declined / unavailable / not offered; per contributor label when choices differ} | {brain skill path in this brain; which hosts were verified, without personal paths} | {date} | {revisit date or condition, if deferred} |
 | Historical catch-up | {accepted / done for listed pairs / deferred / declined} | {inventory and receipt references by machine/agent label} | {date} | {revisit, if deferred} |
 | Continuing ingestion | {active with verified schedule / manual / deferred / declined / not configured} | {source records, latest receipt} | {date} | {expected cadence, e.g. new sessions reviewed within 7 days} |
 | Maintenance and health | {active / manual / not configured} | {latest maintenance receipt or health observation} | {date} | {maximum age before reporting} |
