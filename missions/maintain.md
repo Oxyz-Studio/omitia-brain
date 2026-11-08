@@ -6,7 +6,7 @@ Check whether the brain's structure and recurring work still produce useful, rec
 
 ## Context and authority
 
-Read the entry point, governance, source registry, mission inventory, prior maintenance receipt, and recent run receipts. Work on a bounded scope based on usage, recent changes, or a rotating review policy.
+Read the entry point, governance, source registry, mission inventory, prior maintenance receipt, and recent run receipts. Work on a bounded scope based on usage, recent changes, or a rotating review policy. For rotation, review recent changes first, then a small share of notes not reviewed recently, so each returns within a recorded interval. Record the position in the receipt so the next run continues rather than restarting from the same notes. Length or age can set the order; neither is a defect.
 
 Maintenance cannot authorize itself to connect a service, increase ingestion scope, change retention, publish content, or alter contributors' permissions. Apply the user's existing policy for repairs and escalation.
 
@@ -22,13 +22,13 @@ Choose checks that address actual risks in this brain:
 - **Validation and recovery:** are relied-on controls active, and what has actually been reviewed, checked deterministically or enforced in this environment? Is the recovery path's coverage and last isolated restore test visible and still usable? Follow [reliability](../docs/reliability.md) for the relevant evidence.
 - **Method version:** is a newer kit commit available than the brain's pin? Follow the recorded [update notice](../docs/agents.md#check-for-kit-updates); this mission does not upgrade the method.
 
-Repair safe issues within the granted scope. Route specific work to ingestion, consolidation, revalidation, or reconciliation when those missions have different permissions or budgets. Avoid automatic cosmetic rewrites of healthy notes.
+Repair safe issues within the granted scope. Route specific work to ingestion, consolidation, revalidation, or reconciliation when those missions have different permissions or budgets. Avoid automatic cosmetic rewrites of healthy notes. Unattended rewrites follow the [isolated rewrite contract](../docs/reliability.md#isolate-unattended-rewrites).
 
 For rejected writes, keep new candidates outside the canonical account and preserve existing valid notes; recover only the affected changes without losing concurrent work. Resolve pending questions into canonical knowledge and link their resolution, leaving any remaining unknown explicit. Follow [reliability](../docs/reliability.md) for proportionate checks and recovery evidence. Use [supervision](supervise.md) or [recovery](recover.md) when they need a distinct scope or authority; do not create separate jobs merely because these missions exist.
 
 ## Completion evidence
 
-Leave a receipt that distinguishes the scope examined, checks actually performed, repairs made, issues still open, and any untested assumption. Include a next action and owner or responsible role when the environment supports that distinction.
+Leave a receipt that distinguishes the scope examined, checks actually performed, repairs made, issues still open, and any untested assumption. Include a next action and owner or responsible role when the environment supports that distinction. Where rotation is used, record its position and the share actually reviewed; do not claim whole-brain review.
 
 Report health from observed outcomes. “All jobs exited successfully” is insufficient when their receipts are missing, source coverage is incomplete, or notes are stale.
 

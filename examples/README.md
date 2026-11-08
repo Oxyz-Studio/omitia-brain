@@ -8,6 +8,7 @@ All names, companies, conversations, and commercial details here are invented. T
 - [Procedure checks](procedure-checks.md): observed corrections become bounded procedures; new formats, unproved lessons and changed conditions retain their limits.
 - [Synthesis checks](synthesis-checks.md): save an authorized comparison, recover it in a new session and revise its dependencies while preserving read-only and consultation-only limits.
 - [Proactive capture checks](proactive-capture-checks.md): useful work is retained under standing grants without repeated requests; history ingestion reuses inline captures and narrower source/action limits remain in force.
+- [Unattended-change and history checks](unattended-change-checks.md): isolated rewrites through acceptance, refusal, concurrent contributions and interrupted application; authorship of generated turns, the brain's own runs, reading order and rotating review.
 - [Business-meaning and metric checks](semantic-checks.md): definitions and source authority, conditional dependency impacts, and executed calculations with grain, time boundaries and missing values.
 - [Work-discovery checks](work-discovery-checks.md): explicit setup offers, multi-agent/machine coverage, selective project distillation, clarification, and bounded folder choices.
 - [Command checks](command-checks.md): initialize or resume, perform a read-only assessment, preserve an older method pin and resolve an unknown target.

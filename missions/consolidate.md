@@ -13,6 +13,7 @@ Use the configured autonomy policy. Routine editorial consolidation may be autho
 ## Working brief
 
 - Find the notes that compete to describe the same subject. Determine whether they are duplicates, different scopes, a current version and its history, or genuinely conflicting accounts.
+- Use text search for near-identical lines across canonical notes to find candidates, then read them. Identical wording with a different scope is not a duplicate, and the same claim in other words or another language still requires reading.
 - Establish or improve a clear reference note. Preserve the sources supporting its claims and distinguish fact, interpretation, proposal, and decision.
 - Prefer a focused summary with links to evidence over several copied summaries that can drift independently.
 - Preserve decision rationale, alternatives, scope, effective dates, and exceptions when they remain useful. A shorter note is not better if its meaning depends on context that disappeared.
@@ -30,7 +31,7 @@ Check the changed notes as a future agent would: follow their entry links and ve
 
 ## Stop and recover
 
-Work within a time or note budget. When a larger restructuring is needed, record the proposed scope and dependencies rather than expanding the task silently. Preserve a reversible edit history using the private brain's existing mechanism.
+Work within a time or note budget. When a larger restructuring is needed, record the proposed scope and dependencies rather than expanding the task silently. Preserve a reversible edit history using the private brain's existing mechanism. When this mission rewrites notes unattended, follow the [isolated rewrite contract](../docs/reliability.md#isolate-unattended-rewrites).
 
 If two agents may edit the same note, read the current version before writing, detect competing edits, and reconcile meaning instead of overwriting either contribution. Escalate conflicts under policy or leave a recoverable pending item.
 

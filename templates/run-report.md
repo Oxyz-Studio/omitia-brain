@@ -18,6 +18,7 @@ Use this as the receipt itself, or link to an existing coverage receipt. A separ
 
 - Coverage: {receipt/log reference with source versions, exact observed ranges, outcomes and incomplete IDs; record them here if this is the receipt}.
 - Remaining gaps / contradictions: {what remains and how to retry}.
+- Applied change, if isolated: {candidate and base, checks actually run and their result, who or what applied it, undo reference, and what the checks did not establish}.
 - Last useful success: {time and receipt of the last verified useful result, or never}.
 - Next action / notification: {actual follow-up under the chosen policy, or none}.
 

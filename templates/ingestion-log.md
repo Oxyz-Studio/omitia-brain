@@ -7,6 +7,7 @@ Keep the receipt and its search metadata within the applicable audience. Source 
 ## Run: {stable run ID}
 
 - Mission and time: {mission reference and actual run time}.
+- Execution identity, when available: {scheduled job, runtime session, or agent identity that lets a later run recognize this one; when no session identifier is visible, its job, trigger and time}.
 - Policy used: {policy version or dated section}.
 - Source observations: {source IDs, versions, and exact ranges inspected}.
 
