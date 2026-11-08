@@ -26,6 +26,7 @@ For a manual mission, record its trigger and environment; omit unused scheduling
 - Trigger / cadence, timezone and agent environment: not configured.
 - Runtime or model identity and allowed fallback, when material to cost or reproducibility: not configured.
 - Limits, retry, and overlap handling: not configured.
+- Change path and who applies it, for unattended rewrites: not configured.
 - Report destination and notification conditions: not configured.
 - Scheduler, job reference, pause/removal method and evidence of active scheduling: not configured.
 - How a missing expected receipt is noticed, if unattended continuity is needed: not configured.

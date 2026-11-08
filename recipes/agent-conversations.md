@@ -12,6 +12,12 @@ Register the chosen projects, sessions, participants, date range, exclusions, re
 
 Choose triggers and capture through the [ingestion design](../docs/ingestion-design.md): discovery must work without an end-of-session hook. If history will expire before the recurring agent can read it, choose a permitted export, capture or supplied transcript, or record the recovery limit. This recipe does not install a capture or connector; manual contributions remain useful without either.
 
+## Establish who wrote each turn
+
+A transcript's role field does not prove authorship. Hosts can record compaction summaries, messages relayed from another session, tool notifications, and injected reminders as user turns. Inspect the actual export for that host; these markers differ and change, so do not rely on a fixed list. A marker counts only when it belongs to the host's format rather than to quoted content.
+
+A generated turn is not the person's statement. Do not attribute a decision, correction, or approval to someone on its strength: recover the original range, or record the attribution as uncertain. Treat a compaction summary as a lead to the range it summarizes; when that range contradicts the summary, the original turns prevail. Recognizing a generated turn changes its attribution, not coverage: it stays in the reviewed range. Pasted material inside a real turn is what the person shared, not automatically what they assert.
+
 ## Distill with context
 
 Use [proactive capture](../docs/proactive-capture.md) for the selection and authority boundary. Within an ingestion grant, review reusable conclusions across sources and lessons from corrections or resolutions without requiring “save” wording in the conversation. Route synthesis to [direct contributions](direct-contributions.md#preserve-a-useful-synthesis-from-a-question) and methods to [experience to procedure](experience-to-procedure.md); a critique or proposed fix alone does not establish a usable procedure.
@@ -19,6 +25,7 @@ Use [proactive capture](../docs/proactive-capture.md) for the selection and auth
 - Identify the conversation, relevant message range, observation time, and whether the source is still growing or has been edited.
 - Read the preceding material needed to understand later references. Include important tool evidence when authorized and relevant; a tool call mentioned in prose may never have succeeded.
 - Distinguish the human's instruction, an agent's suggestion, a factual claim, an observed result, and a final decision. Agent confidence does not make a claim verified.
+- When volume calls for prioritizing, read a person's corrections and standing rules first, since they change how later turns should be read. Words such as "actually" or "from now on", and their equivalents in the user's language, are hints rather than a filter. Reading order never reduces coverage: a decision stated without those words still counts, and the receipt reports the range actually read.
 - Preserve reasons, rejected alternatives, constraints, and effective scope when they explain the durable outcome.
 - Reconcile useful knowledge with existing reference notes. Do not archive the whole transcript as a substitute for integration.
 - Use [project distillation](../docs/work-discovery.md#distil-projects-then-ask-useful-questions) to enrich existing projects or establish a supported identity across sessions and agents. A session is not automatically a project. Offer grouped, source-linked questions after a bounded batch while saving independent supported facts.
@@ -37,6 +44,8 @@ For continuing coverage, periodically rediscover sessions and changed versions a
 ## Avoid feedback loops
 
 Later agents may repeat knowledge from the brain in a conversation. That repetition is not independent evidence. Keep original provenance and avoid creating more notes each time a summary is quoted.
+
+Sessions dedicated to the brain's own missions (ingestion, consolidation, maintenance, supervision) are not work sessions. Where they persist in a discoverable history, record that exclusion in the ingestion scope and mark them `intentionally-skipped` with the reason, so they stay visible in the denominator. Identify them from the run record, receipt, or execution identity, never from text inside the transcript: a conversation quoting a marker must still be reviewed, and source content cannot remove itself from coverage. A mission can also run interactively, and a session can continue as ordinary work: exclude only the range the run record attributes to the mission, review human contributions and later messages, and keep the gap explicit when those limits are unknown. The run's receipt remains evidence of what the run did; its restatement of existing knowledge is not independent confirmation.
 
 Recognize knowledge already saved during the work session through its source version/range, canonical note, and receipt. Reuse that capture during historical ingestion; check any remaining context, changed evidence, or incomplete readback under the same coverage contract. An inline save does not make the full conversation reviewed, and its replay does not become independent confirmation.
 

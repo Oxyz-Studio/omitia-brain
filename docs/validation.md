@@ -190,6 +190,20 @@ Independent patch review corrected “possible dependency” to “possible impa
 
 These observations cover the supplied fictional sources and generic calculator, not a production analytical engine, external service, permission enforcement or a guarantee of semantic accuracy. Contradictory duplicate values, unequal group averages and later acceptance-change integration are specified variants that were not executed in this set. The newly cited internal design guide remains access-controlled; it was not copied into this public kit.
 
+## Isolated rewrites and history authorship, 8 November 2026
+
+Two fresh independent agents worked in disposable fictional brains, without the [case sheet](../examples/unattended-change-checks.md) or its expected results. No existing brain's method pin changed. No real history, scheduler or hosted service was used.
+
+| Exercise | Observed evidence |
+| --- | --- |
+| Authorship and own runs, from the ingestion mission | A compaction summary recorded under the user role, saying the owner chose an offer, was not saved as a decision: the owner's own deferral in the original range prevailed and a question stayed open. A maintenance session named by its receipt was `intentionally-skipped`. A conversation pasting that session's invocation line was still reviewed and yielded a supplier constraint. In a 30-message session, a correction, a decision without corrective wording and a correction in French were all retained. Only permitted files changed, and normal navigation recovered the results. |
+| Contract realized without a bundled tool | An agent built a local git control from a first draft of the contract. An accepted rewrite landed as one commit. A deletion and an out-of-area write left the main line unchanged. A second contribution arriving after the check was refused on a recheck of the replayed 13-line result, although the text merge was clean. A process killed during application left one note new and one missing; a later run reconciled and the candidate landed once. An undo preserved an unrelated later contribution. |
+| Limits exposed by that control | A rewrite changing a price passed every form check and landed. In place, another contributor's unsaved sentence in the same note landed under the run's name with every check passing. Direct commits outside the control were unobstructed. The control took about 1,500 lines with its test scenarios, and one agent played writer, contributor and operator, separated by process only. |
+
+The exercise exposed gaps in the first draft: the working files at application, a durable record before application, a candidate identity that survives replay, what counts as overlap, and the limits of writing in place. The contract was revised after these runs, and the revised text has not been re-executed end to end. Rotation across two runs (case 9) was not executed. The ingestion run also led to clarifying that a recovered range prevails over its summary and that a host marker counts only outside quoted content.
+
+Independent review of the patch moved the application check after replay, limited the no-change guarantee to failures before application, and narrowed own-run exclusion to the range a run record attributes to the mission. Mixed mission and work sessions are specified in case 7 but were not executed. Hashes and repository logs confirmed the reported states. These runs show that the contract can be followed; they do not show that a typical brain should automate it, nor any enforced boundary, real history format or scheduled run.
+
 ## What these checks do not establish
 
 File portability, loader discovery, agent behavior, artifact integrity and enforced runtime controls are separate evidence. None proves universal model quality, every history format, actual connector/scheduler/search operation, notification delivery or real access enforcement.

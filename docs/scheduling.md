@@ -27,6 +27,7 @@ Before creating or changing a recurring task, establish the user's intended beha
 | Work budget | Bounds time, items, tool use, and cost for one run. |
 | Access and environment | Identifies the runtime, private brain path, and available connector identity. |
 | Overlap policy | Prevents two runs from losing or overwriting each other's work. |
+| Change path and who applies it | Keeps an unattended rewrite out of current knowledge until it is accepted. See [isolated rewrites](reliability.md#isolate-unattended-rewrites). |
 | Recovery and retries | Makes failures resumable without uncontrolled repetition. |
 | Reporting destination | Makes required action visible without publishing private information. |
 | Pause and removal | Gives the user a clear way to stop automation. |
@@ -52,6 +53,7 @@ During setup, run a bounded instance using the intended environment. If appropri
 - The actual source coverage is visible, including truncation and pagination limits.
 - Existing knowledge is considered before the agent changes it.
 - A receipt records outcomes and a safe continuation, including when no durable update is needed.
+- For a mission that rewrites notes, the change path accepts and refuses a representative disposable change.
 - The chosen storage and reporting destinations keep company material private.
 
 Read back the created task from the scheduler to confirm its actual enabled state, trigger, timezone, target runtime, and durable mission reference. A proposal or tool success message alone does not prove the task exists as intended.

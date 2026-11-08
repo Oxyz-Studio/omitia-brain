@@ -4,6 +4,14 @@ Changes that can affect an existing private brain. A brain records the kit commi
 
 Impact classes: **action recommended** (an existing brain should adapt a file), **optional** (useful improvement), **none** (no effect on existing brains).
 
+## 2026-11-08
+
+### Isolated unattended rewrites and authorship in agent histories
+
+- Changes: reliability adds a contract for rewrites applied without prior review: one candidate checked against its current base by something other than its writer, application confirmed against the latest base, a durable record that lets a later run reconcile an interrupted application, explicit limits for writing in place, and an undo that preserves later work. Conversation ingestion separates generated user-role turns from a person's statements, excludes ranges of the brain's own runs by record rather than by transcript text, and reads corrections first without reducing coverage. Consolidation uses near-duplicate candidates and maintenance defines rotating review. Mission, run-report and ingestion-log templates gain optional lines.
+- Impact: **optional**. Brains that rewrite notes unattended can adopt the contract at an approved method update, and brains whose ingestion can reach their own scheduled runs can record that exclusion. The kit ships no script for this. No grant, method pin, hook or recurring job changes automatically.
+- Files: reliability, scheduling, mechanism review, design references, validation, conversation recipe, consolidate and maintain missions, mission, run-report and ingestion-log templates, new fictional checks and the examples index.
+
 ## 2026-11-02
 
 ### `status` proposals can be declined once

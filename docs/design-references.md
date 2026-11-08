@@ -32,3 +32,13 @@ The **Instagram seven-memory taxonomy** remains an unresolved pedagogical refere
 [Concevoir un agent avec un modèle sémantique, un graphe de connaissances et une ontologie](https://github.com/Oxyz-Studio/laurence-mastra/blob/7b9192e94bdc6123cdc92756dfcb5c3330730530/docs/trois-concepts-semantique-graphe-ontologie.md) — user-supplied internal design guide, consulted **27 October 2026** at commit `7b9192e94bdc6123cdc92756dfcb5c3330730530`. The source repository is private; this citation requires authorized access and does not publish the source document.
 
 **Adapted:** task-scoped [business definitions](context.md#define-terms-that-affect-the-task), [authority for critical information](governance.md#authority-is-specific), [explicit relationships and conditional conclusions](knowledge-model.md#relationships-express-a-specific-claim), and [reproducible metric contracts](metrics.md). These are generic Markdown practices illustrated with fictional material. The guide's proposed APIs, ontology formats, graph stores and runtime architecture are not bundled or required by this kit. Its design examples are proposals, not evidence of a working integration; selected local observations belong in [validation](validation.md).
+
+## Additional design review, 8 November 2026
+
+[Melvynx, `ai-maxxing-skills`, `skills/brain`](https://github.com/Melvynx/ai-maxxing-skills/tree/ca476f62b9ea9936b5e89394ba1271acb86ba9d8/skills/brain), commit `ca476f62b9ea9936b5e89394ba1271acb86ba9d8`, MIT licence, consulted **6 to 8 November 2026**. Its skill files and four scripts were read; they were not run.
+
+**Adapted:** a consolidation pass isolated from current notes and checked before it lands, application by something other than the writer, separating generated turns and the system's own runs from a person's statements, reading corrections first, near-duplicate candidates, and rotating review. Counterparts: [isolated rewrites](reliability.md#isolate-unattended-rewrites), [conversation recipe](../recipes/agent-conversations.md#establish-who-wrote-each-turn), [consolidation](../missions/consolidate.md) and [maintenance](../missions/maintain.md).
+
+**Evaluated only:** its hooks, history parsers, background launcher, fixed project layout and automatic push, which assume specific agents, runtimes and a single contributor. No code is copied or required.
+
+**Limits read in that revision:** checks run before replay onto a newer base; a before-and-after comparison can attribute someone else's concurrent edit to a run; a marker found anywhere in a conversation classifies it as a background run. This is a dated reading of the code, not a test of it.

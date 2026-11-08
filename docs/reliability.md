@@ -28,6 +28,33 @@ Staging and quarantine do not make sensitive content safe to collect or retain. 
 
 After a valid update, save its provenance and receipt, refresh affected views, and perform normal retrieval readback. A successful format check alone does not complete ingestion. See [continuity](continuity.md).
 
+## Isolate unattended rewrites
+
+Use this contract when a run may change existing notes with nobody reviewing it first. A new note or an attended edit does not need it unless the private policy says so. The kit states what must hold and each private brain chooses the means. The simplest realization is a person who reviews and applies the candidate. A hosted pipeline with a protected branch, or a local control, can take over what it can actually verify; automating the whole path is substantial work. This kit ships no script for it.
+
+1. **Fix the base.** Record the version the run starts from.
+2. **Work apart.** The run writes only in a copy with its own files, such as a separate checkout or a draft area. Its writes stay out of current notes and unsaved work stays out of the copy. A branch sharing the same working files is not apart.
+3. **Form one candidate.** Present the result as one reviewable change, with an identity that survives replay and can be found on what lands.
+4. **Bring it up to date.** Compare with the latest version. The brain decides what counts as overlap; a clean text merge does not show that two changes fit together. Hold on overlap unless the policy lets the run reconcile under [governance](governance.md#multiple-contributors-and-agents). A replayed or reconciled result is a new result.
+5. **Check that exact result.** Something other than the writing agent runs the selected checks on it against its current base. A pass on an earlier base or result does not carry over.
+6. **Apply, confirming nothing moved.** First record the intent durably, where a later run will find it. At the last moment, confirm that the base has not moved and that no unsaved work sits on the candidate's notes, with a fast-forward-only update, a protected branch, or an equivalent. Otherwise return to step 4 or hold. A lock binds only those who take it.
+7. **Record and undo.** The applier, not the writer, records the candidate, base, checks and result, and quotes the writer's account as unverified. An undo is a rewrite on this same path and must preserve later contributions; if its checks refuse it, a person decides.
+
+| The kit requires | The private brain records |
+| --- | --- |
+| Where a run may write | Its own areas, in its own layout. |
+| What is refused | Selected properties and how they are measured, such as a deletion or rename, a write outside the area, a lost required field, a large reduction, or an oversized entry point. |
+| Who applies the change | A person, pipeline, or runner distinct from the writing agent, and what that separation actually enforces. See the [scheduling contract](scheduling.md#record-the-scheduling-contract). |
+| How to undo | A revert, a restored snapshot, or the limit when neither exists. |
+| Where held work is visible | A place where a reader of the brain finds refused and held candidates with their reasons. |
+| Evidence that the control works | Disposable cases, [as above](#know-what-a-check-establishes): accepted, refused, overtaken by a concurrent contribution, and interrupted during application. |
+
+A refusal before application leaves current knowledge unchanged: keep the candidate and its reason, as in [rejection](#reject-a-change-without-damaging-current-knowledge). Application may not be atomic, and a crash can leave a note new, old, or missing. The record from step 6 tells a later run that an application was under way. It inspects what landed, completes or reverses only notes in a known state, and holds anything matching neither version for a person. Do not reapply blindly or report that nothing was applied. [Continuity](continuity.md#complete-a-unit-in-recoverable-steps) applies the same discipline to source work.
+
+Avoid writing in place when someone else may edit the same notes. In place, partial writes are live and readable, and the guarantees above do not hold. Where policy still allows it, the run records the content it wrote, not only paths, and anything else changed during the run is held and reported. This cannot detect an edit made to the same note before the run's write, or a contributor committing the run's unchecked write, so report such a run as not isolated.
+
+These checks establish form, not meaning: a rewrite that changes a price can pass them all and land. Say so in the receipt. Use agent or human review for meaning, before application or on a sample afterwards as the policy accepts, and correct a wrong statement through this same path. A written instruction is not a gate. Report which paths are enforced and which are only instructed; a control can bind its own runs while direct commits stay ungoverned. A brain without versioning uses a draft area and review, and records that one-step undo is unavailable.
+
 ## Observe useful work and missing work
 
 Track the signals needed to explain the actual state:
